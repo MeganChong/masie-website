@@ -41,12 +41,12 @@ export default function NavBar(props) {
         if (openToggle) {
             return (
                 <div class="block w-full items-center">
-                    <div class="block justify-center w-full"><Link to="/" class="flex-1 text-center"><button class="hover:text-purple-500 text-navBar">HOME</button></Link></div>
-                    <div class="block justify-center w-full"><Link to="/about" class="flex-1 text-center"><button class="hover:text-purple-500 text-navBar">ABOUT</button></Link></div>
-                    <div class="block justify-center w-full">{createButton("books", "Book")}</div>
-                    <div class="block justify-center w-full">{createButton("catalogs", "Catalog")}</div>
-                    <div class="block justify-center w-full">{createButton("ads", "Ad Campaign")}</div>
-                    <div class="block justify-center w-full">{createButton("other", "Other")}</div>
+                    <div class="block text-center w-full"><Link to="/" class="flex-1 text-center"><button class="hover:text-purple-500 text-navBar">HOME</button></Link></div>
+                    <div class="block text-center w-full"><Link to="/about" class="flex-1 text-center"><button class="hover:text-purple-500 text-navBar">ABOUT</button></Link></div>
+                    <div class="block text-center w-full">{createButton("books", "Book")}</div>
+                    <div class="block text-center w-full">{createButton("catalogs", "Catalog")}</div>
+                    <div class="block text-center w-full">{createButton("ads", "Ad Campaign")}</div>
+                    <div class="block text-center w-full">{createButton("other", "Other")}</div>
                 </div>
             );
         }
@@ -55,7 +55,7 @@ export default function NavBar(props) {
     function displayMobileIcon() {
         return (
             <div class="block pl:20 md:hidden justify-self-center">
-                <img src={logo} alt="the logo- open for menu" class="pb-4" onClick={() => {setToggle(!openToggle)}}/>
+                <img src={logo} alt="the logo- open for menu" class="mx-auto" onClick={() => {setToggle(!openToggle)}}/>
                 {displayMobileBar()}
             </div>
         );
