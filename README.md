@@ -1,10 +1,6 @@
-# Getting Started with Create React App
+# Masie's Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+This is Masie's portfolio website. The active link can be found at this link: http://masie189.herokuapp.com/
 
 ### `npm start`
 
