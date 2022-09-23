@@ -6,6 +6,8 @@ import NavBar from "./NavBar";
 import { formatCell } from "./FormatCell";
 import arrow from '../assests/dropdownArrow.png';
 
+import './BookInfo.css';
+
 //to read from a json file:
 //import data from './data/data.json
 //use .map() to iterate data
@@ -170,5 +172,25 @@ export default function BookInfo() {
         );
     }
 
-    return displayPage();
+    ////////////////////////////////////////2022 UPDATES ////////////////////////////////////////////////////
+
+    function displayPage2() {
+        return (
+            <div className="parent">
+                <div className="upperTriangle">
+                </div>
+                <div className="lowerTriangle">
+                </div>
+                <div className="bottom">
+                </div>
+                <div className="endBar"></div>
+                <div className="checkMore">
+                    <p style={{padding: "3%"}}>CHECK OUT MORE</p>
+                </div>
+                <div className="carousel"></div>
+            </div>
+        );
+    }
+
+    return displayPage2();
 }
