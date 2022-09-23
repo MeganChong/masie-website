@@ -11,34 +11,13 @@
 .upperTriangle {
     top: 0;
     left: 0;
-    background-color: green;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 35%);
 }
 
 .lowerTriangle {
     right: 0;
     top: 0%;
-    background-color: pink;
+    background-color: hsl(350, 100%, 88%);
     clip-path: polygon(0% 35%, 100% 100%, 0% 100%);
     margin-top: -60%; 
-}
-
-.bottom {
-  height: 70vh;
-  background-color: pink;
-}
-
-.endBar {
-  height: 3vh;
-  background-color: lightblue;
-}
-
-.checkMore {
-  height: 15vh;
-  text-align: center;
-}
-
-.carousel {
-  height: 85vh;
-  background-color: purple;
 }
