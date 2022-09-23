@@ -44,8 +44,11 @@ export default function BookInfo() {
     function displayPage2() {
         return (
             <div className="parent">
-                {upperTriangle()}
-                {lowerTriangle()}
+                <div className="logo"></div>
+                <div style={{height: "133vh"}}>
+                    {upperTriangle()}
+                    {lowerTriangle()}
+                </div>
                 {bottom()}
                 {bottomBar()}
                 {checkMore()}
