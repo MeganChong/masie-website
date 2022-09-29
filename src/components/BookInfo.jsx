@@ -13,6 +13,8 @@ export default function BookInfo() {
     var barbg = "rgb(173, 216, 230)";
     var carouselbg = "rgb(128, 0, 128)";
 
+    var awardTitle = "title";
+
     function upperTriangle() {
         return ( <div style={{backgroundColor: `${UTRbg}`}} className="upperTriangle"></div> );
     }
@@ -20,27 +22,25 @@ export default function BookInfo() {
     function lowerTriangle() {
         return ( 
             <div style={{backgroundColor: `${LTRbg}`}} className="lowerTriangle">
-                
-            </div> 
-        );
-    }
+                {/* empty div to move the rest of the items down to correct position */}
+                <div style={{height: "109vh"}}></div> 
 
-    function bottom() {
-        return ( 
-            <div style={{backgroundColor: `${LTRbg}`, height: "70vh"}}>
-                <h1 class="text-5xl text-center">title</h1>
+                <h1 class="text-center text-5xl font-bold m-7 mb-9 mt-0">{awardTitle}</h1>
                 <hr/>
-                <div style={{display: "flex", height: "calc(100% - 48px)", margin:"auto"}}>
-                    
-                    <div class="processText">
-                        <p class="font-bold">header</p>
-                        <p>sample text: curry shrimp tastes delicious 
-                            in three weeks we will be in japan. konichiwa
-                            minasan. i'm bobby flay, each week two chefs try to
-                            take me down in my house.
+
+                <div class="flex mt-14" style={{marginLeft: "9%"}}>
+                    <div class="flex-1 p-3 pt-0">
+                        <p style={{letterSpacing: "4px", fontSize: "46px", lineHeight:"1.1"}}>
+                            award winning chili crab
                         </p>
+                        <p class="font-bold text-xl mt-10" style={{letterSpacing: "4px"}}>HEADER</p>
+                        <p class="pt-3 text-lg" style={{lineHeight: "30px"}}>i'm bobby flay, each week one brave chef tries to
+                            take me down in my house. 
+                        </p>
+                        
                     </div>
-                    <div class="processImages">
+                    <div class="flex-1 bg-gray-900 ml-6" style={{flexGrow: 3, height: "60vh"}}>
+                        
 
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export default function BookInfo() {
 
     function checkMore() {
         return (
-            <p style={{padding: "3%", height: "15vh", textAlign: "center"}}>
+            <p class="text-xl" style={{padding: "3%", height: "15vh", textAlign: "center", letterSpacing: "5px"}}>
                 CHECK OUT MORE
             </p>
         );
@@ -73,7 +73,6 @@ export default function BookInfo() {
                     {lowerTriangle()}
                     {/* <div className="processBox"></div> */}
                 </div>
-                {/* {bottom()} */}
                 {bottomBar()}
                 {checkMore()}
                 {carousel()}
