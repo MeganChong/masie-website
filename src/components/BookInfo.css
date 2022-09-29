@@ -8,20 +8,20 @@
 
 .upperTriangle, .lowerTriangle {
     position: absolute;
-    height: 130vh;
+    height: 200vh;
     width: 100%;
 }
 
 .upperTriangle {
     top: 0;
     left: 0;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 35%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 20%);
 }
 
 .lowerTriangle {
     right: 0;
-    top: 1%;
-    clip-path: polygon(0% 35%, 100% 100%, 0% 100%);
+    top: 0%;
+    clip-path: polygon(0% 21%, 100% 61%, 100% 100%, 0% 100%);
 }
 
 .logo {
@@ -32,4 +32,38 @@
   width: 10vw;
   height: 10vw;
   z-index: 1;
+}
+
+.processBox {
+  position: absolute;
+  right: 0;
+  bottom: 56.5%;
+  background-color: blue;
+  width: 5vw;
+  height: 20vw;
+  z-index: 1;
+}
+
+hr {
+  height: 5px;
+  width: 75%;
+  margin: auto;
+  border-width: 0;
+  background-color: black;
+}
+
+.processText {
+  flex-grow: 1;
+  max-width: 35%;
+  max-height: calc(70vh-48px);
+  margin: auto;
+  padding: 2% 4% 2% 13%;
+  text-align: left;
+}
+
+.processImages {
+  flex-grow: 2;
+  height: 90%;
+  margin: auto;
+  background-color: brown;
 }

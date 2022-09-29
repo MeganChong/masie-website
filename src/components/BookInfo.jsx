@@ -18,11 +18,34 @@ export default function BookInfo() {
     }
 
     function lowerTriangle() {
-        return ( <div style={{backgroundColor: `${LTRbg}`}} className="lowerTriangle"></div> );
+        return ( 
+            <div style={{backgroundColor: `${LTRbg}`}} className="lowerTriangle">
+                
+            </div> 
+        );
     }
 
     function bottom() {
-        return ( <div style={{backgroundColor: `${LTRbg}`, height: "70vh"}}></div> );
+        return ( 
+            <div style={{backgroundColor: `${LTRbg}`, height: "70vh"}}>
+                <h1 class="text-5xl text-center">title</h1>
+                <hr/>
+                <div style={{display: "flex", height: "calc(100% - 48px)", margin:"auto"}}>
+                    
+                    <div class="processText">
+                        <p class="font-bold">header</p>
+                        <p>sample text: curry shrimp tastes delicious 
+                            in three weeks we will be in japan. konichiwa
+                            minasan. i'm bobby flay, each week two chefs try to
+                            take me down in my house.
+                        </p>
+                    </div>
+                    <div class="processImages">
+
+                    </div>
+                </div>
+            </div> 
+        );
     }
 
     function bottomBar() {
@@ -45,11 +68,12 @@ export default function BookInfo() {
         return (
             <div className="parent">
                 <div className="logo"></div>
-                <div style={{height: "133vh"}}>
+                <div style={{height: "200vh"}}>
                     {upperTriangle()}
                     {lowerTriangle()}
+                    {/* <div className="processBox"></div> */}
                 </div>
-                {bottom()}
+                {/* {bottom()} */}
                 {bottomBar()}
                 {checkMore()}
                 {carousel()}
