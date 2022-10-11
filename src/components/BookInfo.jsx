@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from "react";
 import './BookInfo.css';
 
+import step1 from "../assests/steps/giveSay/step1.jpg";
+import step2 from "../assests/steps/giveSay/step2.jpg";
+import thumb from "../assests/thumbnails/GivingStudents.jpg"
+
 //to read from a json file:
 //import data from './data/data.json
 //use .map() to iterate data
@@ -13,35 +17,43 @@ export default function BookInfo() {
     var barbg = "rgb(173, 216, 230)";
     var carouselbg = "rgb(128, 0, 128)";
 
-    var awardTitle = "title";
+    var awardTitle = "the christian siriano save produced \n the winner of the 2020 project runway";
+
+    function thumbNail() {
+        return (<img src={thumb} class="thumbNail"/>)
+    }
 
     function upperTriangle() {
         return ( <div style={{backgroundColor: `${UTRbg}`}} className="upperTriangle"></div> );
     }
 
+    // TODO: use variables
     function lowerTriangle() {
         return ( 
             <div style={{backgroundColor: `${LTRbg}`}} className="lowerTriangle">
                 {/* empty div to move the rest of the items down to correct position */}
                 <div style={{height: "109vh"}}></div> 
 
-                <h1 class="text-center text-5xl font-bold m-7 mb-9 mt-0">{awardTitle}</h1>
+                <h1 class="text-center text-5xl font-bold m-7 mb-9 mt-0" style={{whiteSpace: "pre-line"}}>{awardTitle}</h1>
                 <hr/>
 
                 <div class="flex mt-14" style={{marginLeft: "9%"}}>
                     <div class="flex-1 p-3 pt-0">
-                        <p style={{letterSpacing: "4px", fontSize: "46px", lineHeight:"1.1"}}>
+                        {/* TODO: only display if string exists -> return this in a separate method*/}
+                        <p class="mb-10" style={{letterSpacing: "4px", fontSize: "46px", lineHeight:"1.1"}}>
                             award winning chili crab
                         </p>
-                        <p class="font-bold text-xl mt-10" style={{letterSpacing: "4px"}}>HEADER</p>
-                        <p class="pt-3 text-lg" style={{lineHeight: "30px"}}>i'm bobby flay, each week one brave chef tries to
+                        <p class="font-bold text-xl" style={{letterSpacing: "4px"}}>HEADER</p>
+                        <p class="pt-3 text-lg" style={{lineHeight: "30px"}}>
+                            i'm bobby flay, each week one brave chef tries to
                             take me down in my house. 
                         </p>
                         
                     </div>
-                    <div class="flex-1 bg-gray-900 ml-6" style={{flexGrow: 3, height: "60vh"}}>
-                        
-
+                    <div class="flex-1 ml-16 sideways">
+                        {/* TODO: rotate and flip contents to sidescroll */}
+                        <img src={step1} class="card"/>
+                        <img src={step2} class="card"/>
                     </div>
                 </div>
             </div> 
@@ -60,6 +72,7 @@ export default function BookInfo() {
         );
     }
 
+    // TODO
     function carousel() {
         return ( <div style={{backgroundColor: `${carouselbg}`, height: "85vh"}}></div> );
     }
@@ -68,10 +81,12 @@ export default function BookInfo() {
         return (
             <div className="parent">
                 <div className="logo"></div>
-                <div style={{height: "200vh"}}>
+                <div style={{height: "200vh", minHeight: "fit-content"}}>
+                    {thumbNail()}
                     {upperTriangle()}
                     {lowerTriangle()}
-                    {/* <div className="processBox"></div> */}
+                    {/* TODO */}
+                    {/* <div className="processBox"></div> */} 
                 </div>
                 {bottomBar()}
                 {checkMore()}

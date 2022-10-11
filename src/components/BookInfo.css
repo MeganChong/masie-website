@@ -8,6 +8,7 @@
 
 .upperTriangle, .lowerTriangle {
     position: absolute;
+    min-height: fit-content;
     height: 200vh;
     width: 100%;
 }
@@ -22,6 +23,17 @@
     right: 0;
     top: 0%;
     clip-path: polygon(0% 21%, 100% 61%, 100% 100%, 0% 100%);
+}
+
+.thumbNail {
+  position: absolute;
+  z-index: 10;
+  height: 70vh;
+  top: 0;
+  bottom: 200vh;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .logo {
@@ -40,4 +52,20 @@ hr {
   margin: auto;
   border-width: 0;
   background-color: black;
+}
+
+.sideways {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  flex-grow: 3;
+  height: 60vh;
+
+}
+.card {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 5.5%;
 }
