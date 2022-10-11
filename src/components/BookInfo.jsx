@@ -17,10 +17,37 @@ export default function BookInfo() {
     var barbg = "rgb(173, 216, 230)";
     var carouselbg = "rgb(128, 0, 128)";
 
-    var awardTitle = "the christian siriano save produced \n the winner of the 2020 project runway";
+    var awardTitle = "title";
 
     function thumbNail() {
-        return (<img src={thumb} class="thumbNail"/>)
+        return (<img src={thumb} class="thumbNail"/>);
+    }
+
+    function audience() {
+        return (
+            <div className="audience">
+                <p>AUDIENCE: K-12 TEACHERS</p>
+                <hr className="introLine"/>
+            </div>
+        );
+    }
+
+    function type() {
+        return (
+            <div className="type">
+                <hr className="introLine"/>
+                <p>TYPE: BOOK COVER</p>
+            </div>
+        );
+    }
+
+    function client() {
+        return (
+            <div className="client">
+                <p>CLIENT: ASCD</p>
+                <hr className="introLine"/>
+            </div>
+        );
     }
 
     function upperTriangle() {
@@ -35,7 +62,7 @@ export default function BookInfo() {
                 <div style={{height: "109vh"}}></div> 
 
                 <h1 class="text-center text-5xl font-bold m-7 mb-9 mt-0" style={{whiteSpace: "pre-line"}}>{awardTitle}</h1>
-                <hr/>
+                <hr className="titleLine"/>
 
                 <div class="flex mt-14" style={{marginLeft: "9%"}}>
                     <div class="flex-1 p-3 pt-0">
@@ -84,6 +111,9 @@ export default function BookInfo() {
                 <div style={{height: "200vh", minHeight: "fit-content"}}>
                     {thumbNail()}
                     {upperTriangle()}
+                    {audience()}
+                    {type()}
+                    {client()}
                     {lowerTriangle()}
                     {/* TODO */}
                     {/* <div className="processBox"></div> */} 

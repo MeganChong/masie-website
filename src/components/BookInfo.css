@@ -36,6 +36,39 @@
   margin: auto;
 }
 
+.audience, .type, .client {
+  z-index: 20;
+  position: absolute;
+  color: black;
+  /* mix-blend-mode: overlay; */
+  letter-spacing: 9px;
+  font-size: small;
+}
+
+.audience {
+  transform: rotate(270deg);
+  bottom: 250vh;
+  left: -5vw;
+}
+
+.type {
+  bottom: 210vh;
+  left: 6vw; 
+}
+
+.client {
+  transform: rotate(90deg);
+  right: 0;
+  bottom: 250vh;
+}
+
+.introLine {
+  background-color: black;
+  border-width: 0;
+  height: 2px;
+  margin: 9px auto;
+}
+
 .logo {
   position: absolute;
   top: 0;
@@ -46,7 +79,7 @@
   z-index: 1;
 }
 
-hr {
+.titleLine {
   height: 2px;
   width: 82%;
   margin: auto;
