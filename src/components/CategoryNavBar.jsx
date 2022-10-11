@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from '../assests/MLogo3.png';
 
-export default function InfoPageNavBar(props) {
+export default function CategoryNavBar(props) {
     function createButton(path, type) {
         return (
             <Link
@@ -10,20 +10,21 @@ export default function InfoPageNavBar(props) {
                     pathname:`/${path}`,
                     state: {type: `${type}`}
                 }}
-                class="flex-1 text-center mt-0"
+                class="flex-1"
             >
                 <button class="uppercase text-navBar hover:text-purple-500">{path}</button>
             </Link>
         );
     }
 
-    function displayInfoBar() {
+    function displayCategoryNavBar() {
         return (
-            <div class="hidden md:flex md:flex-1 justify-center items-center z-20 text-black absolute min-w-full">
-                <Link to="/" style={{flexGrow: 4, height: "5vw"}}>
-                    <img src={logo} alt="The logo - click to go to homepage" style={{marginTop: "5vh", marginLeft: "5vh"}}/>
+            <div class="hidden md:flex md:flex-1 p-6 bg-blue-400"
+                style={{width: "20vw", height:"100vh", flexDirection: "column", justifyContent: "right"}}>
+                <Link to="/" style={{flexGrow: 1, height: "3vh"}}>
+                    <img src={logo} alt="The logo - click to go to homepage" />
                 </Link>
-                <Link to="/about" class="flex-1 text-center"><button class="hover:text-purple-500 text-navBar">ABOUT</button></Link>
+                <Link to="/about" class="flex-1"><button class="hover:text-purple-500 text-navBar">ABOUT</button></Link>
                 {createButton("books", "Book")}
                 {createButton("catalogs", "Catalog")}
                 {createButton("ads", "Ad Campaign")}
@@ -32,5 +33,5 @@ export default function InfoPageNavBar(props) {
         );
     }
 
-    return displayInfoBar();
+    return displayCategoryNavBar();
 }

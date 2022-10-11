@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from '../assests/MLogo3.png';
 import InfoPageNavBar from "./InfoPageNavBar";
+import CategoryNavBar from "./CategoryNavBar";
 
 export default function NavBar(props) {
     const [openToggle, setToggle] = useState(false);
@@ -65,7 +66,17 @@ export default function NavBar(props) {
 
     function display() {
         if (props.displayType === "category") {
-            // return displaySideBar();
+            return (
+                <div>
+                    <CategoryNavBar/>
+                    <div class="md:hidden sticky top-0 z-50
+                     bg-white
+                     text-black 
+                     min-w-full p-4 pl-8 content-center">
+                    {displayMobileIcon()}
+                    </div>
+                </div>
+            )
         }
         else if (props.displayType === "info") {
             return (
@@ -76,7 +87,7 @@ export default function NavBar(props) {
                      text-black 
                      min-w-full p-4 pl-8 content-center">
                     {displayMobileIcon()}
-                </div>
+                    </div>
                 </div>
             )
         }

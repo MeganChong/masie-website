@@ -39,7 +39,7 @@ export default function DisplayTypes() {
 
     function displayPage() {
         return (
-            <div class="min-h-screen">
+            <div class="min-h-screen flex">
                 <NavBar show={true} displayType={"category"}/>
 
                 {/* <h1 class="text-5xl font-bold m-10 pt-6">{type}s</h1> */}
