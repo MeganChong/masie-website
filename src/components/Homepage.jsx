@@ -19,7 +19,7 @@ export default function Homepage() {
         <div>
             <img src={header} alt="opening screen"/>
             
-            <NavBar show={false}/>
+            <NavBar show={false} displayType={"homepage"}/>
 
             <div class="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 min-h-screen bg-purple-300">
                 <img src={photoMap["introBox"]} alt="intro box" class="col-span-3"/>

@@ -40,11 +40,12 @@ export default function DisplayTypes() {
     function displayPage() {
         return (
             <div class="min-h-screen">
-                <NavBar show={true}/>
+                <NavBar show={true} displayType={"category"}/>
 
-                <h1 class="text-5xl font-bold m-10 pt-6">{type}s</h1>
+                {/* <h1 class="text-5xl font-bold m-10 pt-6">{type}s</h1> */}
 
-                <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 items-center m-10 overflow-hidden">
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 
+                            gap-5 items-center m-10 overflow-hidden">
                     {displayProjects()}
                 </div>
             </div>

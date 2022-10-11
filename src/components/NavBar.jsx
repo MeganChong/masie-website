@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from '../assests/MLogo3.png';
+import InfoPageNavBar from "./InfoPageNavBar";
 
 export default function NavBar(props) {
     const [openToggle, setToggle] = useState(false);
@@ -53,6 +54,7 @@ export default function NavBar(props) {
     }
 
     function displayMobileIcon() {
+        console.log("displaying mobile nav bar");
         return (
             <div class="block pl:20 md:hidden justify-self-center">
                 <img src={logo} alt="the logo- open for menu" class="mx-auto" onClick={() => {setToggle(!openToggle)}}/>
@@ -61,13 +63,35 @@ export default function NavBar(props) {
         );
     }
 
-    return (
-        <div class="sticky top-0 z-50
-                    bg-white
-                    text-black 
-                    min-w-full p-4 pl-8 content-center">
-            {displayWebBar()}
-            {displayMobileIcon()}
-        </div>
-    );
+    function display() {
+        if (props.displayType === "category") {
+            // return displaySideBar();
+        }
+        else if (props.displayType === "info") {
+            return (
+                <div>
+                    <InfoPageNavBar/>
+                    <div class="md:hidden sticky top-0 z-50
+                     bg-white
+                     text-black 
+                     min-w-full p-4 pl-8 content-center">
+                    {displayMobileIcon()}
+                </div>
+                </div>
+            )
+        }
+        else {
+            return (
+                <div class="sticky top-0 z-50
+                     bg-white
+                     text-black 
+                     min-w-full p-4 pl-8 content-center">
+                    {displayWebBar()}
+                    {displayMobileIcon()}
+                </div>
+            );
+        }
+    }
+
+    return display();
 }

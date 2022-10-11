@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import './BookInfo.css';
+import NavBar from "./NavBar";
 
 import step1 from "../assests/steps/giveSay/step1.jpg";
 import step2 from "../assests/steps/giveSay/step2.jpg";
@@ -78,7 +79,6 @@ export default function BookInfo() {
                         
                     </div>
                     <div class="flex-1 ml-16 sideways">
-                        {/* TODO: rotate and flip contents to sidescroll */}
                         <img src={step1} class="card"/>
                         <img src={step2} class="card"/>
                     </div>
@@ -91,23 +91,17 @@ export default function BookInfo() {
         return ( <div style={{backgroundColor: `${barbg}`, height: "3vh"}}></div> );
     }
 
-    function checkMore() {
-        return (
-            <p class="text-xl" style={{padding: "3%", height: "15vh", textAlign: "center", letterSpacing: "5px"}}>
-                CHECK OUT MORE
-            </p>
-        );
-    }
-
     // TODO
     function carousel() {
         return ( <div style={{backgroundColor: `${carouselbg}`, height: "85vh"}}></div> );
     }
 
-    function displayPage2() {
+    function displayPage() {
         return (
             <div className="parent">
-                <div className="logo"></div>
+                <NavBar show={true} displayType={"info"} class="z-20"/>
+
+                {/* <div className="logo"></div> */}
                 <div style={{height: "200vh", minHeight: "fit-content"}}>
                     {thumbNail()}
                     {upperTriangle()}
@@ -119,11 +113,13 @@ export default function BookInfo() {
                     {/* <div className="processBox"></div> */} 
                 </div>
                 {bottomBar()}
-                {checkMore()}
+                <p class="text-xl" style={{padding: "3%", height: "15vh", textAlign: "center", letterSpacing: "5px"}}>
+                    CHECK OUT MORE
+                </p>
                 {carousel()}
             </div>
         );
     }
 
-    return displayPage2();
+    return displayPage();
 }
