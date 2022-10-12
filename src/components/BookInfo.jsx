@@ -1,10 +1,16 @@
 import React, {useState, useEffect} from "react";
+import {useLocation} from "react-router";
 import './BookInfo.css';
 import NavBar from "./NavBar";
 
 import step1 from "../assests/steps/giveSay/step1.jpg";
 import step2 from "../assests/steps/giveSay/step2.jpg";
 import thumb from "../assests/thumbnails/GivingStudents.jpg"
+
+import colors from "../data/colors.json";
+import bookText from "../data/bookText.json";
+import {photoInfo} from '../data/images';
+import catagories from "../data/categories.json";
 
 //to read from a json file:
 //import data from './data/data.json
@@ -13,82 +19,97 @@ import thumb from "../assests/thumbnails/GivingStudents.jpg"
 //***or data.projects[title]
 
 export default function BookInfo() {
-    var UTRbg = "rgb(0, 128, 0)";
-    var LTRbg = "rgb(255, 192, 203)";
-    var barbg = "rgb(173, 216, 230)";
+    const data = useLocation();
+    const [title, setTitle] = useState(data.state.title);
+    const [colorCodes, setColorCodes] = useState([]);
+    const [textDetails, setTextDetails] = useState([]);
+    const allImages = photoInfo();
+    const [images, setImages] = useState([]);
+    const [steps, setSteps] = useState([]);
     var carouselbg = "rgb(128, 0, 128)";
 
-    var awardTitle = "title";
+    useEffect(() => {
+        setTitle(data.state.title);
+    }, [data]);
 
-    function thumbNail() {
-        return (<img src={thumb} class="thumbNail"/>);
-    }
+    useEffect(() => {
+        setColorCodes(colors[title]);
+        setTextDetails(bookText[title]);
+        setImages(allImages[title]);
+        setSteps(images.process);
+        displayPage();
+    }, [title]);
 
-    function audience() {
+    function info() {
         return (
-            <div className="audience">
-                <p>AUDIENCE: K-12 TEACHERS</p>
-                <hr className="introLine"/>
-            </div>
-        );
-    }
-
-    function type() {
-        return (
-            <div className="type">
-                <hr className="introLine"/>
-                <p>TYPE: BOOK COVER</p>
-            </div>
-        );
-    }
-
-    function client() {
-        return (
-            <div className="client">
-                <p>CLIENT: ASCD</p>
-                <hr className="introLine"/>
+            <div class="bookInfo">
+                <div className="audience">
+                    <p>AUDIENCE: {textDetails.audience}</p>
+                    <hr className="introLine"/>
+                </div>
+                <div className="type">
+                    <hr className="introLine"/>
+                    <p>TYPE: {textDetails.itemType}</p>
+                </div>
+                <div className="client">
+                    <p>CLIENT: {textDetails.client}</p>
+                    <hr className="introLine"/>
+                </div>
             </div>
         );
     }
 
     function upperTriangle() {
-        return ( <div style={{backgroundColor: `${UTRbg}`}} className="upperTriangle"></div> );
+        return ( <div style={{backgroundColor: `${colorCodes.upperTriangle}`}} className="upperTriangle"></div> );
+    }
+
+    function showAward() {
+        if (textDetails.award === undefined || textDetails.award === null || textDetails.award.length === 0) {
+            return;
+        }
+        else {
+            return <p class="mb-10" style={{letterSpacing: "4px", fontSize: "46px", lineHeight:"1.1"}}>
+                        {textDetails.award}
+                    </p>;
+        }
     }
 
     // TODO: use variables
     function lowerTriangle() {
         return ( 
-            <div style={{backgroundColor: `${LTRbg}`}} className="lowerTriangle">
+            <div style={{backgroundColor: `${colorCodes.lowerTriangle}`}} className="lowerTriangle">
                 {/* empty div to move the rest of the items down to correct position */}
                 <div style={{height: "109vh"}}></div> 
 
-                <h1 class="text-center text-5xl font-bold m-7 mb-9 mt-0" style={{whiteSpace: "pre-line"}}>{awardTitle}</h1>
+                <h1 class="text-center text-5xl font-bold m-7 mb-9 mt-0" style={{whiteSpace: "pre-line"}}>
+                    {title}
+                </h1>
                 <hr className="titleLine"/>
 
                 <div class="flex mt-14" style={{marginLeft: "9%"}}>
                     <div class="flex-1 p-3 pt-0">
-                        {/* TODO: only display if string exists -> return this in a separate method*/}
-                        <p class="mb-10" style={{letterSpacing: "4px", fontSize: "46px", lineHeight:"1.1"}}>
-                            award winning chili crab
+                        {showAward()}
+                        <p class="font-bold text-xl" style={{letterSpacing: "4px", textTransform: "uppercase"}}>
+                            {textDetails.header}
                         </p>
-                        <p class="font-bold text-xl" style={{letterSpacing: "4px"}}>HEADER</p>
                         <p class="pt-3 text-lg" style={{lineHeight: "30px"}}>
-                            i'm bobby flay, each week one brave chef tries to
-                            take me down in my house. 
+                            {textDetails.description}
                         </p>
-                        
                     </div>
+
                     <div class="flex-1 ml-16 sideways">
-                        <img src={step1} class="card"/>
-                        <img src={step2} class="card"/>
+                        {displayProcess()}
                     </div>
                 </div>
             </div> 
         );
     }
 
-    function bottomBar() {
-        return ( <div style={{backgroundColor: `${barbg}`, height: "3vh"}}></div> );
+    function displayProcess() {
+        return images.process.map((item, index) => {
+            var i = index+1;
+            return <img src={item} class="card" alt={images.altText + " Step " + i}/>
+        });
     }
 
     // TODO
@@ -103,16 +124,15 @@ export default function BookInfo() {
 
                 {/* <div className="logo"></div> */}
                 <div style={{height: "200vh", minHeight: "fit-content"}}>
-                    {thumbNail()}
+                    <img src={images.thumbnail} class="thumbNail" alt={images.altText + " Cover"}/>
                     {upperTriangle()}
-                    {audience()}
-                    {type()}
-                    {client()}
+                    {info()}
                     {lowerTriangle()}
                     {/* TODO */}
                     {/* <div className="processBox"></div> */} 
                 </div>
-                {bottomBar()}
+
+                <div style={{backgroundColor: `${colorCodes.bottomBar}`, height: "3vh"}}></div> 
                 <p class="text-xl" style={{padding: "3%", height: "15vh", textAlign: "center", letterSpacing: "5px"}}>
                     CHECK OUT MORE
                 </p>

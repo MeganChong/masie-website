@@ -27,7 +27,6 @@ export default function DisplayTypes() {
                 projects.push(item[1].srcName);
             }
         });
-        console.log(projects);
         setProjects(projects);
     }
 

@@ -1,0 +1,7 @@
+{
+    "Giving Students a Say": {
+        "upperTriangle": "rgb(0, 128, 0)",
+        "lowerTriangle": "rgb(255, 192, 203)",
+        "bottomBar": "rgb(173, 216, 230)"
+    }
+}
