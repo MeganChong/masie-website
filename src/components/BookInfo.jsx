@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import {useLocation} from "react-router";
 import './BookInfo.css';
 import NavBar from "./NavBar";
+import CheckOutMoreCarousel from "./CheckOutMoreCarousel";
 
 import step1 from "../assests/steps/giveSay/step1.jpg";
 import step2 from "../assests/steps/giveSay/step2.jpg";
@@ -20,12 +21,11 @@ import catagories from "../data/categories.json";
 
 export default function BookInfo() {
     const data = useLocation();
+    const allImages = photoInfo();
     const [title, setTitle] = useState(data.state.title);
     const [colorCodes, setColorCodes] = useState([]);
     const [textDetails, setTextDetails] = useState([]);
-    const allImages = photoInfo();
     const [images, setImages] = useState([]);
-    const [steps, setSteps] = useState([]);
     var carouselbg = "rgb(128, 0, 128)";
 
     useEffect(() => {
@@ -36,7 +36,6 @@ export default function BookInfo() {
         setColorCodes(colors[title]);
         setTextDetails(bookText[title]);
         setImages(allImages[title]);
-        setSteps(images.process);
         displayPage();
     }, [title]);
 
@@ -74,7 +73,15 @@ export default function BookInfo() {
         }
     }
 
-    // TODO: use variables
+    function displayProcess() {
+        if (images.process === undefined)
+            return;
+        return images.process.map((item, index) => {
+            var i = index+1;
+            return <img src={item} class="card" alt={images.altText + " Step " + i}/>
+        });
+    }
+    
     function lowerTriangle() {
         return ( 
             <div style={{backgroundColor: `${colorCodes.lowerTriangle}`}} className="lowerTriangle">
@@ -105,13 +112,6 @@ export default function BookInfo() {
         );
     }
 
-    function displayProcess() {
-        return images.process.map((item, index) => {
-            var i = index+1;
-            return <img src={item} class="card" alt={images.altText + " Step " + i}/>
-        });
-    }
-
     // TODO
     function carousel() {
         return ( <div style={{backgroundColor: `${carouselbg}`, height: "85vh"}}></div> );
@@ -133,10 +133,11 @@ export default function BookInfo() {
                 </div>
 
                 <div style={{backgroundColor: `${colorCodes.bottomBar}`, height: "3vh"}}></div> 
-                <p class="text-xl" style={{padding: "3%", height: "15vh", textAlign: "center", letterSpacing: "5px"}}>
+                {/* <p class="text-xl" style={{padding: "3%", height: "15vh", textAlign: "center", letterSpacing: "5px"}}>
                     CHECK OUT MORE
                 </p>
-                {carousel()}
+                {carousel()} */}
+                <CheckOutMoreCarousel title={title}/>
             </div>
         );
     }
