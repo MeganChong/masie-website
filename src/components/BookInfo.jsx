@@ -86,17 +86,17 @@ export default function BookInfo() {
         return ( 
             <div style={{backgroundColor: `${colorCodes.lowerTriangle}`}} className="lowerTriangle">
                 {/* empty div to move the rest of the items down to correct position */}
-                <div style={{height: "109vh"}}></div> 
-
-                    <h1 class="text-center text-5xl font-bold mb-9 mt-0" 
-                        style={{whiteSpace: "pre-line", marginRight: "6vw", marginLeft: "6vw"}}>
-                        {/* {title} */}
-                        The longest title in the world skdfjskdfjksnvlsnsndvjdsknvfndkanvxdsk sdncalcnadk
-                    </h1>
-                    <hr className="titleLine"/>
+                {/* <div style={{height: "109vh"}}></div>  */}
+{/* 
+                <h1 class="text-center text-5xl font-bold mb-9 mt-0" 
+                    style={{whiteSpace: "pre-line", marginRight: "6vw", marginLeft: "6vw"}}>
+                    {title} 
+                    The longest title in the world skdfjskdfjksnvlsnsndvjdsknvfndkanvxdsk sdncalcnadk
+                </h1>
+                <hr className="titleLine"/> */}
                 
                 
-                <div style={{height: "fit-content", backgroundColor: `${colorCodes.lowerTriangle}`}}>
+                {/* <div style={{height: "fit-content", backgroundColor: `${colorCodes.lowerTriangle}`}}>
 
                     <div class="grid grid-col-1 md:grid-cols-4 mt-14 relative" 
                         style={{marginLeft: "9%", flexWrap: "wrap"}}>
@@ -114,15 +114,28 @@ export default function BookInfo() {
                             {displayProcess()}
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div> 
+        );
+    }
+
+    function itemTitle() {
+        return (
+            <div className="titleDiv">
+                <h1 class="text-center text-5xl font-bold mb-9 mt-0" 
+                    style={{whiteSpace: "pre-line", marginRight: "6vw", marginLeft: "6vw"}}>
+                    {/* {title} */}
+                    The longest title in the world skdfjskdfjksnvlsnsndvjdsknvfndkanvxdsk sdncalcnadk
+                </h1>
+                <hr className="titleLine"/>
+            </div>
         );
     }
 
     function descriptionProcess() {
         return (
-            <div style={{height: "fit-content", backgroundColor: `${colorCodes.lowerTriangle}`}}>
-                <div class="grid grid-col-1 md:grid-cols-4 mt-14 relative" 
+            <div className="descriptionProcess" style={{height: "fit-content", backgroundColor: `${colorCodes.lowerTriangle}`}}>
+                <div class="grid grid-col-1 md:grid-cols-4 mt-14 mb-10 relative" 
                     style={{marginLeft: "9%", flexWrap: "wrap"}}>
                     <div class="col-span-1 p-3 pt-0">
                         {showAward()}
@@ -138,29 +151,31 @@ export default function BookInfo() {
                         {displayProcess()}
                     </div>
                 </div>
+                
+                <div style={{backgroundColor: `${colorCodes.bottomBar}`, height: "3vh", position: "relative"}}></div> 
+                
+                <CheckOutMoreCarousel title={title}/>
             </div>
         );
     }
 
     function displayPage() {
-        if (images === undefined)
+        if (title === undefined || images === undefined)
             return;
         return (
             <div className="parent">
                 <NavBar show={true} displayType={"info"} class="z-20"/>
 
-                <div style={{height: "200vh", minHeight: "fit-content", position: "relative"}}>
+                <div style={{height: "203vh", minHeight: "fit-content", position: "relative"}}>
                     {upperTriangle()}
                     {info()}
+                    {itemTitle()}
+                    {descriptionProcess()}
                     <div className="processBox">
                         <p className="processText">PROCESS</p>    
                     </div> 
                     {lowerTriangle()}
                 </div>
-                    {/* {descriptionProcess()} */}
-
-                <div style={{backgroundColor: `${colorCodes.bottomBar}`, height: "3vh", position: "relative"}}></div> 
-                <CheckOutMoreCarousel title={title}/>
             </div>
         );
     }

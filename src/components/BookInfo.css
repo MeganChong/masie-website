@@ -30,7 +30,7 @@
 
 .processBox {
   width: 5vw;
-  height: 30vh;
+  height: 40vh;
   background-color: navy;
   position: absolute;
   z-index: 30;
@@ -40,11 +40,12 @@
 }
 
 .processText {
-  transform: rotate(90deg) translateX(100%);
+  transform: rotate(90deg) translateX(130%);
   color: white;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 9px;
+  align-self: center;
 }
 
 
@@ -116,12 +117,26 @@
 } */
 
 /* *********************************** BOTTOM HALF *********************************** */
+.titleDiv {
+  z-index: 20;
+  position: relative;
+  top: 9vh;
+  justify-content: center;
+  width: 100%;
+}
+
 .titleLine {
   height: 2px;
   width: 82%;
   margin: auto;
   border-width: 0;
   background-color: black;
+}
+
+.descriptionProcess {
+  position: relative;
+  z-index: 20;
+  top: 10vh;
 }
 
 .sideways {
