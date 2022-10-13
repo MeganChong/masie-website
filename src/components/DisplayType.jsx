@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { useLocation } from "react-router";
-import NavBar from "./NavBar";
+import NavBar from "./NavBars/NavBar";
 import details from '../projectDetails.json'
 import { formatCell } from "./FormatCell";
 

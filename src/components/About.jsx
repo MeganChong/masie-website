@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./NavBar";
+import NavBar from "./NavBars/NavBar";
 
 export default function About() {
     return (

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {useLocation} from "react-router";
 import './BookInfo.css';
-import NavBar from "./NavBar";
+import NavBar from "./NavBars/NavBar";
 import CheckOutMoreCarousel from "./CheckOutMoreCarousel";
 
 import step1 from "../assests/steps/giveSay/step1.jpg";

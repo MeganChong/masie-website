@@ -6,7 +6,7 @@ import whiteSquare from '../assests/ColorBox_White.jpg'
 import yellowSquare from '../assests/ColorBox_Yellow.jpg'
 
 import header from '../assests/Opening Screen.jpg';
-import NavBar from './NavBar';
+import NavBar from './NavBars/NavBar';
 
 import {photoInfo} from './PhotoInfo';
 import {formatCell} from './FormatCell';

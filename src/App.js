@@ -1,5 +1,3 @@
-
-import NavBar from './components/NavBar'
 import HomepageGrid from './components/Homepage';
 import BookInfo from './components/BookInfo';
 import DisplayTypes from './components/DisplayType';
