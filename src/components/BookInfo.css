@@ -26,6 +26,28 @@
     clip-path: polygon(0% 21%, 100% 61%, 100% 100%, 0% 100%);
 }
 
+/* ******************************* PROCESS BOX ************************************* */
+
+.processBox {
+  width: 5vw;
+  height: 30vh;
+  background-color: navy;
+  position: absolute;
+  z-index: 30;
+  right: 0;
+  top:90vh;
+  align-items: center;
+}
+
+.processText {
+  transform: rotate(90deg) translateX(100%);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+}
+
+
 /* ************************************ BOOK INFO ****************************************** */
 .bookInfo {
   height: 100vh;

@@ -88,7 +88,8 @@ export default function BookInfo() {
                 {/* empty div to move the rest of the items down to correct position */}
                 <div style={{height: "109vh"}}></div> 
 
-                    <h1 class="text-center text-5xl font-bold m-7 mb-9 mt-0" style={{whiteSpace: "pre-line"}}>
+                    <h1 class="text-center text-5xl font-bold mb-9 mt-0" 
+                        style={{whiteSpace: "pre-line", marginRight: "6vw", marginLeft: "6vw"}}>
                         {/* {title} */}
                         The longest title in the world skdfjskdfjksnvlsnsndvjdsknvfndkanvxdsk sdncalcnadk
                     </h1>
@@ -151,9 +152,10 @@ export default function BookInfo() {
                 <div style={{height: "200vh", minHeight: "fit-content", position: "relative"}}>
                     {upperTriangle()}
                     {info()}
+                    <div className="processBox">
+                        <p className="processText">PROCESS</p>    
+                    </div> 
                     {lowerTriangle()}
-                    {/* TODO */}
-                    {/* <div className="processBox"></div> */} 
                 </div>
                     {/* {descriptionProcess()} */}
 
