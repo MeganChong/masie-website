@@ -65,7 +65,7 @@ export default function CheckOutMoreCarousel(props) {
                 <p class="text-xl" style={{padding: "3%", height: "15vh", textAlign: "center", letterSpacing: "5px"}}>
                     CHECK OUT MORE
                 </p>
-                <div class="flex" style={{height: "85vh", alignItems: "center", justifyContent: "center"}}>
+                <div class="grid grid-cols-1 md:grid-cols-3" style={{height: "85vh", alignItems: "center", justifyContent: "center"}}>
                     {noImages()}
                     {displayImage(random1)}
                     {displayImage(random2)}
