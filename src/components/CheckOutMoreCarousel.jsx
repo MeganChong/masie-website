@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {photoInfo} from "../data/images";
+import { formatCell } from "./FormatCell";
 
 export default function CheckOutMoreCarousel(props) {
     const images = photoInfo();
@@ -42,8 +43,9 @@ export default function CheckOutMoreCarousel(props) {
         if (index < 0 || item === undefined)
             return;
         return (
-            <div class="flex" style={{height: "100%", width:"100%", backgroundColor: `${item.backgroundColor}`, alignItems: "center"}}>
+            <div class="flex" style={{height: "100%", backgroundColor: `${item.backgroundColor}`, alignItems: "center"}}>
                 <img src={item.thumbnailWithBackground} alt={item.altText + " Cover"} style={{objectFit: "contain"}}/>
+                {/* {formatCell("giveStudents", "" , "interiorSrc")} */}
             </div>
         );
     }
@@ -63,7 +65,7 @@ export default function CheckOutMoreCarousel(props) {
                 <p class="text-xl" style={{padding: "3%", height: "15vh", textAlign: "center", letterSpacing: "5px"}}>
                     CHECK OUT MORE
                 </p>
-                <div class="flex" style={{height: "85vh", width: "100vw", alignItems: "center", justifyContent: "center"}}>
+                <div class="flex" style={{height: "85vh", alignItems: "center", justifyContent: "center"}}>
                     {noImages()}
                     {displayImage(random1)}
                     {displayImage(random2)}
