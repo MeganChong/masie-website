@@ -18,9 +18,9 @@ function App() {
             <Route path="/" exact component={() => <HomepageGrid/>} />
             <Route path="/about" exact component={() => <About/>} />
             <Route path="/books" exact component={() => <DisplayTypes/>} />
-            <Route path="/catalogs" exact component={() => <DisplayTypes/>} />
-            <Route path="/ads" exact component={() => <DisplayTypes/>} />
-            <Route path="/other" exact component={() => <DisplayTypes/>} />
+            <Route path="/marketing" exact component={() => <DisplayTypes/>} />
+            <Route path="/events" exact component={() => <DisplayTypes/>} />
+            <Route path="/personal" exact component={() => <DisplayTypes/>} />
             <Route path="/:title" exact component={() => <BookInfo/>} />
           </Switch>
 

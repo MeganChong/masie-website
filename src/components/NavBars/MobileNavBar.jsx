@@ -12,11 +12,11 @@ export default function MobileNavBar() {
             return (
                 <div class="block w-full items-center">
                     <div class="block text-center w-full"><Link to="/" class="flex-1 text-center"><button class="hover:text-purple-500 text-navBar">HOME</button></Link></div>
-                    <div class="block text-center w-full">{createButton("about", "", buttonStyle)}</div>
-                    <div class="block text-center w-full">{createButton("books", "Book", buttonStyle)}</div>
-                    <div class="block text-center w-full">{createButton("catalogs", "Catalog", buttonStyle)}</div>
-                    <div class="block text-center w-full">{createButton("ads", "Ad Campaign", buttonStyle)}</div>
-                    <div class="block text-center w-full">{createButton("other", "Other", buttonStyle)}</div>
+                    <div class="block text-center w-full">{createButton("books", "Books", buttonStyle)}</div>
+                    <div class="block text-center w-full">{createButton("marketing", "Marketing", buttonStyle)}</div>
+                    <div class="block text-center w-full">{createButton("events", "Events", buttonStyle)}</div>
+                    <div class="block text-center w-full">{createButton("personal", "Personal", buttonStyle)}</div>
+                    <div class="block text-center w-full">{createButton("about", "About", buttonStyle)}</div>
                 </div>
             );
         }

@@ -18,11 +18,11 @@ export default function NavBar(props) {
         return (
             <div class="hidden md:flex md:flex-1 justify-center items-center">
                 {displayHomeIcon()}
-                {createButton("about", "", buttonStyle)}
-                {createButton("books", "Book", buttonStyle)}
-                {createButton("catalogs", "Catalog", buttonStyle)}
-                {createButton("ads", "Ad Campaign", buttonStyle)}
-                {createButton("other", "Other", buttonStyle)}
+                {createButton("books", "Books", buttonStyle)}
+                {createButton("marketing", "Marketing", buttonStyle)}
+                {createButton("events", "Events", buttonStyle)}
+                {createButton("personal", "Personal", buttonStyle)}
+                {createButton("about", "About", buttonStyle)}
             </div>
         );
     }
