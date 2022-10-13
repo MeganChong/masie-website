@@ -25,42 +25,54 @@
     clip-path: polygon(0% 21%, 100% 61%, 100% 100%, 0% 100%);
 }
 
+.bookInfo {
+  height: 100vh;
+  position: relative;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
 .thumbNail {
-  position: absolute;
-  z-index: 10;
   height: 70vh;
-  top: 0;
-  bottom: 200vh;
-  left: 0;
-  right: 0;
-  margin: auto;
+  position: absolute;
+  z-index: 20;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .audience, .type, .client {
-  z-index: 20;
-  position: absolute;
-  color: black;
-  /* mix-blend-mode: overlay; */
   letter-spacing: 9px;
   font-size: small;
   text-transform: uppercase;
+  /* color: white;
+  mix-blend-mode: difference; */
+
+  position: absolute;
+  z-index: 30;
 }
 
 .audience {
-  transform: rotate(270deg);
-  bottom: 250vh;
-  left: -8vw;
+  transform: rotate(270deg) translate(-100%, 0);
+  transform-origin: left top;
+  top: 23%;
+  left: 4vw;
+  margin: auto 0;
 }
 
 .type {
-  bottom: 210vh;
-  left: 6vw; 
+  bottom: 6vh;
+  left: 5vw;
 }
 
 .client {
-  transform: rotate(90deg);
-  right: -3vw;
-  bottom: 250vh;
+  transform: rotate(90deg) translate(100%, 0);
+  transform-origin: right top;
+  top: 23%;
+  right: 4vw;
+  margin: auto;
 }
 
 .introLine {

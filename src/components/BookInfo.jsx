@@ -26,7 +26,6 @@ export default function BookInfo() {
     const [colorCodes, setColorCodes] = useState([]);
     const [textDetails, setTextDetails] = useState([]);
     const [images, setImages] = useState([]);
-    var carouselbg = "rgb(128, 0, 128)";
 
     useEffect(() => {
         setTitle(data.state.title);
@@ -42,6 +41,7 @@ export default function BookInfo() {
     function info() {
         return (
             <div class="bookInfo">
+                <img src={images.thumbnail} class="thumbNail" alt={images.altText + " Cover"}/>
                 <div className="audience">
                     <p>AUDIENCE: {textDetails.audience}</p>
                     <hr className="introLine"/>
@@ -112,19 +112,16 @@ export default function BookInfo() {
         );
     }
 
-    // TODO
-    function carousel() {
-        return ( <div style={{backgroundColor: `${carouselbg}`, height: "85vh"}}></div> );
-    }
-
     function displayPage() {
+        if (images === undefined)
+            return;
         return (
             <div className="parent">
                 <NavBar show={true} displayType={"info"} class="z-20"/>
 
-                {/* <div className="logo"></div> */}
-                <div style={{height: "200vh", minHeight: "fit-content"}}>
-                    <img src={images.thumbnail} class="thumbNail" alt={images.altText + " Cover"}/>
+                {/* <div style={{height:"50vh", backgroundColor: "white"}}></div> */}
+
+                <div style={{height: "200vh", minHeight: "fit-content", position: "relative"}}>
                     {upperTriangle()}
                     {info()}
                     {lowerTriangle()}
@@ -133,10 +130,6 @@ export default function BookInfo() {
                 </div>
 
                 <div style={{backgroundColor: `${colorCodes.bottomBar}`, height: "3vh"}}></div> 
-                {/* <p class="text-xl" style={{padding: "3%", height: "15vh", textAlign: "center", letterSpacing: "5px"}}>
-                    CHECK OUT MORE
-                </p>
-                {carousel()} */}
                 <CheckOutMoreCarousel title={title}/>
             </div>
         );
