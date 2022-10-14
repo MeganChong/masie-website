@@ -13,6 +13,7 @@
 .slide {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 
     line-height: 100vh;
     text-align: center;
@@ -40,4 +41,36 @@
 #img4 {
     z-index: 1;
     animation-delay: 9s;
+}
+
+.downwardArrow {
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+
+    text-align: center;
+    font-size: 70px;
+
+    animation: jump 12s ease-in-out 0s infinite;
+}
+
+@keyframes jump {
+    0% {
+        opacity: 1;
+        bottom: 0;
+    }
+    8% {
+        bottom: 3vh;
+    }
+    16% {
+        bottom: 0;
+    }
+    25% {
+        bottom: 3vh;
+    }
+    45%,100% {
+        opacity: 0;
+        bottom: 0;
+    }
 }
