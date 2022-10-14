@@ -2,14 +2,6 @@
     height: 100vh;
 }
 
-@keyframes fadein {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
-}
-
 .slide {
     height: 100%;
     width: 100%;
@@ -22,8 +14,15 @@
     margin: auto;
 
     position: absolute;
-    animation: fadein 12s infinite;
-    animation-timing-function: ease-in-out;
+    animation: fadein 12s ease-in-out infinite;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    100% {opacity: 0;}
 }
 
 #img1 {
@@ -57,20 +56,25 @@
 
 @keyframes jump {
     0% {
-        opacity: 1;
-        bottom: 0;
-    }
-    8% {
-        bottom: 3vh;
-    }
-    16% {
-        bottom: 0;
-    }
-    25% {
-        bottom: 3vh;
-    }
-    45%,100% {
         opacity: 0;
+        bottom: 3vh;
+    }
+    12% {
+        opacity: 0.5;
         bottom: 0;
+    }
+    24% {
+        opacity: 1;
+        bottom: 3vh;
+    }
+    33% {
+        bottom: 0vh;
+    }
+    41% {
+        bottom: 3vh;
+    }
+    50%, 100% {
+        opacity: 0;
+        bottom: 0vh;
     }
 }
