@@ -32,20 +32,36 @@ export default function BookInfo() {
         setImages(allImages[title]);
     }, [title]);
 
+    // each text div has a copy to get the color blend effect 
     function info() {
         return (
             <div class="bookInfo">
                 <img src={images.thumbnail} class="thumbNail" alt={images.altText + " Cover"}/>
-                <div className="audience">
-                    <p>AUDIENCE: {textDetails.audience}</p>
+
+                <div className="audience infoType">
+                    <p class="textDiv">AUDIENCE: {textDetails.audience}</p>
                     <hr className="introLine"/>
                 </div>
-                <div className="type">
+                <div className="audience copy">
+                    <p class="textDiv">AUDIENCE: {textDetails.audience}</p>
                     <hr className="introLine"/>
-                    <p>TYPE: {textDetails.itemType}</p>
                 </div>
-                <div className="client">
-                    <p>CLIENT: {textDetails.client}</p>
+
+                <div className="type infoType">
+                    <hr className="introLine"/>
+                    <p class="textDiv">TYPE: {textDetails.itemType}</p>
+                </div>
+                <div className="type copy">
+                    <hr className="introLine"/>
+                    <p class="textDiv">TYPE: {textDetails.itemType}</p>
+                </div>
+
+                <div className="client infoType">
+                    <p class="textDiv">CLIENT: {textDetails.client}</p>
+                    <hr className="introLine"/>
+                </div>
+                <div className="client copy">
+                    <p class="textDiv">CLIENT: {textDetails.client}</p>
                     <hr className="introLine"/>
                 </div>
             </div>

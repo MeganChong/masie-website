@@ -4,6 +4,7 @@
   height: 100%;
   min-height: fit-content;
   margin: auto;
+  background-color: white;
 }
 
 /* ****************************** TRIANGLES ************************************************** */
@@ -59,7 +60,7 @@
 
 .thumbNail {
   height: 70vh;
-  position: absolute;
+  position: absolute; 
   z-index: 20;
   margin: 0;
   top: 50%;
@@ -67,13 +68,20 @@
   transform: translate(-50%, -50%);
 }
 
-.audience, .type, .client {
+.copy {
+  mix-blend-mode: overlay;
+}
+
+.infoType {
+  mix-blend-mode: difference;
+}
+
+.audience, .type, .client, .copy {
   letter-spacing: 9px;
   font-size: small;
   text-transform: uppercase;
-  /* color: white;
-  mix-blend-mode: difference; */
-
+  color: white;
+  
   position: absolute;
   z-index: 30;
 }
@@ -100,21 +108,11 @@
 }
 
 .introLine {
-  background-color: black;
+  background-color: white;
   border-width: 0;
   height: 2px;
   margin: 9px auto;
 }
-
-/* .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: blue;
-  width: 10vw;
-  height: 10vw;
-  z-index: 1;
-} */
 
 /* *********************************** BOTTOM HALF *********************************** */
 .titleDiv {
