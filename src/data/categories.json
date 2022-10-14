@@ -1,8 +1,43 @@
 {
     "Book": [
-        "Giving Students a Say",
-        "The Essential 25",
+        "Learning in a New Language", 
+        "Navigating the Principalship", 
         "The Minimalist Teacher",
-        "Five Practices for Equity-Focused School Leadership"
+        "Math Fact Fluency",
+        "The Classroom Behavior Manual",
+        "The Essential 25",
+        "You're the Principal! Now What?",
+        "Engage the Brain",
+        "Five Practices for Equity-Focused School Leadership",
+        "Social Emotional Learning and the Brain",
+        "Giving Students a Say",
+        "Arias Series"
+    ],
+
+    "Marketing": [
+        "Rebranding",
+        "Author Workshops",
+        "'Be' Ad Series",
+        "Lessons Learned Catalog",
+        "ASCD Resource Guide",
+        "Spring Sourcebook",
+        "Trauma-Sensitive Schools Catalog",
+        "Summer Catalog",
+        "Membership Promotion",
+        "Book Bundles",
+        "Product Ad Series",
+        "What's New?"
+    ],
+
+    "Events": [
+        "Recharge & Reconnect",
+        "Empower19",
+        "The Adaptive Leader",
+        "Empower17"
+    ],
+
+    "Personal": [
+        "Happiness",
+        "Japan Postcards"
     ]
 }

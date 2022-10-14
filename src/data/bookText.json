@@ -1,10 +1,271 @@
 {
+    "Learning in a New Language": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Would like to see an abstract approach that reflects the diversity of multilingual communities.",
+		"audience": "K–8 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
+    "Navigating the Principalship": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Make sure the author’s names are prominent and incorporate a compass into the design.",
+		"audience": "K–12 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
+    "The Minimalist Teacher": {
+		"award": "2021-22 American InHouse Design Winner",
+		"header": "Client Request",
+		"description": "Create a cover with soft colors and lots of breathing room to reflect the minimalistic tone.",
+		"audience": "K–12 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
+    "Math Fact Fluency": {
+		"award": "",
+		"header": "Client Request",
+		"description": "The cover should reflect the book’s idea of using games to make math fun and engaging. Should be bright and colorful.",
+		"audience": "K–8 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
+    "The Classroom Behavior Manual": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Create a cover that is fitting for a reference book. It should be timeless and authoritative.",
+		"audience": "K–12 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
+    "The Essential 25": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Design a cover that skews fun and vibrant. The title and subtitle should have equal prominence.",
+		"audience": "K–12 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
+    "You're the Principal! Now What?": {
+		"award": "2017 American InHouse Design Winner",
+		"header": "Client Request",
+		"description": "Design a book cover to reflect the book’s approachable and student-centered tone.",
+		"audience": "K–12 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
+    "Engage the Brain": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Design a book cover with an abstract approach, focused on emotions.",
+		"audience": "K–12 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
+    "Five Practices for Equity-Focused School Leadership": {
+		"award": "",
+		"header": "Client Request",
+		"description": "The authors like covers with a single focal image or a typographical approach but there was no specific request.",
+		"audience": "K–12 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
+    "Social Emotional Learning and the Brain": {
+		"award": "",
+		"header": "Client Request",
+		"description": "The books has a positive and engaging tone. Focus on the emotional rather than the scientific aspect of the book.",
+		"audience": "K–12 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
     "Giving Students a Say": {
-		"award": "2018 best chili crab",
-		"header": "this is my book",
-		"description": "i made it for work. tada! there are lots of colors because that makes me happy! wahoo",
-		"audience": "whoever finds it",
-		"itemType": "book cover",
-		"client": "the world"
+		"award": "",
+		"header": "Client Request",
+		"description": "Design a cover to reflect the book’s vocabulary focus and approachable tone.",
+		"audience": "K–12 Teachers",
+		"itemType": "Book Cover Design",
+		"client": "ASCD"
+	},
+
+    "Arias Series": {
+		"award": "2016 American InHouse Design Winner",
+		"header": "Client Request",
+		"description": "Make it easily templated and individualized for each book while retaining elements of the original cover.",
+		"audience": "K–12 Teachers",
+		"itemType": "Book Cover Redesign",
+		"client": "ASCD"
+	},
+
+    "Rebranding": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Create print and digital pieces to reflect the new ASCD brand. ",
+		"audience": "K–12 Teachers",
+		"itemType": "Branding/Digital Design",
+		"client": "ASCD"
+	},
+
+    "Author Workshops": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Create a set of ads and visual emails for ASCD’s new service using ASCD’s branding.",
+		"audience": "K–12 Teachers",
+		"itemType": "Advertising Design",
+		"client": "ASCD"
+	},
+
+    "'Be' Ad Series": {
+		"award": "2019 American InHouse Design Winner",
+		"header": "Client Request",
+		"description": "Create a series of four ads with a focus on students. The ads should encourage educators to join ASCD.",
+		"audience": "K–12 Teachers",
+		"itemType": "Advertising Design",
+		"client": "ASCD"
+	},
+
+    "Lessons Learned Catalog": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Create a cover reflecting the theme and keep the interior simple, neat, and product focused.",
+		"audience": "K–12 Teachers",
+		"itemType": "Catalog Design",
+		"client": "ASCD"
+	},
+
+    "ASCD Resource Guide": {
+		"award": "2019-21 American InHouse Design Winner",
+		"header": "Client Request",
+		"description": "Make the cover educator-focused. Incorporate the ASCD color palette and branding throughout.",
+		"audience": "K–12 Teachers",
+		"itemType": "Catalog Design",
+		"client": "ASCD"
+	},
+
+    "Spring Sourcebook": {
+		"award": "2019 American InHouse Design Winner",
+		"header": "Client Request",
+		"description": "Create a cover that stands out from previous catalogs. It should look like something educators want to hold on to.",
+		"audience": "K–12 Teachers",
+		"itemType": "Catalog Cover Design",
+		"client": "ASCD"
+	},
+
+    "Trauma-Sensitive Schools Catalog": {
+		"award": "",
+		"header": "Client Request",
+		"description": "This catalog’s theme is tied to two corresponding symposiums. Incorporate the symposiums' themes and colors on the cover.",
+		"audience": "K–12 Teachers",
+		"itemType": "Catalog Cover Design",
+		"client": "ASCD"
+	},
+
+    "Summer Catalog": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Create a cover fitting for the summer season. The interior should be neat and colorful.",
+		"audience": "K–12 Teachers",
+		"itemType": "Catalog Design",
+		"client": "ASCD"
+	},
+
+    "Membership Promotion": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Create a series of four ads that highlights the educator. Apply the same theme to the brochure.",
+		"audience": "K–12 Teachers",
+		"itemType": "Advertising Design",
+		"client": "ASCD"
+	},
+
+    "Book Bundles": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Create a flyer and social media graphic for each book bundle. It should be approachable and professional.",
+		"audience": "K–12 Teachers",
+		"itemType": "Advertising Design",
+		"client": "ASCD"
+	},
+
+    "Product Ad Series": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Create a series of ads that highlights ASCD’s membership offerings.",
+		"audience": "K–12 Teachers",
+		"itemType": "Advertising Design",
+		"client": "ASCD"
+	},
+
+    "What's New?": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Design a new feature section for ASCD’s magazine. It should be easily adaptable for different amounts of content.",
+		"audience": "K–12 Teachers",
+		"itemType": "Advertising Design",
+		"client": "ASCD"
+	},
+
+    "Recharge & Reconnect": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Design signage for the convention center, slides to be displayed throughout conference, and takeaways.",
+		"audience": "K–12 Teachers",
+		"itemType": "Conference Design",
+		"client": "ASCD"
+	},
+
+    "Empower19": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Design a coverwrap to promote the conference and signage for the convention center.",
+		"audience": "K–12 Teachers",
+		"itemType": "Conference Design",
+		"client": "ASCD"
+	},
+
+    "The Adaptive Leader": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Create a concept for this conference. Use the theme to design the accompanying signage and swag items.",
+		"audience": "K–12 Teachers",
+		"itemType": "Conference Design",
+		"client": "ASCD"
+	},
+
+    "Empower17": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Design a program book for attendees and a separate kit especially for the press.",
+		"audience": "K–12 Teachers",
+		"itemType": "Conference Design",
+		"client": "ASCD"
+	},
+
+    "Happiness": {
+		"award": "",
+		"header": "Project Goal",
+		"description": "Create a book of my mother’s recipes to preserve them for future generations.",
+		"audience": "Advanced Cooks",
+		"itemType": "Book Design",
+		"client": "Myself"
+	},
+
+    "Japan Postcards": {
+		"award": "",
+		"header": "Project Goal",
+		"description": "Create a visual Japan itinerary for an upcoming trip.",
+		"audience": "Trip Planners",
+		"itemType": "Postcard Design",
+		"client": "Myself"
 	}
 }
