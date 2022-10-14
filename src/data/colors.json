@@ -1,7 +1,181 @@
 {
+    "Learning in a New Language": {
+        "upperTriangle": "#266A4D",
+        "lowerTriangle": "#F7E5EE",
+        "bottomBar": "#BEBE54"
+    },
+
+    "Navigating the Principalship": {
+        "upperTriangle": "#C9DBFE",
+        "lowerTriangle": "#FED536",
+        "bottomBar": "#798EBA"
+    },
+
+    "The Minimalist Teacher": {
+        "upperTriangle": "#AD769E",
+        "lowerTriangle": "#FDBD40",
+        "bottomBar": "#E6D9E3"
+    },
+
+    "Math Fact Fluency": {
+        "upperTriangle": "#FFD340",
+        "lowerTriangle": "#7DD4DB",
+        "bottomBar": "#FF8D1A"
+    },
+
+    "The Classroom Behavior Manual": {
+        "upperTriangle": "#F16F63",
+        "lowerTriangle": "#FFD340",
+        "bottomBar": "#7299BB"
+    },
+
+    "The Essential 25": {
+        "upperTriangle": "#AA5689",
+        "lowerTriangle": "#FFD340",
+        "bottomBar": "#359EAB"
+    },
+
+    "You're the Principal! Now What?": {
+        "upperTriangle": "#253C45",
+        "lowerTriangle": "#77C0C7",
+        "bottomBar": "#FAEA2E"
+    },
+
+    "Engage the Brain": {
+        "upperTriangle": "#BEACD7",
+        "lowerTriangle": "#FFC633",
+        "bottomBar": "#32415F"
+    },
+
+    "Five Practices for Equity-Focused School Leadership": {
+        "upperTriangle": "#5E618B",
+        "lowerTriangle": "#E1EBF6",
+        "bottomBar": "#6AAEBA"
+    },
+
+    "Social Emotional Learning and the Brain": {
+        "upperTriangle": "#E0F1FF",
+        "lowerTriangle": "#D4D848",
+        "bottomBar": "#5D7A9C"
+    },
+
     "Giving Students a Say": {
-        "upperTriangle": "rgb(0, 128, 0)",
-        "lowerTriangle": "rgb(255, 192, 203)",
-        "bottomBar": "rgb(173, 216, 230)"
+        "upperTriangle": "#78CEBC",
+        "lowerTriangle": "#FFD138",
+        "bottomBar": "#ED7253"
+    },
+
+    "Arias Series": {
+        "upperTriangle": "#7680B1",
+        "lowerTriangle": "#FFAE52",
+        "bottomBar": "#BE5A9A"
+    },
+
+    "Rebranding": {
+        "upperTriangle": "#BEE3DA",
+        "lowerTriangle": "#2D393D",
+        "bottomBar": "#E89BA5"
+    },
+
+    "Author Workshops": {
+        "upperTriangle": "#E56E7C",
+        "lowerTriangle": "#B0E3D7",
+        "bottomBar": "#2D393D"
+    },
+
+    "'Be' Ad Series": {
+        "upperTriangle": "#B7E3E8",
+        "lowerTriangle": "#9CC450",
+        "bottomBar": "#284D5D"
+    },
+
+    "Lessons Learned Catalog": {
+        "upperTriangle": "#615E67",
+        "lowerTriangle": "#FEB59F",
+        "bottomBar": "#53C3BE"
+    },
+
+    "ASCD Resource Guide": {
+        "upperTriangle": "#707070",
+        "lowerTriangle": "#C4D041",
+        "bottomBar": "#5EABC3"
+    },
+
+    "Spring Sourcebook": {
+        "upperTriangle": "#EAF4F7",
+        "lowerTriangle": "#56CBD8",
+        "bottomBar": "#1C5289"
+    },
+
+    "Trauma-Sensitive Schools Catalog": {
+        "upperTriangle": "#FDEAEB",
+        "lowerTriangle": "#8EB7E6",
+        "bottomBar": "#B66C5F"
+    },
+
+    "Summer Catalog": {
+        "upperTriangle": "#FFA536",
+        "lowerTriangle": "#98D2D8",
+        "bottomBar": "#FA7235"
+    },
+
+    "Membership Promotion": {
+        "upperTriangle": "#B25B93",
+        "lowerTriangle": "#FDBE59",
+        "bottomBar": "#F44985"
+    },
+
+    "Book Bundles": {
+        "upperTriangle": "#FFB98D",
+        "lowerTriangle": "#C1D0EA",
+        "bottomBar": "#14866D"
+    },
+
+    "Product Ad Series": {
+        "upperTriangle": "#435770",
+        "lowerTriangle": "#BEACD7",
+        "bottomBar": "#286CC9"
+    },
+
+    "What's New?": {
+        "upperTriangle": "#1B9BB4",
+        "lowerTriangle": "#F0CD49",
+        "bottomBar": "#4A4D52"
+    },
+
+    "Recharge & Reconnect": {
+        "upperTriangle": "#3D7CB2",
+        "lowerTriangle": "#FFAC27",
+        "bottomBar": "#159774"
+    },
+
+    "Empower19": {
+        "upperTriangle": "#FFF4F9",
+        "lowerTriangle": "#9A7FBA",
+        "bottomBar": "##FECF2F"
+    },
+
+    "The Adaptive Leader": {
+        "upperTriangle": "#F48D95",
+        "lowerTriangle": "#91D0C0",
+        "bottomBar": "#2C373C"
+    },
+
+    "Empower17": {
+        "upperTriangle": "#1DA7B2",
+        "lowerTriangle": "#F79C31",
+        "bottomBar": "#CFE04F"
+    },
+
+    "Happiness": {
+        "upperTriangle": "#A382A7",
+        "lowerTriangle": "#F09D3B",
+        "bottomBar": "#B2DFEA"
+    },
+
+    "Japan Postcards": {
+        "upperTriangle": "#F6C005",
+        "lowerTriangle": "#BDABC1",
+        "bottomBar": "#2A8058"
     }
 }
