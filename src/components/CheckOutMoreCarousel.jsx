@@ -62,7 +62,7 @@ export default function CheckOutMoreCarousel(props) {
         getRandomImages();
         return (
             <div>
-                <p class="text-xl bg-white" style={{padding: "3%", height: "15vh", textAlign: "center", letterSpacing: "5px", alignSelf: "center"}}>
+                <p class="text-xl bg-white" style={{height: "15vh", lineHeight: "15vh", textAlign: "center", letterSpacing: "5px", alignSelf: "center"}}>
                     CHECK OUT MORE
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3" style={{height: "85vh", alignItems: "center", justifyContent: "center"}}>
