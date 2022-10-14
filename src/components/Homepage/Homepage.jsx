@@ -7,6 +7,7 @@ import yellowSquare from '../../assests/ColorBox_Yellow.jpg'
 
 import header from '../../assests/Opening Screen.jpg';
 import NavBar from '../NavBars/NavBar';
+import HeaderCarousel from './HeaderCarousel';
 
 import {photoInfo} from '../PhotoInfo';
 import {formatCell} from '../FormatCell';
@@ -17,7 +18,8 @@ export default function Homepage() {
 
     return (
         <div>
-            <img src={header} alt="opening screen"/>
+            {/* <img src={header} alt="opening screen"/> */}
+            <HeaderCarousel/>
             
             <NavBar show={false} displayType={"homepage"}/>
 

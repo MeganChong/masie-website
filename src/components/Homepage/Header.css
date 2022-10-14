@@ -1,0 +1,43 @@
+.header {
+    height: 100vh;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+
+    line-height: 100vh;
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 60px;
+    margin: auto;
+
+    position: absolute;
+    animation: fadein 12s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#img1 {
+    z-index: 4;
+    animation-delay: 0s;
+} 
+#img2 {
+    z-index: 3;
+    animation-delay: 3s;
+} 
+#img3 {
+    z-index: 2;
+    animation-delay: 6s;
+}
+#img4 {
+    z-index: 1;
+    animation-delay: 9s;
+}
