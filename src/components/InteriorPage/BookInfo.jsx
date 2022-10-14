@@ -7,7 +7,6 @@ import CheckOutMoreCarousel from "./CheckOutMoreCarousel";
 import colors from "../../data/colors.json";
 import bookText from "../../data/bookText.json";
 import {photoInfo} from '../../data/images';
-import catagories from "../../data/categories.json";
 
 //to read from a json file:
 //import data from './data/data.json
@@ -31,7 +30,6 @@ export default function BookInfo() {
         setColorCodes(colors[title]);
         setTextDetails(bookText[title]);
         setImages(allImages[title]);
-        displayPage();
     }, [title]);
 
     function info() {
@@ -157,6 +155,7 @@ export default function BookInfo() {
     }
 
     function displayPage() {
+        // console.log("displaying page");
         if (title === undefined || images === undefined)
             return;
         return (
