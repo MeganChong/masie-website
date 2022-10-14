@@ -1,8 +1,8 @@
-import HomepageGrid from './components/Homepage';
-import BookInfo from './components/BookInfo';
-import DisplayTypes from './components/DisplayType';
+import HomepageGrid from './components/Homepage/Homepage';
+import BookInfo from './components/InteriorPage/BookInfo';
+import DisplayTypes from './components/CategoriesPage/DisplayType';
 import ScrollToTop from './components/ScrollToTop';
-import About from './components/About';
+import About from './components/CategoriesPage/About';
 import './App.css';
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";

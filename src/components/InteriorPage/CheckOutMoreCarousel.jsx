@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import {photoInfo} from "../data/images";
-import { formatCell } from "./FormatCell";
+import {photoInfo} from "../../data/images";
+import { formatCell } from "../FormatCell";
 
 export default function CheckOutMoreCarousel(props) {
     const images = photoInfo();
