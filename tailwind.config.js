@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'about': "url('./assests/AboutBkgd.jpg')",
+        'about': "url('./assests/old/AboutBkgd.jpg')",
       },
       fontFamily: {
         brand: ['Lexend', 'sans-serif']

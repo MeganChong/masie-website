@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from '../../assests/MLogo3.png';
+import logo from '../../assests/old/MLogo3.png';
 import { createButton } from "./CreateButton";
 
 export default function MobileNavBar() {

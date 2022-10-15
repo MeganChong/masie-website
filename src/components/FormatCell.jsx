@@ -1,18 +1,22 @@
 import {Link} from 'react-router-dom';
-import {photoInfo} from './PhotoInfo';
+import {photoInfo} from "../data/images";
 
-export function formatCell(source, classStyle, sourceType) {
+export function formatCell(itemTitle, classStyle, sourceType) {
     const photoMap = photoInfo();
-    const path = "/" + photoMap[source].title;
+
+    if (photoMap[itemTitle] === undefined)
+        return (<div class={classStyle}></div>);
+
+    const path = "/" + itemTitle;
     const style = classStyle + " hover:opacity-50";
     return (
         <Link 
             to={{
                 pathname: path,
-                state: {title: photoMap[source].title}
+                state: {title: itemTitle}
             }} 
             class={style}>
-            <img src={photoMap[source][sourceType]} alt={photoMap[source].alt} />
+            <img src={photoMap[itemTitle][sourceType]} alt={itemTitle + " Cover"} />
         </Link>
     );
 }

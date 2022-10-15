@@ -346,11 +346,11 @@ export function photoInfo() {
             altText: "Product Ad Series",
             process: ProductSteps,
         },
-        "What’s New?": {
+        "What's New?": {
             thumbnail: BookThumbWhatsNew,
             thumbnailWithBackground: BookThumbBkgdWhatsNew,
             backgroundColor: "#1B9BB4",
-            altText: "What’s New?",
+            altText: "What's New?",
             process: WhatsNewSteps,
         },
         "Recharge & Reconnect": {

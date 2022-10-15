@@ -94,38 +94,7 @@ export default function BookInfo() {
     
     function lowerTriangle() {
         return ( 
-            <div style={{backgroundColor: `${colorCodes.lowerTriangle}`}} className="lowerTriangle">
-                {/* empty div to move the rest of the items down to correct position */}
-                {/* <div style={{height: "109vh"}}></div>  */}
-{/* 
-                <h1 class="text-center text-5xl font-bold mb-9 mt-0" 
-                    style={{whiteSpace: "pre-line", marginRight: "6vw", marginLeft: "6vw"}}>
-                    {title} 
-                    The longest title in the world skdfjskdfjksnvlsnsndvjdsknvfndkanvxdsk sdncalcnadk
-                </h1>
-                <hr className="titleLine"/> */}
-                
-                
-                {/* <div style={{height: "fit-content", backgroundColor: `${colorCodes.lowerTriangle}`}}>
-
-                    <div class="grid grid-col-1 md:grid-cols-4 mt-14 relative" 
-                        style={{marginLeft: "9%", flexWrap: "wrap"}}>
-                        <div class="col-span-1 p-3 pt-0">
-                            {showAward()}
-                            <p class="font-bold text-xl" style={{letterSpacing: "4px", textTransform: "uppercase"}}>
-                                {textDetails.header}
-                            </p>
-                            <p class="pt-3 text-lg" style={{lineHeight: "30px"}}>
-                                {textDetails.description}
-                            </p>
-                        </div>
-
-                        <div class="cols-span-1 md:col-span-3 md:ml-16 sideways">
-                            {displayProcess()}
-                        </div>
-                    </div>
-                </div> */}
-            </div> 
+            <div style={{backgroundColor: `${colorCodes.lowerTriangle}`}} className="lowerTriangle"></div> 
         );
     }
 
@@ -134,8 +103,8 @@ export default function BookInfo() {
             <div className="titleDiv">
                 <h1 class="text-center text-5xl font-bold mb-9" 
                     style={{whiteSpace: "pre-line", marginRight: "6vw", marginLeft: "6vw"}}>
-                    {/* {title} */}
-                    The longest title in the world skdfjskdfjksnvlsnsndvjdsknvfndkanvxdsk sdncalcnadk
+                    {title}
+                    {/* The longest title in the world skdfjskdfjksnvlsnsndvjdsknvfndkanvxdsk sdncalcnadk */}
                 </h1>
                 <hr className="titleLine"/>
             </div>
@@ -171,9 +140,17 @@ export default function BookInfo() {
     }
 
     function displayPage() {
-        // console.log("displaying page");
-        if (title === undefined || images === undefined)
-            return;
+        if (title === undefined || images === undefined) {
+            console.log(title + " " + images);
+            return (
+                <div class="min-h-screen"> 
+                    <NavBar show={true} displayType={"info"}/>
+                    <h1 class="text-center" style={{lineHeight: "100vh"}}>
+                        Whoops! Much like my marbles, I seem to have lost this book! Please go back and try again
+                    </h1>
+                </div>
+            );
+        }
         return (
             <div className="parent">
                 <NavBar show={true} displayType={"info"} class="z-20"/>

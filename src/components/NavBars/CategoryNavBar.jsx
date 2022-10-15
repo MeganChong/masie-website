@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from '../../assests/MLogo3.png';
+import logo from '../../assests/old/MLogo3.png';
 import { createButton } from "./CreateButton";
 
 export default function CategoryNavBar() {
@@ -34,7 +34,7 @@ export default function CategoryNavBar() {
     function displayCategoryNavBar() {
         return (
             <div class="hidden md:flex md:flex-1 p-6"
-                style={{width: "18vw", minWidth: "fit-content", height:"100vh", flexDirection: "column", alignItems: "flex-start", backgroundColor: `${color}`}}>
+                style={{width: "18vw", minWidth: "fit-content", height:"100%", flexDirection: "column", alignItems: "flex-start", backgroundColor: `${color}`}}>
                 <Link to="/" style={{flexGrow: 1, height: "3vh"}}>
                     <img src={logo} alt="The logo - click to go to homepage" />
                 </Link>
