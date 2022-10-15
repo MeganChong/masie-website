@@ -133,7 +133,7 @@ import BookProcessEmpower193 from "../assests/steps/Events/Empower19/EventProces
 import BookThumbAdaptive from "../assests/thumbnails/EventThumbnail_Adaptive.gif";
 import BookThumbBkgdAdaptive from "../assests/thumbBkgd/EventThumbnailBkgd_Adaptive.jpg";
 import BookProcessAdaptive from "../assests/steps/Events/Adaptive/EventProcess_Adaptive.jpg";
-// import BookProcessAdaptive2 from "../assests/steps/Events/Adaptive/EventProcess_Adaptive2.jpg";
+import BookProcessAdaptive2 from "../assests/steps/Events/Adaptive/EventProcess_Adaptive2.jpg";
 
 import BookThumbEmpower17 from "../assests/thumbnails/EventThumbnail_Empower17.png";
 import BookThumbBkgdEmpower17 from "../assests/thumbBkgd/EventThumbnailBkgd_Empower17.jpg";
@@ -152,6 +152,20 @@ import BookThumbBkgdJapan from "../assests/thumbBkgd/PersonalThumbnailBkgd_Japan
 import BookProcessJapan from "../assests/steps/Personal/Japan/PersonalProcess_Japan.jpg";
 import BookProcessJapan2 from "../assests/steps/Personal/Japan/PersonalProcess_Japan2.jpg";
 import BookProcessJapan3 from "../assests/steps/Personal/Japan/PersonalProcess_Japan3.jpg";
+
+import MinimalistHomepage from "../assests/homepage/Homepg_Minimalist.gif";
+import MathHomepage from "../assests/homepage/Homepg_Math.jpg";
+import ClassroomHomepage from "../assests/homepage/Homepg_Classroom.jpg";
+import Essential25Homepage from "../assests/homepage/Homepg_Essential25.gif";
+import FiveHomepage from "../assests/homepage/Homepg_Five.jpg";
+import GivingHomepage from "../assests/homepage/Homepg_Giving.jpg";
+import BeAdHomepage from "../assests/homepage/Homepg_BeAd.jpg";
+import LessonsHomepage from "../assests/homepage/Homepg_Lessons.jpg";
+import SpringHomepage from "../assests/homepage/Homepg_Spring.gif";
+import SummerHomepage from "../assests/homepage/Homepg_Summer.jpg";
+import Empower19Homepage from "../assests/homepage/Homepg_Empower19.jpg";
+import HappinessHomepage from "../assests/homepage/Homepg_Happiness.jpg";
+import JapanHomepage from "../assests/homepage/Homepg_Japan.jpg";
 
 export function photoInfo() {
     const LearningSteps = [BookProcessLearning];
@@ -179,7 +193,7 @@ export function photoInfo() {
     const WhatsNewSteps = [BookProcessWhatsNew, BookProcessWhatsNew2];
     const RechargeSteps = [BookProcessRecharge, BookProcessRecharge2, BookProcessRecharge3];
     const Empower19Steps = [BookProcessEmpower19, BookProcessEmpower192, BookProcessEmpower193];
-    const AdaptiveSteps = [BookProcessAdaptive];
+    const AdaptiveSteps = [BookProcessAdaptive, BookProcessAdaptive2];
     const Empower17Steps = [BookProcessEmpower17, BookProcessEmpower172, BookProcessEmpower173];
     const HappinessSteps = [BookProcessHappiness, BookProcessHappiness2, BookProcessHappiness3];
     const JapanSteps = [BookProcessJapan, BookProcessJapan2, BookProcessJapan3];
@@ -205,7 +219,7 @@ export function photoInfo() {
             backgroundColor: "#AD769E",
             altText: "The Minimalist Teacher",
             process: MinimalistSteps,
-            homepage: ""
+            homepage: MinimalistHomepage
         },
         "Math Fact Fluency": {
             thumbnail: BookThumbMath,
@@ -213,7 +227,7 @@ export function photoInfo() {
             backgroundColor: "#FED340",
             altText: "Math Fact Fluency",
             process: MathSteps,
-            homepage: ""
+            homepage: MathHomepage
         },
         "The Classroom Behavior Manual": {
             thumbnail: BookThumbClassroom,
@@ -221,7 +235,7 @@ export function photoInfo() {
             backgroundColor: "#F16F63",
             altText: "The Classroom Behavior Manual",
             process: ClassroomSteps,
-            homepage: ""
+            homepage: ClassroomHomepage
         },
         "The Essential 25": {
             thumbnail: BookThumbEssential25,
@@ -229,7 +243,7 @@ export function photoInfo() {
             backgroundColor: "#FED340",
             altText: "The Essential 25",
             process: Essential25Steps,
-            homepage: ""
+            homepage: Essential25Homepage
         },
         "You're the Principal! Now What?": {
             thumbnail: BookThumbPrincipal,
@@ -245,13 +259,13 @@ export function photoInfo() {
             altText: "Engage the Brain",
             process: EngageSteps,
         },
-        "Five Practices for Equity-Focused School Leadership": {
+        "Five Practices for\n Equity-Focused School Leadership": {
             thumbnail: BookThumbFive,
             thumbnailWithBackground: BookThumbBkgdFive,
             backgroundColor: "#5E618B",
             altText: "Five Practices for Equity-Focused School Leadership",
             process: FiveSteps,
-            homepage: ""
+            homepage: FiveHomepage
         },
         "Social Emotional Learning and the Brain": {
             thumbnail: BookThumbSel,
@@ -259,7 +273,6 @@ export function photoInfo() {
             backgroundColor: "#E0F1FE",
             altText: "Social Emotional Learning and the Brain",
             process: SelSteps,
-            homepage: ""
         },
         "Giving Students a Say": {
             thumbnail: BookThumbGiving,
@@ -267,7 +280,7 @@ export function photoInfo() {
             backgroundColor: "#78CEBC",
             altText: "Giving Students a Say",
             process: GivingSteps,
-            homepage: ""
+            homepage: GivingHomepage
         },
         "Arias Series": {
             thumbnail: BookThumbArias,
@@ -289,6 +302,7 @@ export function photoInfo() {
             backgroundColor: "#B7E3E8",
             altText: "'Be' Ad Series",
             process: BeAdSteps,
+            homepage: BeAdHomepage
         },
         "Lessons Learned Catalog": {
             thumbnail: BookThumbLessons,
@@ -296,6 +310,7 @@ export function photoInfo() {
             backgroundColor: "#615E67",
             altText: "Lessons Learned Catalog",
             process: LessonsSteps,
+            homepage: LessonsHomepage
         },
         "ASCD Resource Guide": {
             thumbnail: BookThumbASCD,
@@ -310,6 +325,7 @@ export function photoInfo() {
             backgroundColor: "#57BDCB",
             altText: "Spring Sourcebook",
             process: SpringSteps,
+            homepage: SpringHomepage
         },
         "Trauma-Sensitive Schools Catalog": {
             thumbnail: BookThumbTrauma,
@@ -324,6 +340,7 @@ export function photoInfo() {
             backgroundColor: "#FDA536",
             altText: "Summer Catalog",
             process: SummerSteps,
+            homepage: SummerHomepage
         },
         "Membership Promotion": {
             thumbnail: BookThumbMembership,
@@ -356,7 +373,7 @@ export function photoInfo() {
         "Recharge & Reconnect": {
             thumbnail: BookThumbRecharge,
             thumbnailWithBackground: BookThumbBkgdRecharge,
-            backgroundColor: "#3D7CB2",
+            backgroundColor: "#707070",
             altText: "Recharge & Reconnect",
             process: RechargeSteps,
         },
@@ -366,6 +383,7 @@ export function photoInfo() {
             backgroundColor: "#FFF4F9",
             altText: "Empower19",
             process: Empower19Steps,
+            homepage: Empower19Homepage
         },
         "Empower17": {
             thumbnail: BookThumbEmpower17,
@@ -387,6 +405,7 @@ export function photoInfo() {
             backgroundColor: "#F09D3B",
             altText: "Happiness",
             process: HappinessSteps,
+            homepage: HappinessHomepage
         },
         "Japan Postcards": {
             thumbnail: BookThumbJapan,
@@ -394,6 +413,7 @@ export function photoInfo() {
             backgroundColor: "#BDABC1",
             altText: "Japan Postcards",
             process: JapanSteps,
+            homepage: JapanHomepage
         },
     };
     return photoMap;
