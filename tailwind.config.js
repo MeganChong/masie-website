@@ -27,7 +27,7 @@ module.exports = {
           lineHeight: '23.5px',
         }],
         'navBar' : ['15px', {
-          letterSpacing: '8px',
+          letterSpacing: '7px',
           lineHeight: '28px',
         }],
         'about': ['18px', {
