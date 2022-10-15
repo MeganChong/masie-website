@@ -37,3 +37,12 @@
     transform: rotate(360deg);
   }
 }
+
+/* ****************************** SCROLL BAR ************************************************ */
+::-webkit-scrollbar {
+  width: 2%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255, 0.4);
+}
