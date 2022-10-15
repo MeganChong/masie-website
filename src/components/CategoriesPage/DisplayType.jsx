@@ -1,50 +1,37 @@
 import React, {useEffect, useState} from "react";
 import { useLocation } from "react-router";
 import NavBar from "../NavBars/NavBar";
-import details from '../../projectDetails.json'
 import { formatCell } from "../FormatCell";
+import categories from "../../data/categories.json";
 
 export default function DisplayTypes() {
     const data = useLocation();
     const [type, setType] = useState(data.state.type);
-    const [projects, setProjects] = useState([]); //categories[type]
+    const [projects, setProjects] = useState(categories[type]);
+
+    const LARGE = " col-span-2";
 
     useEffect(() => {
         setType(data.state.type);
+        setProjects(categories[type]);
+        
     }, [data]);
 
-    useEffect(() => {
-        loadProjects();
-        displayPage();
-    }, [type]);
-
-    //no longer needed
-    function loadProjects() {
-        console.log(type);
-        let projects = [];
-        Object.entries(details).map((item) => {
-            console.log(item[1].type);
-            if (item[1].type === type) {
-                projects.push(item[1].srcName);
-            }
-        });
-        setProjects(projects);
-    }
-
-    //TODO: change with new formatcell
     function displayProjects() {
+        var s = "object-contain";
+        if (type === "Personal")
+            s = s + LARGE;
         return projects.map(item => {
-            return formatCell(item, "", "interiorSrc");
+            return formatCell(item, s, "thumbnailWithBackground");
         })
     }
 
     function displayPage() {
         return (
-            <div class="min-h-screen md:flex">
+            <div class="md:flex" style={{height: "fit-content", minHeight: "100vh"}}>
                 <NavBar show={true} displayType={"category"}/>
 
-                <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 
-                            gap-5 items-center m-10 overflow-hidden">
+                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center">
                     {displayProjects()}
                 </div>
             </div>
