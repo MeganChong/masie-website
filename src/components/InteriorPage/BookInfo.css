@@ -1,3 +1,6 @@
+
+
+/* ************************************PARENT********************************************** */
 .parent {
   position: relative;
   display: block;
@@ -31,7 +34,7 @@
 
 .processBox {
   width: 5vw;
-  height: 40vh;
+  height: 32vh;
   background-color: navy;
   position: absolute;
   z-index: 30;
@@ -41,7 +44,7 @@
 }
 
 .processText {
-  transform: rotate(90deg) translateX(130%);
+  transform: rotate(90deg) translateX(123%);
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -135,6 +138,8 @@
   position: relative;
   z-index: 20;
   top: 10vh;
+  height: fit-content;
+  padding-top: 2%;
 }
 
 .sideways {
@@ -143,7 +148,7 @@
   white-space: nowrap;
 
   flex-grow: 3;
-  height: 60vh;
+  max-height: 60vh;
 
 }
 .card {
