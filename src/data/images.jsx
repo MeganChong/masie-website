@@ -1,156 +1,157 @@
 import BookThumbLearning from "../assests/thumbnails/BookThumbnail_Learning.png";
 import BookThumbBkgdLearning from "../assests/thumbBkgd/BookThumbnailBkgd_Learning.jpg";
-import BookProcessLearning from "../assests/steps/BookProcess_Learning.jpg";
+import BookProcessLearning from "../assests/steps/Books/Learning/BookProcess_Learning.jpg";
 
 import BookThumbNavigating from "../assests/thumbnails/BookThumbnail_Navigating.png";
 import BookThumbBkgdNavigating from "../assests/thumbBkgd/BookThumbnailBkgd_Navigating.jpg";
-import BookProcessNavigating from "../assests/steps/BookProcess_Navigating.jpg";
-import BookProcessNavigating2 from "../assests/steps/BookProcess_Navigating2.jpg";
+import BookProcessNavigating from "../assests/steps/Books/Navigating/BookProcess_Navigating.jpg";
+import BookProcessNavigating2 from "../assests/steps/Books/Navigating/BookProcess_Navigating2.jpg";
 
 import BookThumbMinimalist from "../assests/thumbnails/BookThumbnail_Minimalist.png";
 import BookThumbBkgdMinimalist from "../assests/thumbBkgd/BookThumbnailBkgd_Minimalist.jpg";
-import BookProcessMinimalist from "../assests/steps/BookProcess_Minimalist.jpg";
-import BookProcessMinimalist2 from "../assests/steps/BookProcess_Minimalist2.jpg";
-import BookProcessMinimalist3 from "../assests/steps/BookProcess_Minimalist3.jpg";
+import BookProcessMinimalist from "../assests/steps/Books/Minimalist/BookProcess_Minimalist.jpg";
+import BookProcessMinimalist2 from "../assests/steps/Books/Minimalist/BookProcess_Minimalist2.jpg";
+import BookProcessMinimalist3 from "../assests/steps/Books/Minimalist/BookProcess_Minimalist3.jpg";
 
 import BookThumbMath from "../assests/thumbnails/BookThumbnail_Math.png";
 import BookThumbBkgdMath from "../assests/thumbBkgd/BookThumbnailBkgd_Math.jpg";
-import BookProcessMath from "../assests/steps/BookProcess_Math.jpg";
-import BookProcessMath2 from "../assests/steps/BookProcess_Math2.jpg";
+import BookProcessMath from "../assests/steps/Books/Math/BookProcess_Math.jpg";
+import BookProcessMath2 from "../assests/steps/Books/Math/BookProcess_Math2.jpg";
 
 import BookThumbClassroom from "../assests/thumbnails/BookThumbnail_Classroom.png";
 import BookThumbBkgdClassroom from "../assests/thumbBkgd/BookThumbnailBkgd_Classroom.jpg";
-import BookProcessClassroom from "../assests/steps/BookProcess_Classroom.jpg";
-import BookProcessClassroom2 from "../assests/steps/BookProcess_Classroom2.jpg";
+import BookProcessClassroom from "../assests/steps/Books/Classroom/BookProcess_Classroom.jpg";
+import BookProcessClassroom2 from "../assests/steps/Books/Classroom/BookProcess_Classroom2.jpg";
 
 import BookThumbEssential25 from "../assests/thumbnails/BookThumbnail_Essential25.png";
 import BookThumbBkgdEssential25 from "../assests/thumbBkgd/BookThumbnailBkgd_Essential25.jpg";
-import BookProcessEssential25 from "../assests/steps/BookProcess_Essential25.jpg";
-import BookProcessEssential252 from "../assests/steps/BookProcess_Essential252.jpg";
-import BookProcessEssential253 from "../assests/steps/BookProcess_Essential253.jpg";
+import BookProcessEssential25 from "../assests/steps/Books/Essential25/BookProcess_Essential25.jpg";
+import BookProcessEssential252 from "../assests/steps/Books/Essential25/BookProcess_Essential252.jpg";
+import BookProcessEssential253 from "../assests/steps/Books/Essential25/BookProcess_Essential253.jpg";
 
 import BookThumbPrincipal from "../assests/thumbnails/BookThumbnail_Principal.png";
 import BookThumbBkgdPrincipal from "../assests/thumbBkgd/BookThumbnailBkgd_Principal.jpg";
-import BookProcessPrincipal from "../assests/steps/BookProcess_Principal.jpg";
+import BookProcessPrincipal from "../assests/steps/Books/Principal/BookProcess_Principal.jpg";
 
 import BookThumbEngage from "../assests/thumbnails/BookThumbnail_Engage.png";
 import BookThumbBkgdEngage from "../assests/thumbBkgd/BookThumbnailBkgd_Engage.jpg";
-import BookProcessEngage from "../assests/steps/BookProcess_Engage.jpg";
-import BookProcessEngage2 from "../assests/steps/BookProcess_Engage2.jpg";
+import BookProcessEngage from "../assests/steps/Books/Engage/BookProcess_Engage.jpg";
+import BookProcessEngage2 from "../assests/steps/Books/Engage/BookProcess_Engage2.jpg";
 
 import BookThumbFive from "../assests/thumbnails/BookThumbnail_Five.png";
 import BookThumbBkgdFive from "../assests/thumbBkgd/BookThumbnailBkgd_Five.jpg";
-import BookProcessFive from "../assests/steps/BookProcess_Five.jpg";
-import BookProcessFive2 from "../assests/steps/BookProcess_Five2.jpg";
-import BookProcessFive3 from "../assests/steps/BookProcess_Five3.jpg";
+import BookProcessFive from "../assests/steps/Books/Five/BookProcess_Five.jpg";
+import BookProcessFive2 from "../assests/steps/Books/Five/BookProcess_Five2.jpg";
+import BookProcessFive3 from "../assests/steps/Books/Five/BookProcess_Five3.jpg";
 
 import BookThumbSel from "../assests/thumbnails/BookThumbnail_Sel.png";
 import BookThumbBkgdSel from "../assests/thumbBkgd/BookThumbnailBkgd_Sel.jpg";
-import BookProcessSel from "../assests/steps/BookProcess_Sel.jpg";
-import BookProcessSel2 from "../assests/steps/BookProcess_Sel2.jpg";
-import BookProcessSel3 from "../assests/steps/BookProcess_Sel3.jpg";
+import BookProcessSel from "../assests/steps/Books/Sel/BookProcess_Sel.jpg";
+import BookProcessSel2 from "../assests/steps/Books/Sel/BookProcess_Sel2.jpg";
+import BookProcessSel3 from "../assests/steps/Books/Sel/BookProcess_Sel3.jpg";
 
 import BookThumbGiving from "../assests/thumbnails/BookThumbnail_Giving.png";
 import BookThumbBkgdGiving from "../assests/thumbBkgd/BookThumbnailBkgd_Giving.jpg";
-import BookProcessGiving from "../assests/steps/BookProcess_Giving.jpg";
-import BookProcessGiving2 from "../assests/steps/BookProcess_Giving2.jpg";
+import BookProcessGiving from "../assests/steps/Books/Giving/BookProcess_Giving.jpg";
+import BookProcessGiving2 from "../assests/steps/Books/Giving/BookProcess_Giving2.jpg";
 
 import BookThumbArias from "../assests/thumbnails/BookThumbnail_Arias.png";
 import BookThumbBkgdArias from "../assests/thumbBkgd/BookThumbnailBkgd_Arias.jpg";
-import BookProcessArias from "../assests/steps/BookProcess_Arias.jpg";
-import BookProcessArias2 from "../assests/steps/BookProcess_Arias2.jpg";
-import BookProcessArias3 from "../assests/steps/BookProcess_Arias3.jpg";
+import BookProcessArias from "../assests/steps/Books/Arias/BookProcess_Arias.jpg";
+import BookProcessArias2 from "../assests/steps/Books/Arias/BookProcess_Arias2.jpg";
+import BookProcessArias3 from "../assests/steps/Books/Arias/BookProcess_Arias3.jpg";
 
-import BookThumbAuthor from "../assests/thumbnails/BookThumbnail_Author.png";
-import BookThumbBkgdAuthor from "../assests/thumbBkgd/BookThumbnailBkgd_Author.jpg";
-import BookProcessAuthor from "../assests/steps/BookProcess_Author.jpg";
-import BookThumbBeAd from "../assests/thumbnails/BookThumbnail_BeAd.png";
-import BookThumbBkgdBeAd from "../assests/thumbBkgd/BookThumbnailBkgd_BeAd.jpg";
-import BookProcessBeAd from "../assests/steps/BookProcess_BeAd.jpg";
-import BookProcessBeAd2 from "../assests/steps/BookProcess_BeAd2.jpg";
+import BookThumbAuthor from "../assests/thumbnails/MarketingThumbnail_Author.png";
+import BookThumbBkgdAuthor from "../assests/thumbBkgd/MarketingThumbnailBkgd_Author.jpg";
+import BookProcessAuthor from "../assests/steps/Marketing/Author/MarketingProcess_Author.jpg";
 
-import BookThumbLessons from "../assests/thumbnails/BookThumbnail_Lessons.png";
-import BookThumbBkgdLessons from "../assests/thumbBkgd/BookThumbnailBkgd_Lessons.jpg";
-import BookProcessLessons from "../assests/steps/BookProcess_Lessons.jpg";
-import BookProcessLessons2 from "../assests/steps/BookProcess_Lessons2.jpg";
+import BookThumbBeAd from "../assests/thumbnails/MarketingThumbnail_BeAd.png";
+import BookThumbBkgdBeAd from "../assests/thumbBkgd/MarketingThumbnailBkgd_BeAd.jpg";
+import BookProcessBeAd from "../assests/steps/Marketing/BeAd/MarketingProcess_BeAd.jpg";
+import BookProcessBeAd2 from "../assests/steps/Marketing/BeAd/MarketingProcess_BeAd2.jpg";
 
-import BookThumbASCD from "../assests/thumbnails/BookThumbnail_ASCD.png";
-import BookThumbBkgdASCD from "../assests/thumbBkgd/BookThumbnailBkgd_ASCD.jpg";
-import BookProcessASCD from "../assests/steps/BookProcess_ASCD.jpg";
-import BookProcessASCD2 from "../assests/steps/BookProcess_ASCD2.jpg";
-import BookProcessASCD3 from "../assests/steps/BookProcess_ASCD3.jpg";
+import BookThumbLessons from "../assests/thumbnails/MarketingThumbnail_Lessons.png";
+import BookThumbBkgdLessons from "../assests/thumbBkgd/MarketingThumbnailBkgd_Lessons.jpg";
+import BookProcessLessons from "../assests/steps/Marketing/Lessons/MarketingProcess_Lessons.jpg";
+import BookProcessLessons2 from "../assests/steps/Marketing/Lessons/MarketingProcess_Lessons2.jpg";
 
-import BookThumbSpring from "../assests/thumbnails/BookThumbnail_Spring.png";
-import BookThumbBkgdSpring from "../assests/thumbBkgd/BookThumbnailBkgd_Spring.jpg";
-import BookProcessSpring from "../assests/steps/BookProcess_Spring.jpg";
-import BookProcessSpring2 from "../assests/steps/BookProcess_Spring2.jpg";
-import BookProcessSpring3 from "../assests/steps/BookProcess_Spring3.jpg";
+import BookThumbASCD from "../assests/thumbnails/MarketingThumbnail_ASCD.png";
+import BookThumbBkgdASCD from "../assests/thumbBkgd/MarketingThumbnailBkgd_ASCD.jpg";
+import BookProcessASCD from "../assests/steps/Marketing/ASCD/MarketingProcess_ASCD.jpg";
+import BookProcessASCD2 from "../assests/steps/Marketing/ASCD/MarketingProcess_ASCD2.jpg";
+import BookProcessASCD3 from "../assests/steps/Marketing/ASCD/MarketingProcess_ASCD3.jpg";
 
-import BookThumbTrauma from "../assests/thumbnails/BookThumbnail_Trauma.png";
-import BookThumbBkgdTrauma from "../assests/thumbBkgd/BookThumbnailBkgd_Trauma.jpg";
-import BookProcessTrauma from "../assests/steps/BookProcess_Trauma.jpg";
-import BookProcessTrauma2 from "../assests/steps/BookProcess_Trauma2.jpg";
+import BookThumbSpring from "../assests/thumbnails/MarketingThumbnail_Spring.png";
+import BookThumbBkgdSpring from "../assests/thumbBkgd/MarketingThumbnailBkgd_Spring.jpg";
+import BookProcessSpring from "../assests/steps/Marketing/Spring/MarketingProcess_Spring.jpg";
+import BookProcessSpring2 from "../assests/steps/Marketing/Spring/MarketingProcess_Spring2.jpg";
+import BookProcessSpring3 from "../assests/steps/Marketing/Spring/MarketingProcess_Spring3.jpg";
 
-import BookThumbSummer from "../assests/thumbnails/BookThumbnail_Summer.png";
-import BookThumbBkgdSummer from "../assests/thumbBkgd/BookThumbnailBkgd_Summer.jpg";
-import BookProcessSummer from "../assests/steps/BookProcess_Summer.jpg";
-import BookProcessSummer2 from "../assests/steps/BookProcess_Summer2.jpg";
-import BookProcessSummer3 from "../assests/steps/BookProcess_Summer3.jpg";
+import BookThumbTrauma from "../assests/thumbnails/MarketingThumbnail_Trauma.png";
+import BookThumbBkgdTrauma from "../assests/thumbBkgd/MarketingThumbnailBkgd_Trauma.jpg";
+import BookProcessTrauma from "../assests/steps/Marketing/Trauma/MarketingProcess_Trauma.jpg";
+import BookProcessTrauma2 from "../assests/steps/Marketing/Trauma/MarketingProcess_Trauma2.jpg";
 
-import BookThumbMembership from "../assests/thumbnails/BookThumbnail_Membership.png";
-import BookThumbBkgdMembership from "../assests/thumbBkgd/BookThumbnailBkgd_Membership.jpg";
-import BookProcessMembership from "../assests/steps/BookProcess_Membership.jpg"
-import BookProcessMembership2 from "../assests/steps/BookProcess_Membership2.jpg";
-import BookProcessMembership3 from "../assests/steps/BookProcess_Membership3.jpg";
+import BookThumbSummer from "../assests/thumbnails/MarketingThumbnail_Summer.png";
+import BookThumbBkgdSummer from "../assests/thumbBkgd/MarketingThumbnailBkgd_Summer.jpg";
+import BookProcessSummer from "../assests/steps/Marketing/Summer/MarketingProcess_Summer.jpg";
+import BookProcessSummer2 from "../assests/steps/Marketing/Summer/MarketingProcess_Summer2.jpg";
+import BookProcessSummer3 from "../assests/steps/Marketing/Summer/MarketingProcess_Summer3.jpg";
 
-import BookThumbBook from "../assests/thumbnails/BookThumbnail_Book.png";
-import BookThumbBkgdBook from "../assests/thumbBkgd/BookThumbnailBkgd_Book.jpg";
-import BookProcessBook from "../assests/steps/BookProcess_Book.jpg";
+import BookThumbMembership from "../assests/thumbnails/MarketingThumbnail_Membership.png";
+import BookThumbBkgdMembership from "../assests/thumbBkgd/MarketingThumbnailBkgd_Membership.jpg";
+import BookProcessMembership from "../assests/steps/Marketing/Membership/MarketingProcess_Membership.jpg"
+import BookProcessMembership2 from "../assests/steps/Marketing/Membership/MarketingProcess_Membership2.jpg";
+import BookProcessMembership3 from "../assests/steps/Marketing/Membership/MarketingProcess_Membership3.jpg";
 
-import BookThumbProduct from "../assests/thumbnails/BookThumbnail_Product.png";
-import BookThumbBkgdProduct from "../assests/thumbBkgd/BookThumbnailBkgd_Product.jpg";
-import BookProcessProduct from "../assests/steps/BookProcess_Product.jpg";
-import BookProcessProduct2 from "../assests/steps/BookProcess_Product2.jpg";
+import BookThumbBook from "../assests/thumbnails/MarketingThumbnail_Book.png";
+import BookThumbBkgdBook from "../assests/thumbBkgd/MarketingThumbnailBkgd_Book.jpg";
+import BookProcessBook from "../assests/steps/Marketing/Book/MarketingProcess_Book.jpg";
 
-import BookThumbWhatsNew from "../assests/thumbnails/BookThumbnail_WhatsNew.png";
-import BookThumbBkgdWhatsNew from "../assests/thumbBkgd/BookThumbnailBkgd_WhatsNew.jpg";
-import BookProcessWhatsNew from "../assests/steps/BookProcess_WhatsNew.jpg";
-import BookProcessWhatsNew2 from "../assests/steps/BookProcess_WhatsNew2.jpg";
+import BookThumbProduct from "../assests/thumbnails/MarketingThumbnail_Product.png";
+import BookThumbBkgdProduct from "../assests/thumbBkgd/MarketingThumbnailBkgd_Product.jpg";
+import BookProcessProduct from "../assests/steps/Marketing/Product/MarketingProcess_Product.jpg";
+import BookProcessProduct2 from "../assests/steps/Marketing/Product/MarketingProcess_Product2.jpg";
 
-import BookThumbRecharge from "../assests/thumbnails/BookThumbnail_Recharge.png";
-import BookThumbBkgdRecharge from "../assests/thumbBkgd/BookThumbnailBkgd_Recharge.jpg";
-import BookProcessRecharge from "../assests/steps/BookProcess_Recharge.jpg";
-import BookProcessRecharge2 from "../assests/steps/BookProcess_Recharge2.jpg";
-import BookProcessRecharge3 from "../assests/steps/BookProcess_Recharge3.jpg";
+import BookThumbWhatsNew from "../assests/thumbnails/MarketingThumbnail_WhatsNew.png";
+import BookThumbBkgdWhatsNew from "../assests/thumbBkgd/MarketingThumbnailBkgd_WhatsNew.jpg";
+import BookProcessWhatsNew from "../assests/steps/Marketing/WhatsNew/MarketingProcess_WhatsNew.jpg";
+import BookProcessWhatsNew2 from "../assests/steps/Marketing/WhatsNew/MarketingProcess_WhatsNew2.jpg";
 
-import BookThumbEmpower19 from "../assests/thumbnails/BookThumbnail_Empower19.png";
-import BookThumbBkgdEmpower19 from "../assests/thumbBkgd/BookThumbnailBkgd_Empower19.jpg";
-import BookProcessEmpower19 from "../assests/steps/BookProcess_Empower19.jpg";
-import BookProcessEmpower192 from "../assests/steps/BookProcess_Empower192.jpg";
-import BookProcessEmpower193 from "../assests/steps/BookProcess_Empower193.jpg";
+import BookThumbRecharge from "../assests/thumbnails/EventThumbnail_Recharge.png";
+import BookThumbBkgdRecharge from "../assests/thumbBkgd/EventThumbnailBkgd_Recharge.jpg";
+import BookProcessRecharge from "../assests/steps/Events/Recharge/EventProcess_Recharge.jpg";
+import BookProcessRecharge2 from "../assests/steps/Events/Recharge/EventProcess_Recharge2.jpg";
+import BookProcessRecharge3 from "../assests/steps/Events/Recharge/EventProcess_Recharge3.jpg";
 
-import BookThumbAdaptive from "../assests/thumbnails/BookThumbnail_Adaptive.png";
-import BookThumbBkgdAdaptive from "../assests/thumbBkgd/BookThumbnailBkgd_Adaptive.jpg";
-import BookProcessAdaptive from "../assests/steps/BookProcess_Adaptive.jpg";
-import BookProcessAdaptive2 from "../assests/steps/BookProcess_Adaptive2.jpg";
+import BookThumbEmpower19 from "../assests/thumbnails/EventThumbnail_Empower19.png";
+import BookThumbBkgdEmpower19 from "../assests/thumbBkgd/EventThumbnailBkgd_Empower19.jpg";
+import BookProcessEmpower19 from "../assests/steps/Events/Empower19/EventProcess_Empower19.jpg";
+import BookProcessEmpower192 from "../assests/steps/Events/Empower19/EventProcess_Empower192.jpg";
+import BookProcessEmpower193 from "../assests/steps/Events/Empower19/EventProcess_Empower193.jpg";
 
-import BookThumbEmpower17 from "../assests/thumbnails/BookThumbnail_Empower17.png";
-import BookThumbBkgdEmpower17 from "../assests/thumbBkgd/BookThumbnailBkgd_Empower17.jpg";
-import BookProcessEmpower17 from "../assests/steps/BookProcess_Empower17.jpg";
-import BookProcessEmpower172 from "../assests/steps/BookProcess_Empower172.jpg";
-import BookProcessEmpower173 from "../assests/steps/BookProcess_Empower173.jpg";
+import BookThumbAdaptive from "../assests/thumbnails/EventThumbnail_Adaptive.gif";
+import BookThumbBkgdAdaptive from "../assests/thumbBkgd/EventThumbnailBkgd_Adaptive.jpg";
+import BookProcessAdaptive from "../assests/steps/Events/Adaptive/EventProcess_Adaptive.jpg";
+// import BookProcessAdaptive2 from "../assests/steps/Events/Adaptive/EventProcess_Adaptive2.jpg";
 
-import BookThumbHappiness from "../assests/thumbnails/BookThumbnail_Happiness.png";
-import BookThumbBkgdHappiness from "../assests/thumbBkgd/BookThumbnailBkgd_Happiness.jpg";
-import BookProcessHappiness from "../assests/steps/BookProcess_Happiness.jpg";
-import BookProcessHappiness2 from "../assests/steps/BookProcess_Happiness2.jpg";
-import BookProcessHappiness3 from "../assests/steps/BookProcess_Happiness3.jpg";
+import BookThumbEmpower17 from "../assests/thumbnails/EventThumbnail_Empower17.png";
+import BookThumbBkgdEmpower17 from "../assests/thumbBkgd/EventThumbnailBkgd_Empower17.jpg";
+import BookProcessEmpower17 from "../assests/steps/Events/Empower17/EventProcess_Empower17.jpg";
+import BookProcessEmpower172 from "../assests/steps/Events/Empower17/EventProcess_Empower172.jpg";
+import BookProcessEmpower173 from "../assests/steps/Events/Empower17/EventProcess_Empower173.jpg";
 
-import BookThumbJapan from "../assests/thumbnails/BookThumbnail_Japan.png";
-import BookThumbBkgdJapan from "../assests/thumbBkgd/BookThumbnailBkgd_Japan.jpg";
-import BookProcessJapan from "../assests/steps/BookProcess_Japan.jpg";
-import BookProcessJapan2 from "../assests/steps/BookProcess_Japan2.jpg";
-import BookProcessJapan3 from "../assests/steps/BookProcess_Japan3.jpg";
+import BookThumbHappiness from "../assests/thumbnails/PersonalThumbnail_Happiness.png";
+import BookThumbBkgdHappiness from "../assests/thumbBkgd/PersonalThumbnailBkgd_Happiness.jpg";
+import BookProcessHappiness from "../assests/steps/Personal/Happiness/PersonalProcess_Happiness.jpg";
+import BookProcessHappiness2 from "../assests/steps/Personal/Happiness/PersonalProcess_Happiness2.jpg";
+import BookProcessHappiness3 from "../assests/steps/Personal/Happiness/PersonalProcess_Happiness3.jpg";
+
+import BookThumbJapan from "../assests/thumbnails/PersonalThumbnail_Japan.png";
+import BookThumbBkgdJapan from "../assests/thumbBkgd/PersonalThumbnailBkgd_Japan.jpg";
+import BookProcessJapan from "../assests/steps/Personal/Japan/PersonalProcess_Japan.jpg";
+import BookProcessJapan2 from "../assests/steps/Personal/Japan/PersonalProcess_Japan2.jpg";
+import BookProcessJapan3 from "../assests/steps/Personal/Japan/PersonalProcess_Japan3.jpg";
 
 export function photoInfo() {
     const LearningSteps = [BookProcessLearning];
@@ -178,7 +179,7 @@ export function photoInfo() {
     const WhatsNewSteps = [BookProcessWhatsNew, BookProcessWhatsNew2];
     const RechargeSteps = [BookProcessRecharge, BookProcessRecharge2, BookProcessRecharge3];
     const Empower19Steps = [BookProcessEmpower19, BookProcessEmpower192, BookProcessEmpower193];
-    const AdaptiveSteps = [BookProcessAdaptive, BookProcessAdaptive2];
+    const AdaptiveSteps = [BookProcessAdaptive];
     const Empower17Steps = [BookProcessEmpower17, BookProcessEmpower172, BookProcessEmpower173];
     const HappinessSteps = [BookProcessHappiness, BookProcessHappiness2, BookProcessHappiness3];
     const JapanSteps = [BookProcessJapan, BookProcessJapan2, BookProcessJapan3];
