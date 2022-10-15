@@ -9,6 +9,10 @@
     bottom: 3vh;
 }
 
+.scrollDiv:hover {
+    cursor: pointer;
+}
+
 .arrow {
     height:100%;
     width: 100%;
