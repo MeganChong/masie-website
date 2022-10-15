@@ -1,5 +1,6 @@
 import {photoInfo} from "../../data/images";
 import { formatCell } from "../FormatCell";
+import ScrollToTopButton from "../ScrollButton/ScrollToTopButton";
 
 export default function CheckOutMoreCarousel(props) {
     const images = photoInfo();
@@ -60,17 +61,19 @@ export default function CheckOutMoreCarousel(props) {
     function display() {
         getRandomImages();
         return (
-            <div>
-                <p class="text-xl bg-white" style={{height: "15vh", lineHeight: "15vh", textAlign: "center", letterSpacing: "5px", alignSelf: "center"}}>
+            <div style={{height: "fit-content"}}>
+                <p class="text-xl bg-white pt-5" style={{height: "16vh", lineHeight: "16vh", textAlign: "center", letterSpacing: "5px", alignSelf: "center"}}>
                     CHECK OUT MORE
                 </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3" style={{height: "50vh", alignItems: "center", justifyContent: "center"}}>
+
+                <div class="grid grid-cols-1 md:grid-cols-3" style={{height: "fit-content", alignItems: "center", justifyContent: "center"}}>
                     {noImages()}
                     {displayImage(random1)}
                     {displayImage(random2)}
                     {displayImage(random3)}
                 </div>
+                
+                <ScrollToTopButton textColor={images[keys[random3]].backgroundColor}/>
             </div>
         );
     }

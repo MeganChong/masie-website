@@ -1,0 +1,19 @@
+.scrollDiv {
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    z-index: 50;
+    right: 1.5vw;
+    bottom: 3vh;
+}
+
+.arrow {
+    height:100%;
+    width: 100%;
+    transform: rotate(-90deg) translateY(2%);
+    font-size: 40px;
+    text-align: center;
+    line-height: 7.5vh;
+}
