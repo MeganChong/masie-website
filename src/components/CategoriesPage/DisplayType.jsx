@@ -19,7 +19,7 @@ export default function DisplayTypes() {
 
     function displayProjects() {
         var s = "object-contain";
-        if (type === "Personal")
+        if (type === "Personal" || type=== "Events")
             s = s + LARGE;
         return projects.map(item => {
             return formatCell(item, s, "thumbnailWithBackground");
