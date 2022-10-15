@@ -7,19 +7,28 @@ export default function CategoryNavBar() {
     const data = useLocation();
     const type = data.state.type;
     const [color, setColor] = useState("");
+    const [bottomHeight, setBottomHeight] = useState("25%");
     const buttonStyle = "flex-1 ml-2";
 
     useEffect(() => {
-        if (type === "Books")
+        if (type === "Books") {
             setColor("#e0aefc");
-        else if (type === "Marketing") 
+            setBottomHeight("40%");
+        }
+        else if (type === "Marketing") {
             setColor("#a2bcf5");
-        else if (type === "Events")
+            setBottomHeight("40%");
+        }
+        else if (type === "Events") {
             setColor("#fff01c");
-        else if (type === "Personal")
+            setBottomHeight("55%");
+        }
+        else if (type === "Personal") {
             setColor("#ffcff9");
-        else    
+        }
+        else {
             setColor("#d4ffd4");
+        }
     }, [type]);
 
     function button(path, item) {
@@ -44,7 +53,7 @@ export default function CategoryNavBar() {
                 {button("events", "Events")}
                 {button("personal", "Personal")}
                 {button("about", "About")}
-                <div style={{height: "21vh"}}></div>
+                <div style={{height: `${bottomHeight}`}}></div>
             </div>
         );
     }
