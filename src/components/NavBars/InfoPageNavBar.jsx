@@ -4,7 +4,8 @@ import logo from '../../assests/old/MLogo3.png';
 import { createButton } from "./CreateButton";
 
 export default function InfoPageNavBar() {
-    const buttonStyle = "flex-1 text-center m-3";
+    const buttonStyle = "flex-1 text-center m-3 mt-14";
+    const fontStyle = {fontSize: "12px", letterSpacing: "6px"};
 
     function displayInfoBar() {
         return (
@@ -12,11 +13,13 @@ export default function InfoPageNavBar() {
                 <Link to="/" style={{flexGrow: 4, height: "5vw"}}>
                     <img src={logo} alt="The logo - click to go to homepage" style={{marginTop: "5vh", marginLeft: "5vh"}}/>
                 </Link>
-                {createButton("books", "Books", buttonStyle, {})}
-                {createButton("marketing", "Marketing", buttonStyle, {})}
-                {createButton("events", "Events", buttonStyle, {})}
-                {createButton("personal", "Personal", buttonStyle, {})}
-                {createButton("about", "About", buttonStyle, {})}
+                <div class="mr-10 mt-5 text-white">
+                    {createButton("books", "Books", buttonStyle, fontStyle)}
+                    {createButton("marketing", "Marketing", buttonStyle, fontStyle)}
+                    {createButton("events", "Events", buttonStyle, fontStyle)}
+                    {createButton("personal", "Personal", buttonStyle, fontStyle)}
+                    {createButton("about", "About", buttonStyle, fontStyle)}
+                </div>
             </div>
         );
     }
