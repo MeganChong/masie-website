@@ -26,7 +26,7 @@ function App() {
 
 
           <div class="text-center m-5 object-bottom">
-            <p>Copyright 2021 @ Masie</p>
+            <p>Copyright 2022 @ Masie</p>
           </div>
 
         </ScrollToTop>
