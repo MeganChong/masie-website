@@ -24,23 +24,12 @@ export default function MobileNavBar() {
 
     function displayMobileIcon() {
         return (
-            <div class="block pl:20 md:hidden justify-self-center">
+            <div class="block md:hidden justify-self-center text-center">
                 <img src={logo} alt="the logo- open for menu" class="mx-auto" onClick={() => {setToggle(!openToggle)}}/>
                 {displayMobileBar()}
             </div>
         );
     }
 
-    function display() {
-        return (
-            <div class="sticky top-0 z-50
-                bg-white
-                text-black 
-                min-w-full p-4 pl-8 content-center">
-                {displayMobileIcon()}
-            </div>
-        );
-    }
-
-    return display();
+    return displayMobileIcon();
 }
