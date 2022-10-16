@@ -36,7 +36,7 @@ export default function NavBar(props) {
         }
         else {
             return (
-                <div class="sticky top-0 z-50
+                <div class="hidden md:block sticky top-0 z-50
                      bg-white
                      text-black 
                      min-w-full p-4 pl-8 content-center">
@@ -53,7 +53,7 @@ export default function NavBar(props) {
                 <div class="md:hidden sticky top-0 z-50
                      bg-white
                      text-black 
-                     min-w-full p-4 pl-8 content-center">
+                     min-w-full p-4 content-center">
                     <MobileNavBar/>
                 </div>
             </div>
