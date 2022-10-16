@@ -38,32 +38,32 @@ export default function BookInfo() {
             <div class="bookInfo">
                 <img src={images.thumbnail} class="thumbNail" alt={images.altText + " Cover"}/>
 
-                <div className="audience infoType">
+                <div class="invisible md:visible audience infoType">
                     <p class="textDiv">AUDIENCE: {textDetails.audience}</p>
                     <hr className="introLine"/>
                 </div>
-                <div className="audience copy">
+                {/* <div class="sm:invisible md:visible audience copy">
                     <p class="textDiv">AUDIENCE: {textDetails.audience}</p>
                     <hr className="introLine"/>
-                </div>
+                </div> */}
 
-                <div className="type infoType">
+                <div className="invisible md:visible type infoType">
                     <hr className="introLine"/>
                     <p class="textDiv">TYPE: {textDetails.itemType}</p>
                 </div>
-                <div className="type copy">
+                {/* <div className="sm:invisible md:visible type copy">
                     <hr className="introLine"/>
                     <p class="textDiv">TYPE: {textDetails.itemType}</p>
-                </div>
+                </div> */}
 
-                <div className="client infoType">
+                <div className="invisible md:visible client infoType">
                     <p class="textDiv">CLIENT: {textDetails.client}</p>
                     <hr className="introLine"/>
                 </div>
-                <div className="client copy">
+                {/* <div className="sm:invisible md:visible client copy">
                     <p class="textDiv">CLIENT: {textDetails.client}</p>
                     <hr className="introLine"/>
-                </div>
+                </div> */}
             </div>
         );
     }
@@ -113,9 +113,9 @@ export default function BookInfo() {
 
     function descriptionProcess() {
         return (
-            <div className="descriptionProcess" style={{height: "fit-content", backgroundColor: `${colorCodes.lowerTriangle}`}}>
+            <div className="descriptionProcess" style={{backgroundColor: `${colorCodes.lowerTriangle}`}}>
                 
-                <div class="grid grid-col-1 md:grid-cols-4 mt-14 mb-10 relative" 
+                <div class="grid grid-col-1 md:grid-cols-4 mt-14 mb-20 relative" 
                     style={{marginLeft: "9%", flexWrap: "wrap"}}>
                     <div class="col-span-1 p-3 pt-0">
                         {showAward()}
@@ -127,7 +127,9 @@ export default function BookInfo() {
                         </p>
                     </div>
 
-                    <div class="cols-span-1 md:col-span-3 md:ml-16 sideways">
+                    <div class="cols-span-1 md:col-span-3 
+                                mt-8 md:mt-0 md:ml-16 
+                                sideways">
                         {displayProcess()}
                     </div>
                 </div>
@@ -141,7 +143,6 @@ export default function BookInfo() {
 
     function displayPage() {
         if (title === undefined || images === undefined) {
-            console.log(title + " " + images);
             return (
                 <div class="min-h-screen"> 
                     <NavBar show={true} displayType={"info"}/>
@@ -160,11 +161,13 @@ export default function BookInfo() {
                     {info()}
                     {itemTitle()}
                     {descriptionProcess()}
-                    <div className="processBox">
+                    <div class="invisible md:visible processBox">
                         <p className="processText">PROCESS</p>    
                     </div> 
                     {lowerTriangle()}
                 </div>
+
+
             </div>
         );
     }
