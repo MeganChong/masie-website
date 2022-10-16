@@ -1,49 +1,81 @@
 import React from 'react';
-// import blueSquare from '../../assests/ColorBox_Blue.jpg'
-// import purpleSquare from '../../assests/ColorBox_Purple.jpg'
-// import redSquare from '../../assests/ColorBox_Red.jpg'
-// import whiteSquare from '../../assests/ColorBox_White.jpg'
-// import yellowSquare from '../../assests/ColorBox_Yellow.jpg'
 
-// import header from '../../assests/Opening Screen.jpg';
+import hello from "../../assests/homepage/Homepg_Intro.jpg";
+import whiteSquare from '../../assests/homepage/Homepg_White.jpg'
+import blueSquare from '../../assests/homepage/Homepg_Blue.jpg'
+
+import phone from "../../assests/homepage/Homepg_Rebranding.gif";
+
 import NavBar from '../NavBars/NavBar';
 import HeaderCarousel from './HeaderCarousel';
 
-import {photoInfo} from '../PhotoInfo';
 import {formatCell} from '../FormatCell';
 
 export default function Homepage() {
-    // const photoMap = photoInfo();
-    const source = "homeSrc";
+    const source = "homepage";
 
     return (
         <div>
-            {/* <img src={header} alt="opening screen"/> */}
             <HeaderCarousel/>
             
             <NavBar show={false} displayType={"homepage"}/>
 
-            {/* <div class="grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 min-h-screen bg-purple-300">
-                <img src={photoMap["introBox"]} alt="intro box" class="col-span-3"/>
-                {formatCell("flowerHead", "col-span-2 row-span-2", source)}
-                {formatCell("boxGif", "", source)}
+            {/* mobile version md+ hide */}
+            <div class="md:hidden grid grid-cols-3 min-h-screen bg-purple-300">
+                <img src={hello} alt="intro box" class="col-span-3"/>
+                {formatCell("Lessons Learned Catalog", "col-span-2 row-span-2", source)}
+                {formatCell("The Essential 25", "", source)}
+
+                {formatCell("Five Practices for\n Equity-Focused School Leadership", "", source)}
+                {formatCell("Summer Catalog", "col-span-3", source)}
+
+                {formatCell("Giving Students a Say", "col-span-3 row-span-2", source)}
+                {formatCell("The Minimalist Teacher", "col-span-3 row-span-2", source)}
+                {formatCell("Japan Postcards", "col-span-3", source)}
+
+                
+                {formatCell("Happiness", "", source)}
+                {formatCell("Empower19", "", source)}
+                {formatCell("The Classroom Behavior Manual", "", source)}
+
+                {formatCell("'Be' Ad Series", "col-span-3", source)}
+
+
+
+                {formatCell("Math Fact Fluency", "col-span-2 row-span-2", source)}
+                <img src={phone} class="row-span-2" style={{height: "100%"}}/>
+                <div></div>
+                
+                {formatCell("Spring Sourcebook", "col-span-3", source)}
+            </div>
+
+            {/* normal version sm hide md+show */}
+            <div class="hidden md:grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 min-h-screen bg-purple-300">
+                <img src={hello} alt="intro box" class="col-span-3"/>
+                {formatCell("Lessons Learned Catalog", "col-span-2 row-span-2", source)}
+                {formatCell("The Essential 25", "", source)}
+
                 <img src={whiteSquare} alt="a white square"/>
-                {formatCell("summerGuide", "col-span-2", source)}
-                {formatCell("fivePractices", "", source)}
-                {formatCell("giveStudents", "col-span-2 row-span-2", source)}
-                {formatCell("minimalistGif", "col-span-2 row-span-2", source)}
-                {formatCell("membershipAd", "col-span-2", source)}
-                {formatCell("janCat", "", source)}
+                {formatCell("Summer Catalog", "col-span-2", source)}
+                {formatCell("Five Practices for\n Equity-Focused School Leadership", "", source)}
+
+                {formatCell("Giving Students a Say", "col-span-3 md:col-span-2 row-span-2", source)}
+                {formatCell("The Minimalist Teacher", "col-span-3 md:col-span-2 row-span-2", source)}
+                {formatCell("Japan Postcards", "col-span-2", source)}
+                {formatCell("The Classroom Behavior Manual", "", source)}
+                <img src={blueSquare} alt="a blue square" class="hidden md:block"/>
+
+                <img src={blueSquare} alt="a blue square" class="hidden md:block"/>
+                {formatCell("'Be' Ad Series", "col-span-3", source)}
+                {formatCell("Empower19", "", source)}
+
+                <img src={phone} class="row-span-2"/>
+
+                {formatCell("Spring Sourcebook", "col-span-2", source)}
+                {formatCell("Math Fact Fluency", "", source)}
                 <img src={blueSquare} alt="a blue square"/>
-                <img src={redSquare} alt="a red square"/>
-                {formatCell("kids", "col-span-3", source)}
-                <img src={purpleSquare} alt="a purple square"/>
-                {formatCell("phoneGif", "row-span-2", source)}
-                {formatCell("sourceBook", "col-span-2", source)}
-                {formatCell("noodles", "", source)}
-                <img src={yellowSquare} alt="a yellow square"/>
-                <img src={whiteSquare} alt="a white square"/>
-            </div> */}
+                {formatCell("Happiness", "", source)}
+            </div>
         </div>
     );
 }
