@@ -17,12 +17,14 @@ import {photoInfo} from '../../data/images';
 export default function BookInfo() {
     const data = useLocation();
     const allImages = photoInfo();
-    const [title, setTitle] = useState(data.state.title);
+    const [title, setTitle] = useState("");
     const [colorCodes, setColorCodes] = useState([]);
     const [textDetails, setTextDetails] = useState([]);
     const [images, setImages] = useState([]);
 
     useEffect(() => {
+        if (data === undefined || data.state === undefined || data.state.title === undefined)
+            return errorPage();
         setTitle(data.state.title);
     }, [data]);
 
@@ -141,16 +143,20 @@ export default function BookInfo() {
         );
     }
 
+    function errorPage() {
+        return (
+            <div class="min-h-screen bg-purple-300"> 
+                <NavBar show={true} displayType={"info"}/>
+                <h1 class="text-center text-lg" style={{lineHeight: "100vh"}}>
+                    Whoops! Much like my marbles, I seem to have lost this book! Please go back and try again
+                </h1>
+            </div>
+        );
+    }
+
     function displayPage() {
         if (title === undefined || images === undefined) {
-            return (
-                <div class="min-h-screen"> 
-                    <NavBar show={true} displayType={"info"}/>
-                    <h1 class="text-center" style={{lineHeight: "100vh"}}>
-                        Whoops! Much like my marbles, I seem to have lost this book! Please go back and try again
-                    </h1>
-                </div>
-            );
+            return errorPage();
         }
         return (
             <div className="parent">
