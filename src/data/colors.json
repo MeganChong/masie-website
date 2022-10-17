@@ -53,7 +53,7 @@
         "bottomBar": "#6AAEBA"
     },
 
-    "Social Emotional Learning and the Brain": {
+    "Social Emotional Learning\n and the Brain": {
         "upperTriangle": "#E0F1FF",
         "lowerTriangle": "#D4D848",
         "bottomBar": "#5D7A9C"
@@ -73,7 +73,7 @@
 
     "Rebranding": {
         "upperTriangle": "#BEE3DA",
-        "lowerTriangle": "#2D393D",
+        "lowerTriangle": "#D5D5D5",
         "bottomBar": "#E89BA5"
     },
 
@@ -151,8 +151,8 @@
 
     "Empower19": {
         "upperTriangle": "#FFF4F9",
-        "lowerTriangle": "#9A7FBA",
-        "bottomBar": "##FECF2F"
+        "lowerTriangle": "#A6e3eb",
+        "bottomBar": "#FECF2F"
     },
 
     "The Adaptive Leader": {

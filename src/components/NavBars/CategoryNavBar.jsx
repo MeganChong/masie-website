@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from '../../assests/old/MLogo3.png';
+import logo from '../../assests/Logo.png';
 import { createButton } from "./CreateButton";
 
 export default function CategoryNavBar() {
@@ -12,19 +12,19 @@ export default function CategoryNavBar() {
 
     useEffect(() => {
         if (type === "Books") {
-            setColor("#e0aefc");
+            setColor("#ffbf4");
             setBottomHeight("40%");
         }
         else if (type === "Marketing") {
-            setColor("#a2bcf5");
+            setColor("#f6dff");
             setBottomHeight("40%");
         }
         else if (type === "Events") {
-            setColor("#fff01c");
+            setColor("#fdc712");
             setBottomHeight("55%");
         }
         else if (type === "Personal") {
-            setColor("#ffcff9");
+            setColor("#bfedf8");
         }
         else {
             setColor("#d4ffd4");

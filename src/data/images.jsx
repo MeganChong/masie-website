@@ -114,6 +114,7 @@ import BookProcessMembership3 from "../assests/steps/Marketing/Membership/Market
 import BookThumbBook from "../assests/thumbnails/MarketingThumbnail_Book.png";
 import BookThumbBkgdBook from "../assests/thumbBkgd/MarketingThumbnailBkgd_Book.jpg";
 import BookProcessBook from "../assests/steps/Marketing/Book/MarketingProcess_Book.jpg";
+import BookProcessBook2 from "../assests/steps/Marketing/Book/MarketingProcess_Book2.jpg";
 
 import BookThumbProduct from "../assests/thumbnails/MarketingThumbnail_Product.png";
 import BookThumbBkgdProduct from "../assests/thumbBkgd/MarketingThumbnailBkgd_Product.jpg";
@@ -173,7 +174,7 @@ import SummerHomepage from "../assests/homepage/Homepg_Summer.jpg";
 import Empower19Homepage from "../assests/homepage/Homepg_Empower19.jpg";
 import HappinessHomepage from "../assests/homepage/Homepg_Happiness.jpg";
 import JapanHomepage from "../assests/homepage/Homepg_Japan.jpg";
-import RebrandingHomepage from "../assests/homepage/Homepg_Rebranding.gif";
+import RebrandingHomepage from "../assests/old/mobileGif.gif";
 
 export function photoInfo() {
     const LearningSteps = [BookProcessLearning];
@@ -196,7 +197,7 @@ export function photoInfo() {
     const TraumaSteps = [BookProcessTrauma, BookProcessTrauma2];
     const SummerSteps = [BookProcessSummer, BookProcessSummer2, BookProcessSummer3];
     const MembershipSteps = [BookProcessMembership, BookProcessMembership2, BookProcessMembership3];
-    const BookSteps = [BookProcessBook];
+    const BookSteps = [BookProcessBook, BookProcessBook2];
     const ProductSteps = [BookProcessProduct, BookProcessProduct2];
     const WhatsNewSteps = [BookProcessWhatsNew, BookProcessWhatsNew2];
     const RechargeSteps = [BookProcessRecharge, BookProcessRecharge2, BookProcessRecharge3];
@@ -276,7 +277,7 @@ export function photoInfo() {
             process: FiveSteps,
             homepage: FiveHomepage
         },
-        "Social Emotional Learning and the Brain": {
+        "Social Emotional Learning\n and the Brain": {
             thumbnail: BookThumbSel,
             thumbnailWithBackground: BookThumbBkgdSel,
             backgroundColor: "#E0F1FE",
