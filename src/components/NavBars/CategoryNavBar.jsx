@@ -28,6 +28,7 @@ export default function CategoryNavBar() {
         }
         else {
             setColor("#d4ffd4");
+            setBottomHeight("55%");
         }
     }, [type]);
 
