@@ -4,8 +4,6 @@ import hello from "../../assests/homepage/Homepg_Intro.jpg";
 import whiteSquare from '../../assests/homepage/Homepg_White.jpg'
 import blueSquare from '../../assests/homepage/Homepg_Blue.jpg'
 
-import phone from "../../assests/homepage/Homepg_Rebranding.gif";
-
 import NavBar from '../NavBars/NavBar';
 import HeaderCarousel from './HeaderCarousel';
 
@@ -43,7 +41,7 @@ export default function Homepage() {
 
 
                 {formatCell("Math Fact Fluency", "col-span-2 row-span-2", source)}
-                <img src={phone} class="row-span-2" style={{height: "100%"}}/>
+                {formatCell("Rebranding", "row-span-2", source)}
                 <div></div>
                 
                 {formatCell("Spring Sourcebook", "col-span-3", source)}
@@ -59,17 +57,17 @@ export default function Homepage() {
                 {formatCell("Summer Catalog", "col-span-2", source)}
                 {formatCell("Five Practices for\n Equity-Focused School Leadership", "", source)}
 
-                {formatCell("Giving Students a Say", "col-span-3 md:col-span-2 row-span-2", source)}
-                {formatCell("The Minimalist Teacher", "col-span-3 md:col-span-2 row-span-2", source)}
+                {formatCell("Giving Students a Say", "col-span-2 row-span-2", source)}
+                {formatCell("The Minimalist Teacher", "col-span-2 row-span-2", source)}
                 {formatCell("Japan Postcards", "col-span-2", source)}
                 {formatCell("The Classroom Behavior Manual", "", source)}
-                <img src={blueSquare} alt="a blue square" class="hidden md:block"/>
+                <img src={blueSquare} alt="a blue square"/>
 
-                <img src={blueSquare} alt="a blue square" class="hidden md:block"/>
+                <img src={blueSquare} alt="a blue square"/>
                 {formatCell("'Be' Ad Series", "col-span-3", source)}
                 {formatCell("Empower19", "", source)}
 
-                <img src={phone} class="row-span-2"/>
+                {formatCell("Rebranding", "row-span-2", source)}
 
                 {formatCell("Spring Sourcebook", "col-span-2", source)}
                 {formatCell("Math Fact Fluency", "", source)}

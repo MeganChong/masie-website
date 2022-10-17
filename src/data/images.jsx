@@ -81,6 +81,12 @@ import BookProcessASCD from "../assests/steps/Marketing/ASCD/MarketingProcess_AS
 import BookProcessASCD2 from "../assests/steps/Marketing/ASCD/MarketingProcess_ASCD2.jpg";
 import BookProcessASCD3 from "../assests/steps/Marketing/ASCD/MarketingProcess_ASCD3.jpg";
 
+import BookThumbRebranding from "../assests/thumbnails/MarketingThumbnail_Rebranding.png";
+import BookThumbBkgdRebranding from "../assests/thumbBkgd/MarketingThumbnailBkgd_Rebranding.jpg";
+import BookProcessRebranding from "../assests/steps/Marketing/Rebranding/MarketingProcess_Rebranding.jpg";
+import BookProcessRebranding2 from "../assests/steps/Marketing/Rebranding/MarketingProcess_Rebranding2.jpg";
+import BookProcessRebranding3 from "../assests/steps/Marketing/Rebranding/MarketingProcess_Rebranding3.jpg";
+
 import BookThumbSpring from "../assests/thumbnails/MarketingThumbnail_Spring.png";
 import BookThumbBkgdSpring from "../assests/thumbBkgd/MarketingThumbnailBkgd_Spring.jpg";
 import BookProcessSpring from "../assests/steps/Marketing/Spring/MarketingProcess_Spring.jpg";
@@ -166,6 +172,7 @@ import SummerHomepage from "../assests/homepage/Homepg_Summer.jpg";
 import Empower19Homepage from "../assests/homepage/Homepg_Empower19.jpg";
 import HappinessHomepage from "../assests/homepage/Homepg_Happiness.jpg";
 import JapanHomepage from "../assests/homepage/Homepg_Japan.jpg";
+import RebrandingHomepage from "../assests/homepage/Homepg_Rebranding.gif";
 
 export function photoInfo() {
     const LearningSteps = [BookProcessLearning];
@@ -197,6 +204,7 @@ export function photoInfo() {
     const Empower17Steps = [BookProcessEmpower17, BookProcessEmpower172, BookProcessEmpower173];
     const HappinessSteps = [BookProcessHappiness, BookProcessHappiness2, BookProcessHappiness3];
     const JapanSteps = [BookProcessJapan, BookProcessJapan2, BookProcessJapan3];
+    const RebrandingSteps = [BookProcessRebranding, BookProcessRebranding2, BookProcessRebranding3];
     
     const photoMap = {
         "Learning in a New Language": {
@@ -414,6 +422,14 @@ export function photoInfo() {
             altText: "Japan Postcards",
             process: JapanSteps,
             homepage: JapanHomepage
+        },
+        "Rebranding": {
+            thumbnail: BookThumbRebranding,
+            thumbnailWithBackground: BookThumbBkgdRebranding,
+            backgroundColor: "#bee3db",
+            altText: "Rebranding",
+            process: RebrandingSteps,
+            homepage: RebrandingHomepage
         },
     };
     return photoMap;
