@@ -43,6 +43,14 @@
   width: 2%;
 }
 
+::-webkit-scrollbar:vertical {
+  width: 2vh;
+}
+
 ::-webkit-scrollbar-thumb {
   background: rgb(255, 255, 255, 0.4);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgb(202, 183, 244);
 }
