@@ -64,6 +64,7 @@ import BookProcessArias3 from "../assests/steps/Books/Arias/BookProcess_Arias3.j
 import BookThumbAuthor from "../assests/thumbnails/MarketingThumbnail_Author.png";
 import BookThumbBkgdAuthor from "../assests/thumbBkgd/MarketingThumbnailBkgd_Author.jpg";
 import BookProcessAuthor from "../assests/steps/Marketing/Author/MarketingProcess_Author.jpg";
+import BookProcessAuthor2 from "../assests/steps/Marketing/Author/MarketingProcess_Author2.gif";
 
 import BookThumbBeAd from "../assests/thumbnails/MarketingThumbnail_BeAd.png";
 import BookThumbBkgdBeAd from "../assests/thumbBkgd/MarketingThumbnailBkgd_BeAd.jpg";
@@ -187,7 +188,7 @@ export function photoInfo() {
     const SelSteps = [BookProcessSel, BookProcessSel2, BookProcessSel3];
     const GivingSteps = [BookProcessGiving, BookProcessGiving2];
     const AriasSteps = [BookProcessArias, BookProcessArias2, BookProcessArias3];
-    const AuthorSteps = [BookProcessAuthor];
+    const AuthorSteps = [BookProcessAuthor, BookProcessAuthor2];
     const BeAdSteps = [BookProcessBeAd, BookProcessBeAd2];
     const LessonsSteps = [BookProcessLessons, BookProcessLessons2];
     const ASCDSteps = [BookProcessASCD, BookProcessASCD2, BookProcessASCD3];
