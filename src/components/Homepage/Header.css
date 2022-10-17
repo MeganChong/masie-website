@@ -2,35 +2,33 @@
     height: 100vh;
 }
 
-.slide, .slideSm {
+.slide {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
 
-    line-height: 100vh;
-    text-align: center;
-    letter-spacing: 60px;
-    margin: auto;
+    object-fit: cover;
+    top:0;
 
     position: absolute;
     animation: fadein 12s ease-in-out infinite;
 }
 
-@media (min-width: 768px) {
-    .md\:slideHorizontal {
-        font-size: 600%;
+/* if screen is < 1120 the image will be cut off */
+@media (max-width: 1120px) {
+    .slide {
+        object-fit: contain;
     }
 }
 
+/* small screens */
 @media (max-width: 767px) {
-    .slideSm {
-        text-orientation: upright;
-        writing-mode: vertical-rl;
-        font-size: x-large;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .header {
+        height: 30vh;
+    }
+    .slide {
+        height: auto;
+        width: auto;
     }
 }
 
@@ -67,8 +65,9 @@
 
     text-align: center;
     font-size: 70px;
+    color: white;
 
-    animation: jump 12s ease-in-out 0s infinite;
+    animation: jump 12s ease-in-out 9s infinite;
 }
 
 @keyframes jump {
