@@ -1,9 +1,6 @@
 {
   "name": "alfredo_sauce",
   "version": "0.1.0",
-  "engines": {
-    "node": "18.x"
-  },
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.5",
