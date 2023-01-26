@@ -5,7 +5,7 @@ import ScrollToTop from './components/ScrollToTop';
 import About from './components/CategoriesPage/About';
 import './App.css';
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -14,15 +14,15 @@ function App() {
         
         <ScrollToTop>
 
-          <Switch>
-            <Route path="/" exact component={() => <HomepageGrid/>} />
-            <Route path="/about" exact component={() => <About/>} />
-            <Route path="/books" exact component={() => <DisplayTypes/>} />
-            <Route path="/marketing" exact component={() => <DisplayTypes/>} />
-            <Route path="/events" exact component={() => <DisplayTypes/>} />
-            <Route path="/personal" exact component={() => <DisplayTypes/>} />
-            <Route path="/:title" exact component={() => <BookInfo/>} />
-          </Switch>
+          <Routes>
+            <Route path="/" exact element={() => <HomepageGrid/>} />
+            <Route path="/about" exact element={() => <About/>} />
+            <Route path="/books" exact element={() => <DisplayTypes/>} />
+            <Route path="/marketing" exact element={() => <DisplayTypes/>} />
+            <Route path="/events" exact element={() => <DisplayTypes/>} />
+            <Route path="/personal" exact element={() => <DisplayTypes/>} />
+            <Route path="/:title" exact element={() => <BookInfo/>} />
+          </Routes>
 
 
           <div class="text-center m-5 object-bottom">
