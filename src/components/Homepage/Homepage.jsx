@@ -48,7 +48,7 @@ export default function Homepage() {
             </div>
 
             {/* normal version sm hide md+show */}
-            <div class="hidden md:grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 min-h-screen bg-purple-300">
+            <div class="hidden md:grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 min-h-screen gap-0 bg-purple-300">
                 <img src={hello} alt="intro box" class="col-span-3"/>
                 {formatCell("Lessons Learned Catalog", "col-span-2 row-span-2", source)}
                 {formatCell("The Essential 25", "", source)}
