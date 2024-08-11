@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../../assests/Logo.png';
+import darkLogo from '../../assests/LogoDark.png';
+import lightLogo from '../../assests/LogoWhite.png';
 import { createButton } from "./CreateButton";
 import Color from 'color'
 
@@ -14,7 +15,7 @@ export default function InfoPageNavBar(props) {
         return (
             <div class={`hidden md:flex md:flex-1 justify-center items-center z-20 absolute min-w-full ${textColor}`}>
                 <Link to="/" style={{flexGrow: 4, height: "5vw"}}>
-                    <img src={logo} alt="The logo - click to go to homepage" style={{marginTop: "5vh", marginLeft: "5vh"}}/>
+                    <img src={isBkgLight ? darkLogo : lightLogo} alt="The logo - click to go to homepage" style={{marginTop: "5vh", marginLeft: "5vh"}}/>
                 </Link>
                 <div className="mr-10 mt-5">
                     {createButton("books", "Books", buttonStyle, fontStyle)}
