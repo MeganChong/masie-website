@@ -35,6 +35,10 @@ module.exports = {
           lineHeight: '35px',
         }]
       },
+      colors: {
+	'light': '#ffffff',
+	'dark': '#092835',
+      }
     },
   },
   variants: {

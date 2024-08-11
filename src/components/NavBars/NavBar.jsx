@@ -32,7 +32,7 @@ export default function NavBar(props) {
             return <CategoryNavBar/>;
         }
         else if (props.displayType === "info") {
-            return <InfoPageNavBar/>;
+            return <InfoPageNavBar backgroundColor={props.backgroundColor}/>;
         }
         else {
             return (

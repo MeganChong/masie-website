@@ -164,7 +164,7 @@ export default function BookInfo() {
         }
         return (
             <div className="parent">
-                <NavBar show={true} displayType={"info"} class="z-20"/>
+                <NavBar show={true} displayType={"info"} backgroundColor={`${colorCodes.upperTriangle}`} class="z-20"/>
 
                 <div style={{height: "203vh", minHeight: "fit-content", position: "relative"}}>
                     {upperTriangle()}
