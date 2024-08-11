@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import {useLocation} from "react-router";
 import './BookInfo.css';
 import NavBar from "../NavBars/NavBar";
@@ -21,6 +21,7 @@ export default function BookInfo() {
     const [colorCodes, setColorCodes] = useState([]);
     const [textDetails, setTextDetails] = useState([]);
     const [images, setImages] = useState([]);
+    const processDivRef = useRef();
 
     useEffect(() => {
         if (data === undefined || data.state === undefined || data.state.title === undefined)
@@ -32,7 +33,10 @@ export default function BookInfo() {
         setColorCodes(colors[title]);
         setTextDetails(bookText[title]);
         setImages(allImages[title]);
-    }, [title]);
+	if (processDivRef.current) {
+		processDivRef.current.scrollLeft = 0;
+   	} 
+   }, [title]);
 
     // each text div has a copy to get the color blend effect 
     function info() {
@@ -129,7 +133,7 @@ export default function BookInfo() {
                         </p>
                     </div>
 
-                    <div class="cols-span-1 md:col-span-3 
+                    <div ref={processDivRef} class="cols-span-1 md:col-span-3 
                                 mt-8 md:mt-0 md:ml-16 
                                 sideways">
                         {displayProcess()}
