@@ -8,6 +8,8 @@ import colors from "../../data/colors.json";
 import bookText from "../../data/bookText.json";
 import {photoInfo} from '../../data/images';
 
+import Color from 'color';
+
 //to read from a json file:
 //import data from './data/data.json
 //use .map() to iterate data
@@ -40,21 +42,26 @@ export default function BookInfo() {
 
     // each text div has a copy to get the color blend effect 
     function info() {
-        return (
+	const upperTriText = Color(colorCodes.upperTriangle).isLight() ? "text-dark" : "text-light";
+        const bottomTriText = Color(colorCodes.lowerTriangle).isLight() ? "text-dark" : "text-light";
+	const upperBg = Color(colorCodes.upperTriangle).isLight() ? "bg-dark" : "bg-light";
+	const bottomBg = Color(colorCodes.lowerTriangle).isLight() ? "bg-dark" : "bg-light";	
+
+	return (
             <div class="bookInfo">
                 <img src={images.thumbnail} class="thumbNail" alt={images.altText + " Cover"}/>
 
-                <div class="invisible md:visible audience infoType">
+                <div class={`invisible md:visible audience ${bottomTriText}`}>
                     <p class="textDiv">AUDIENCE: {textDetails.audience}</p>
-                    <hr className="introLine"/>
+                    <hr className={`introLine ${bottomBg}`}/>
                 </div>
                 {/* <div class="sm:invisible md:visible audience copy">
                     <p class="textDiv">AUDIENCE: {textDetails.audience}</p>
                     <hr className="introLine"/>
                 </div> */}
 
-                <div className="invisible md:visible type infoType">
-                    <hr className="introLine"/>
+                <div className={`invisible md:visible type ${bottomTriText}`}>
+                    <hr className={`introLine ${bottomBg}`}/>
                     <p class="textDiv">TYPE: {textDetails.itemType}</p>
                 </div>
                 {/* <div className="sm:invisible md:visible type copy">
@@ -62,9 +69,9 @@ export default function BookInfo() {
                     <p class="textDiv">TYPE: {textDetails.itemType}</p>
                 </div> */}
 
-                <div className="invisible md:visible client infoType">
+                <div className={`invisible md:visible client ${upperTriText}`}>
                     <p class="textDiv">CLIENT: {textDetails.client}</p>
-                    <hr className="introLine"/>
+                    <hr className={`introLine ${upperBg}`}/>
                 </div>
                 {/* <div className="sm:invisible md:visible client copy">
                     <p class="textDiv">CLIENT: {textDetails.client}</p>
