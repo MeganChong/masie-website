@@ -61,7 +61,7 @@ export default function CheckOutMoreCarousel(props) {
     function display() {
         getRandomImages();
         return (
-            <div style={{height: "fit-content"}}>
+            <div className="h-fit">
                 <p class="text-xl bg-white pt-5" style={{height: "16vh", lineHeight: "16vh", textAlign: "center", letterSpacing: "5px", alignSelf: "center"}}>
                     CHECK OUT MORE
                 </p>

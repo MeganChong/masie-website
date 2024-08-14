@@ -1,5 +1,5 @@
 import HomepageGrid from './components/Homepage/Homepage';
-import BookInfo from './components/InteriorPage/BookInfo';
+import InteriorPage from './components/InteriorPage/InteriorPage';
 import DisplayTypes from './components/CategoriesPage/DisplayType';
 import ScrollToTop from './components/ScrollToTop';
 import About from './components/CategoriesPage/About';
@@ -21,7 +21,7 @@ function App() {
             <Route path="/marketing" exact component={() => <DisplayTypes/>} />
             <Route path="/events" exact component={() => <DisplayTypes/>} />
             <Route path="/personal" exact component={() => <DisplayTypes/>} />
-            <Route path="/:title" exact component={() => <BookInfo/>} />
+            <Route path="/:title" exact component={() => <InteriorPage/>} />
           </Switch>
 
 
