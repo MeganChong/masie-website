@@ -6,7 +6,7 @@ import ErrorPage from "./ErrorPage";
 
 export default function InteriorPage() {
 	const data = useLocation();
-	const [title, setTitle] = useState(data.state.title);
+	const [title, setTitle] = useState("");
 
 	useEffect(() => {
         	if (data === undefined || data.state === undefined || data.state.title === undefined) {
