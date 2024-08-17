@@ -1,7 +1,7 @@
 {
     "Books": [
         "Learning in a New Language", 
-        "Navigating the Principalship", 
+        "How to Teach AI", 
         "The Minimalist Teacher",
         "Math Fact Fluency",
         "The Classroom Behavior Manual",
@@ -33,7 +33,9 @@
         "Recharge & Reconnect",
         "Empower19",
         "The Adaptive Leader",
-        "Empower17"
+        "Empower17",
+	"Annual Conference 2023",
+	"Witsby Booth"
     ],
 
     "Personal": [

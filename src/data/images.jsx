@@ -2,10 +2,11 @@ import BookThumbLearning from "../assests/thumbnails/BookThumbnail_Learning.png"
 import BookThumbBkgdLearning from "../assests/thumbBkgd/BookThumbnailBkgd_Learning.jpg";
 import BookProcessLearning from "../assests/steps/Books/Learning/BookProcess_Learning.jpg";
 
-import BookThumbNavigating from "../assests/thumbnails/BookThumbnail_Navigating.png";
-import BookThumbBkgdNavigating from "../assests/thumbBkgd/BookThumbnailBkgd_Navigating.jpg";
-import BookProcessNavigating from "../assests/steps/Books/Navigating/BookProcess_Navigating.jpg";
-import BookProcessNavigating2 from "../assests/steps/Books/Navigating/BookProcess_Navigating2.jpg";
+import BookThumbAI from "../assests/thumbnails/BookThumbnail_AI.png";
+import BookThumbBkgdAI from "../assests/thumbBkgd/BookThumbnailBkgd_AI.jpg";
+import BookProcessAI from "../assests/steps/Books/AI/BookProcess_AI.jpg";
+import BookProcessAI2 from "../assests/steps/Books/AI/BookProcess_AI2.jpg";
+import BookProcessAI3 from "../assests/steps/Books/AI/BookProcess_AI3.jpg";
 
 import BookThumbMinimalist from "../assests/thumbnails/BookThumbnail_Minimalist.png";
 import BookThumbBkgdMinimalist from "../assests/thumbBkgd/BookThumbnailBkgd_Minimalist.jpg";
@@ -149,6 +150,18 @@ import BookProcessEmpower17 from "../assests/steps/Events/Empower17/EventProcess
 import BookProcessEmpower172 from "../assests/steps/Events/Empower17/EventProcess_Empower172.jpg";
 import BookProcessEmpower173 from "../assests/steps/Events/Empower17/EventProcess_Empower173.jpg";
 
+import BookThumbAC23 from "../assests/thumbnails/EventThumbnail_AC23.png";
+import BookThumbBkgdAC23 from "../assests/thumbBkgd/EventThumbnailBkgd_AC23.jpg";
+import BookProcessAC23 from "../assests/steps/Events/AC23/EventProcess_AC23.jpg";
+import BookProcessAC232 from "../assests/steps/Events/AC23/EventProcess_AC232.jpg";
+import BookProcessAC233 from "../assests/steps/Events/AC23/EventProcess_AC233.jpg";
+
+import BookThumbWitsby from "../assests/thumbnails/EventThumbnail_Witsby.png";
+import BookThumbBkgdWitsby from "../assests/thumbBkgd/EventThumbnailBkgd_Witsby.jpg";
+import BookProcessWitsby from "../assests/steps/Events/Witsby/EventProcess_Witsby.jpg";
+import BookProcessWitsby2 from "../assests/steps/Events/Witsby/EventProcess_Witsby2.jpg";
+import BookProcessWitsby3 from "../assests/steps/Events/Witsby/EventProcess_Witsby3.jpg";
+
 import BookThumbHappiness from "../assests/thumbnails/PersonalThumbnail_Happiness.png";
 import BookThumbBkgdHappiness from "../assests/thumbBkgd/PersonalThumbnailBkgd_Happiness.jpg";
 import BookProcessHappiness from "../assests/steps/Personal/Happiness/PersonalProcess_Happiness.jpg";
@@ -174,11 +187,11 @@ import SummerHomepage from "../assests/homepage/Homepg_Summer.jpg";
 import Empower19Homepage from "../assests/homepage/Homepg_Empower19.jpg";
 import HappinessHomepage from "../assests/homepage/Homepg_Happiness.jpg";
 import JapanHomepage from "../assests/homepage/Homepg_Japan.jpg";
-import RebrandingHomepage from "../assests/old/mobileGif.gif";
+import RebrandingHomepage from "../assests/homepage/Homepg_Rebranding.gif";
 
 export function photoInfo() {
     const LearningSteps = [BookProcessLearning];
-    const NavigatingSteps = [BookProcessNavigating, BookProcessNavigating2];
+    const AISteps = [BookProcessAI, BookProcessAI2, BookProcessAI3];
     const MinimalistSteps = [BookProcessMinimalist, BookProcessMinimalist2, BookProcessMinimalist3];
     const MathSteps = [BookProcessMath, BookProcessMath2];
     const ClassroomSteps = [BookProcessClassroom, BookProcessClassroom2];
@@ -202,6 +215,8 @@ export function photoInfo() {
     const WhatsNewSteps = [BookProcessWhatsNew, BookProcessWhatsNew2];
     const RechargeSteps = [BookProcessRecharge, BookProcessRecharge2, BookProcessRecharge3];
     const Empower19Steps = [BookProcessEmpower19, BookProcessEmpower192, BookProcessEmpower193];
+    const AC23Steps = [BookProcessAC23, BookProcessAC232, BookProcessAC233];
+    const WitsbySteps = [BookProcessWitsby, BookProcessWitsby2, BookProcessWitsby3];
     const AdaptiveSteps = [BookProcessAdaptive, BookProcessAdaptive2];
     const Empower17Steps = [BookProcessEmpower17, BookProcessEmpower172, BookProcessEmpower173];
     const HappinessSteps = [BookProcessHappiness, BookProcessHappiness2, BookProcessHappiness3];
@@ -216,12 +231,12 @@ export function photoInfo() {
             altText: "Learning in a New Language",
             process: LearningSteps,
         },
-        "Navigating the Principalship": {
-            thumbnail: BookThumbNavigating,
-            thumbnailWithBackground: BookThumbBkgdNavigating,
-            backgroundColor: "#C9DBFE",
-            altText: "Navigating the Principalship",
-            process: NavigatingSteps,
+        "How to Teach AI": {
+            thumbnail: BookThumbAI,
+            thumbnailWithBackground: BookThumbBkgdAI,
+            backgroundColor: "#103d81",
+            altText: "How to Teach AI",
+            process: AISteps,
         },
         "The Minimalist Teacher": {
             thumbnail: BookThumbMinimalist,
@@ -408,6 +423,20 @@ export function photoInfo() {
             backgroundColor: "#91D0C0",
             altText: "The Adaptive Leader",
             process: AdaptiveSteps,
+        },
+        "Annual Conference 2023": {
+            thumbnail: BookThumbAC23,
+            thumbnailWithBackground: BookThumbBkgdAC23,
+            backgroundColor: "#9b7ba2",
+            altText: "Annual Conference",
+            process: AC23Steps,
+        },
+        "Witsby Booth": {
+            thumbnail: BookThumbWitsby,
+            thumbnailWithBackground: BookThumbBkgdWitsby,
+            backgroundColor: "#75c4b1",
+            altText: "Witsby Booth",
+            process: WitsbySteps,
         },
         "Happiness": {
             thumbnail: BookThumbHappiness,
