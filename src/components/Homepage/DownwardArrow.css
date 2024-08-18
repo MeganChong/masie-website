@@ -1,0 +1,19 @@
+.fadeArrowIn {
+	opacity: 0;
+	animation: fade-in 9s ease-in 4s infinite;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}

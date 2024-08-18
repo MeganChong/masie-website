@@ -5,7 +5,8 @@ import whiteSquare from '../../assests/homepage/Homepg_White.jpg'
 import blueSquare from '../../assests/homepage/Homepg_Blue.jpg'
 
 import NavBar from '../NavBars/NavBar';
-import HeaderCarousel from './HeaderCarousel';
+import IntroVideo from "../../assests/homepage/header/IntroVideo.mp4";
+import "./DownwardArrow.css";
 
 import {formatCell} from '../FormatCell';
 
@@ -69,8 +70,13 @@ export default function Homepage() {
 
     return (
         <div>
-            <HeaderCarousel/>
-            
+	    <div>
+            	<video autoPlay muted loop src={IntroVideo}/>
+	    	<div className="fadeArrowIn absolute top-[90vh] min-w-full">
+			<p className="text-white text-7xl text-center animate-bounce">&#xFE40;</p>
+		</div>
+	    </div>            
+
             <NavBar show={false} displayType={"homepage"}/>
 
             {/* mobile version md+ hide */}

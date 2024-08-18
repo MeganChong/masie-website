@@ -43,8 +43,8 @@ export default function CategoryNavBar() {
 
     function displayCategoryNavBar() {
         return (
-            <div class="hidden md:flex md:flex-1 p-6"
-                style={{width: "18vw", minWidth: "fit-content", height:"100%", flexDirection: "column", alignItems: "flex-start", backgroundColor: `${color}`}}>
+            <div class="hidden md:flex md:flex-1 p-6 min-h-full"
+                style={{width: "18vw", minWidth: "fit-content", flexDirection: "column", alignItems: "flex-start", backgroundColor: `${color}`}}>
                 <Link to="/" style={{flexGrow: 1, height: "3vh"}}>
                     <img src={logo} alt="The logo - click to go to homepage" />
                 </Link>
