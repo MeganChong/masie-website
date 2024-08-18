@@ -72,7 +72,7 @@ export default function Homepage() {
         <div>
 	    <div>
             	<video autoPlay muted loop src={IntroVideo}/>
-	    	<div className="fadeArrowIn absolute top-[90vh] min-w-full">
+	    	<div className="invisible lg:visible fadeArrowIn absolute top-[90%] min-w-full">
 			<p className="text-white text-7xl text-center animate-bounce">&#xFE40;</p>
 		</div>
 	    </div>            
