@@ -41,7 +41,7 @@ export default function CategoryNavBar() {
     function getCategoryNavBar() {
 	return <div className={type==="About" ? "bg-brandPurple text-dark" : "bg-dark text-light"}> 
 	   <div className="hidden md:flex md:flex-1 flex-col min-h-screen">
-		<Link to="/" className="w-[25%] mb-[30%] mt-7 ml-8 mr-9">
+		<Link to="/" className="w-[23%] mb-[30%] mt-7 ml-8 mr-9">
 			{ (type==="About")
 				? <img src={DarkLogo}/> 
         			: <img src={WhiteLogo}/> 

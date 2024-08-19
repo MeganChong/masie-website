@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../../assests/LogoDark.png';
 import InfoPageNavBar from "./InfoPageNavBar";
 import CategoryNavBar from "./CategoryNavBar";
 import MobileNavBar from "./MobileNavBar";

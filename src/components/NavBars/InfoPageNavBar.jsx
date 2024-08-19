@@ -1,23 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import darkLogo from '../../assests/LogoDark.png';
-import lightLogo from '../../assests/LogoWhite.png';
+import {default as DarkLogo} from '../../assests/LogoDark.svg';
+import {default as LightLogo} from '../../assests/LogoWhite.svg';
 import { createButton } from "./CreateButton";
 import Color from 'color'
 
 export default function InfoPageNavBar(props) {
-    const buttonStyle = "flex-1 text-center m-3 mt-14";
+    const buttonStyle = "flex-1 text-center m-3";
     const fontStyle = {fontSize: "12px", letterSpacing: "6px"};
     const isBkgLight = props.backgroundColor != 'undefined' ? Color(props.backgroundColor).isLight() : false;
     const textColor = isBkgLight ? "text-dark" : "text-light";   
 
     function displayInfoBar() {
         return (
-            <div class={`hidden md:flex md:flex-1 justify-center items-center z-20 absolute min-w-full ${textColor}`}>
-                <Link to="/" style={{flexGrow: 4, height: "5vw"}}>
-                    <img src={isBkgLight ? darkLogo : lightLogo} alt="The logo - click to go to homepage" style={{marginTop: "5vh", marginLeft: "5vh"}}/>
+            <div class={`hidden md:flex md:flex-1 p-3 justify-items-end z-20 absolute min-w-full ${textColor}`}>
+                <Link to="/" className="w-[4.5%] mt-7 ml-8">
+                    <img src={isBkgLight ? DarkLogo : LightLogo} alt="The logo - click to go to homepage"/>
                 </Link>
-                <div className="mr-10 mt-5">
+		<div className="grow"/>
+                <div className="flex justify-items-end mt-2">
                     {createButton("books", "Books", buttonStyle, fontStyle)}
                     {createButton("marketing", "Marketing", buttonStyle, fontStyle)}
                     {createButton("events", "Events", buttonStyle, fontStyle)}

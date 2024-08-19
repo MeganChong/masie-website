@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../../assests/LogoDark.png';
+import {default as logo} from '../../assests/LogoDark.svg';
 import { createButton } from "./CreateButton";
 
 export default function HomepageNavBar(props) {
 	const buttonStyle = "flex-1 text-center bg-white";
-	
+
 	function displayHomeIcon() {
         	if (props.shouldShow)
             		return <Link to="/" class="bg-white"><img src={logo} alt="The logo - click to go to homepage"/></Link>;
