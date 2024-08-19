@@ -1,15 +1,15 @@
 import {Link} from 'react-router-dom';
 
-export function createButton(path, type, classStyle, buttonStyle) {
+export function createButton(path, type, classStyle, buttonStyle, extraStyles) {
     return (
         <Link
             to={{
                 pathname:`/${path}`,
                 state: {type: `${type}`}
             }}
-            class= {classStyle}
+            className= {classStyle}
         >
-            <button class="uppercase text-navBar hover:text-purple-500" style={buttonStyle}>{path}</button>
+            <button className={`uppercase text-navBar hover:text-scrollbarPurple ${extraStyles}`} style={buttonStyle}>{path}</button>
         </Link>
     );
 }

@@ -1,63 +1,62 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from '../../assests/LogoDark.png';
+import { default as WhiteLogo } from '../../assests/LogoWhite.svg';
+import { default as DarkLogo } from '../../assests/LogoDark.svg';
 import { createButton } from "./CreateButton";
 
 export default function CategoryNavBar() {
     const data = useLocation();
     const type = data.state.type;
-    const [color, setColor] = useState("");
-    const [bottomHeight, setBottomHeight] = useState("25%");
-    const buttonStyle = "flex-1 ml-2";
+    const [selectedButtonStyles, setSelectedButtonStyles] = useState("");
+    const buttonStyle = "";
+    const extraAboutHover = type==="About" ? "hover:text-light " : "";
 
     useEffect(() => {
         if (type === "Books") {
-            setColor("#ffbf4");
-            setBottomHeight("40%");
+            setSelectedButtonStyles("bg-brandPurple text-dark hover:text-dark");
         }
         else if (type === "Marketing") {
-            setColor("#f6dff");
-            setBottomHeight("40%");
+            setSelectedButtonStyles("bg-brandYellow text-dark hover:text-dark");
         }
         else if (type === "Events") {
-            setColor("#fdc712");
-            setBottomHeight("55%");
+            setSelectedButtonStyles("bg-brandRed text-light hover:text-light");
         }
         else if (type === "Personal") {
-            setColor("#bfedf8");
+            setSelectedButtonStyles("bg-brandBlue text-dark hover:text-dark");
         }
         else {
-            setColor("#d4ffd4");
-            setBottomHeight("55%");
+            setSelectedButtonStyles("bg-light text-dark hover:text-dark");
         }
     }, [type]);
 
     function button(path, item) {
         if (type === item) {
-            return createButton(path, item, buttonStyle, {fontWeight: "bolder", fontSize: "16px"});
+            return createButton(path, item, buttonStyle, {fontWeight: "bolder", fontSize: "16px"}, selectedButtonStyles + " py-4 pl-9 pr-9 text-left w-full");
         }
         else {
-            return createButton(path, item, buttonStyle, {});
+            return createButton(path, item, buttonStyle, {}, extraAboutHover + "p-6 pl-9 mr-9");
         }
     }
 
-    function displayCategoryNavBar() {
-        return (
-            <div class="hidden md:flex md:flex-1 p-6 min-h-full"
-                style={{width: "18vw", minWidth: "fit-content", flexDirection: "column", alignItems: "flex-start", backgroundColor: `${color}`}}>
-                <Link to="/" style={{flexGrow: 1, height: "3vh"}}>
-                    <img src={logo} alt="The logo - click to go to homepage" />
-                </Link>
-                <div style={{height: "11vh"}}></div>
-                {button("books", "Books")}
-                {button("marketing", "Marketing")}
-                {button("events", "Events")}
-                {button("personal", "Personal")}
-                {button("about", "About")}
-                <div style={{height: `${bottomHeight}`}}></div>
-            </div>
-        );
+    function getCategoryNavBar() {
+	return <div className={type==="About" ? "bg-brandPurple text-dark" : "bg-dark text-light"}> 
+	   <div className="hidden md:flex md:flex-1 flex-col min-h-screen">
+		<Link to="/" className="w-[25%] mb-[30%] mt-7 ml-8 mr-9">
+			{ (type==="About")
+				? <img src={DarkLogo}/> 
+        			: <img src={WhiteLogo}/> 
+                	}
+		</Link>
+		<div className="grow flex flex-col">
+			{button("books", "Books")}
+                	{button("marketing", "Marketing")}
+                	{button("events", "Events")}
+                	{button("personal", "Personal")}
+                	{button("about", "About")}
+		</div>
+	   </div>
+	</div>;
     }
 
-    return displayCategoryNavBar();
+    return getCategoryNavBar();
 }
