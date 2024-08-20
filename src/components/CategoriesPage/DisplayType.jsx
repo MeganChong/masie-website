@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { useLocation } from "react-router";
 import NavBar from "../NavBars/NavBar";
-import { formatCell } from "../FormatCell";
+import formatCell from "../FormatCell";
 import categories from "../../data/categories.json";
 
 export default function DisplayTypes() {

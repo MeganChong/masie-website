@@ -8,7 +8,7 @@ import NavBar from '../NavBars/NavBar';
 import IntroVideo from "../../assests/homepage/header/IntroVideo.mp4";
 import "./DownwardArrow.css";
 
-import {formatCell} from '../FormatCell';
+import formatCell from '../FormatCell';
 
 export default function Homepage() {
     const source = "homepage";
@@ -80,12 +80,12 @@ export default function Homepage() {
             <NavBar show={false} displayType={"homepage"}/>
 
             {/* mobile version md+ hide */}
-            <div class="md:hidden grid grid-cols-3 min-h-screen bg-purple-300">
+            <div class="md:hidden grid grid-cols-3 min-h-screen">
                {mobileHomepage()}
             </div>
 
             {/* normal version sm hide md+show */}
-            <div class="hidden md:grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 min-h-screen gap-0 bg-purple-300">
+            <div class="hidden md:grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 min-h-screen gap-0">
 		{desktopHomepage()}
             </div>
         </div>

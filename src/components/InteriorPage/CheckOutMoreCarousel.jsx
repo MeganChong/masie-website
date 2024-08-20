@@ -1,5 +1,5 @@
 import {photoInfo} from "../../data/images";
-import { formatCell } from "../FormatCell";
+import formatCell from "../FormatCell";
 import ScrollToTopButton from "../ScrollButton/ScrollToTopButton";
 
 export default function CheckOutMoreCarousel(props) {

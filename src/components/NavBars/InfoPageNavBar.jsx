@@ -8,7 +8,7 @@ import Color from 'color'
 export default function InfoPageNavBar(props) {
     const buttonStyle = "flex-1 text-center m-3";
     const fontStyle = {fontSize: "12px", letterSpacing: "6px"};
-    const isBkgLight = props.backgroundColor != 'undefined' ? Color(props.backgroundColor).isLight() : false;
+    const isBkgLight = props.backgroundColor !== 'undefined' ? Color(props.backgroundColor).isLight() : false;
     const textColor = isBkgLight ? "text-dark" : "text-light";   
 
     function displayInfoBar() {
