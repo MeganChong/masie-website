@@ -18,7 +18,7 @@ export default function InfoPageNavBar(props) {
                     <img src={isBkgLight ? DarkLogo : LightLogo} alt="The logo - click to go to homepage"/>
                 </Link>
 		<div className="grow"/>
-                <div className="flex justify-items-end mt-2 mr-3">
+                <div className="flex justify-items-end mt-2 mr-7">
                     {createButton("books", "Books", buttonStyle, fontStyle)}
                     {createButton("marketing", "Marketing", buttonStyle, fontStyle)}
                     {createButton("events", "Events", buttonStyle, fontStyle)}

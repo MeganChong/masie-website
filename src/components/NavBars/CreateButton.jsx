@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 
-export function createButton(path, type, classStyle, buttonStyle, extraStyles, hoverColor) {
-    const hoverText = hoverColor ?? "hover:text-scrollbarPurple";
+export function createButton(path, type, classStyle, buttonStyle, extraStyles, isHoverDifferentColor) {
+    const hoverText = isHoverDifferentColor ? "" : "hover:text-scrollbarPurple";
     return (
         <Link
             to={{

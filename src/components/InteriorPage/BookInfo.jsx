@@ -151,7 +151,7 @@ export default function BookInfo({title, carousel}) {
     }
 
     function showPopup() {
-	return <div className="bg-black bg-opacity-70 text-white min-h-screen z-50 fixed top-0 left-0 flex justify-center">
+	return <div className="bg-black bg-opacity-70 text-white min-h-screen min-w-[100vw] z-50 fixed top-0 left-0 flex justify-center">
 		<div className="invisible md:visible text-4xl absolute top-[3%] right-[3%]" onClick={() => setIsPopupOpen(false)}>X</div>
 		<div className="visible md:invisible text-4xl absolute top-[20%] right-[5%]" onClick={() => setIsPopupOpen(false)}>X</div>
 		<div className="text-6xl m-auto" onClick={() => updatePopupIndex(false)}>&lsaquo;</div>

@@ -3,8 +3,8 @@ import NavBar from "../NavBars/NavBar";
 
 import circles from "../../assests/about/Circles.png";
 import kitkat from "../../assests/about/About_KitKat.jpg";
-import shrimp from "../../assests/about/About_Food.jpg";
-import sleep from "../../assests/about/About_Sleep.jpg";
+import shrimp from "../../assests/about/About_NasiLemak.jpg";
+import sleep from "../../assests/about/About_Sleep2.jpg";
 import travel from "../../assests/about/AboutPhotos_Travel.png";
 import photography from "../../assests/about/AboutPhotos_Photo.png";
 import baking from "../../assests/about/AboutPhotos_Baking.png";
@@ -14,7 +14,7 @@ import email from "../../assests/about/AboutIcon_Email.png";
 export default function About() {
     function barWithWordsDiv(text) {
 	return <div className="w-full">
-		<hr className="bg-light h-3 w-7/12 mx-auto"/>
+		<hr className="bg-light h-3 w-8/12 mx-auto"/>
 		<div className="m-6 px-5 text-xl">{text}</div>
 	</div>;
     }
@@ -26,8 +26,8 @@ export default function About() {
 		<img src={circles} className="w-4/12 m-10 mb-20" alt="a row of 4 circles"/>
 		<div className="flex w-full items-start flex-col md:flex-row">
 			{barWithWordsDiv("10 years of experience")}
-			{barWithWordsDiv("print and digital designer")}
-			{barWithWordsDiv("ID, AI, PS, XD, AE")}
+			{barWithWordsDiv("print and digital")}
+			{barWithWordsDiv("ID, AI, PS, LR, XD, AE")}
 		</div>
 	</div>;
     }
@@ -43,10 +43,10 @@ export default function About() {
 		</div>
 		
 		<div className="max-w-full lg:max-w-[50%] flex flex-col gap-4 h-full max-h-fit md:max-h-[90vh]">
-			<img className="object-cover grow max-h-[66%]" src={kitkat} alt="graphic neon kitkats"/>
-			<div className="flex flex-row gap-4 max-w-full max-h-[33%] object-scale-down">
-				<img src={shrimp} className="w-6/12 object-scale-down" alt="A bowl of stir-fried shrimp"/>
-				<img src={sleep} className="w-6/12 object-scale-down" alt="A sleeping penguin figure"/>
+			<img className="object-cover md:grow h-[50vh] md:h-[66%]" src={kitkat} alt="graphic neon kitkats"/>
+			<div className="flex flex-row max-w-full h-[33%]">
+				<img src={shrimp} className="w-6/12 object-cover pr-2" alt="A bowl of stir-fried shrimp"/>
+				<img src={sleep} className="w-6/12 object-cover pl-2" alt="A sleeping penguin figure"/>
 			</div>
 		</div>
 	</div>;
@@ -73,8 +73,8 @@ export default function About() {
 		</div>
 
 		<div className="bg-light flex flex-col md:flex-row max-h-[45%] text-xl">
-			<div className="text-3xl tracking-[0.5rem] m-12 mt-16 ml-16">
-				Let's make some cool stuff together!
+			<div className="basis-11/12 text-3xl tracking-[0.5rem] m-12 mt-16 ml-16 text-center md:text-left">
+				Let's make something cool together!
 			</div>
 			
 			<div className="flex flex-row max-h-fit min-h-full max-w-full">
