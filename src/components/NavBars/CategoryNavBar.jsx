@@ -31,7 +31,7 @@ export default function CategoryNavBar() {
 
     function button(path, item) {
         if (type === item) {
-            return createButton(path, item, buttonStyle, {fontWeight: "bolder", fontSize: "16px"}, selectedButtonStyles + " py-4 pl-9 pr-9 text-left w-full");
+            return createButton(path, item, buttonStyle, {fontWeight: "bolder", fontSize: "16px"}, selectedButtonStyles + " py-4 pl-9 pr-9 text-left w-full", "");
         }
         else {
             return createButton(path, item, buttonStyle, {}, extraAboutHover + "p-6 pl-9 mr-9");
