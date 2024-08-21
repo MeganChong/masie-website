@@ -21,8 +21,8 @@ export default function About() {
 
     function topIntroSection() {
 	return <div className="bg-dark h-fit text-light text-center items-center flex flex-col p-10">
-		<div className="text-7xl tracking-[0.7rem] mt-32 mb-4">Masie</div>
-		<div className="text-3xl tracking-[0.7rem]">Senior Graphic Designer</div>
+		<div className="text-7xl tracking-[0.7rem] mt-32 mb-6 md:mb-4">Masie</div>
+		<div className="text-3xl leading-[2.85rem] tracking-[0.5rem]">Senior Graphic Designer</div>
 		<img src={circles} className="w-4/12 m-10 mb-20" alt="a row of 4 circles"/>
 		<div className="flex w-full items-start flex-col md:flex-row">
 			{barWithWordsDiv("10 years of experience")}
@@ -54,8 +54,8 @@ export default function About() {
 
     function bottomHobbiesContactSection() {
 	return <div className="bg-brandBlue min-h-screen flex flex-col">
-		<div className="text-center text-xl tracking-[0.3rem] max-h-[55%] m-20">
-			<div className="text-3xl m-8">My hobbies include</div>
+		<div className="text-center text-xl tracking-[0.2rem] max-h-[55%] m-20">
+			<div className="text-3xl m-8 leading-[2.6rem] tracking-[0.3rem]">My hobbies include</div>
 			<div className="flex flex-col md:flex-row w-full">
 				<div className="p-5">	
 					<img src={travel} className="w-9/12 m-auto" alt="A photo of a the red temple gate in Japan that I took"/>
@@ -73,7 +73,7 @@ export default function About() {
 		</div>
 
 		<div className="bg-light flex flex-col md:flex-row max-h-[45%] text-xl">
-			<div className="basis-11/12 text-3xl tracking-[0.5rem] m-12 mt-16 ml-16 text-center md:text-left">
+			<div className="basis-11/12 text-3xl leading-[2.5rem] tracking-[0.4rem] m-12 mt-16 ml-16 text-center md:text-left">
 				Let's make something cool together!
 			</div>
 			
