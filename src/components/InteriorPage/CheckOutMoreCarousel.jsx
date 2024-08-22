@@ -1,5 +1,5 @@
 import {photoInfo} from "../../data/images";
-import { formatCell } from "../FormatCell";
+import {Link} from 'react-router-dom';
 import ScrollToTopButton from "../ScrollButton/ScrollToTopButton";
 
 export default function CheckOutMoreCarousel(props) {
@@ -40,12 +40,19 @@ export default function CheckOutMoreCarousel(props) {
 
     function displayImage(index) {
         const item = images[keys[index]];
+	const itemTitle = keys[index];
         if (index < 0 || item === undefined)
             return;
         return (
             <div class="flex" style={{height: "100%", backgroundColor: `${item.backgroundColor}`, alignItems: "center"}}>
-                {/* <img src={item.thumbnailWithBackground} alt={item.altText + " Cover"} style={{objectFit: "contain"}}/> */}
-                {formatCell(keys[index], "" , "thumbnailWithBackground")}
+		<Link
+            		to={{
+                		pathname: "/" + itemTitle,
+                		state: {title: itemTitle}
+            		}}
+            		className="hover:opacity-50">
+            		<img src={images[itemTitle]["thumbnailWithBackground"]} alt={itemTitle + " Cover"} />
+        	</Link>
             </div>
         );
     }
@@ -61,7 +68,7 @@ export default function CheckOutMoreCarousel(props) {
     function display() {
         getRandomImages();
         return (
-            <div style={{height: "fit-content"}}>
+            <div className="h-fit">
                 <p class="text-xl bg-white pt-5" style={{height: "16vh", lineHeight: "16vh", textAlign: "center", letterSpacing: "5px", alignSelf: "center"}}>
                     CHECK OUT MORE
                 </p>

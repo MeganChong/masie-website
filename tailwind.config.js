@@ -35,6 +35,15 @@ module.exports = {
           lineHeight: '35px',
         }]
       },
+      colors: {
+	'light': '#ffffff',
+	'dark': '#092835',
+	'scrollbarPurple': '#cab7f4',
+	'brandPurple': '#BEACD7',
+	'brandYellow': '#F6C005',
+	'brandBlue': '#E1EBF6',
+	'brandRed': '#FD606E',
+      }
     },
   },
   variants: {

@@ -1,12 +1,14 @@
-import React, {useState, useEffect} from "react";
-import {useLocation} from "react-router";
+import React, {useState, useEffect, useRef} from "react";
 import './BookInfo.css';
 import NavBar from "../NavBars/NavBar";
+import ErrorPage from "./ErrorPage";
 import CheckOutMoreCarousel from "./CheckOutMoreCarousel";
 
 import colors from "../../data/colors.json";
 import bookText from "../../data/bookText.json";
 import {photoInfo} from '../../data/images';
+
+import Color from 'color';
 
 //to read from a json file:
 //import data from './data/data.json
@@ -14,58 +16,49 @@ import {photoInfo} from '../../data/images';
 //or .forEach()
 //***or data.projects[title]
 
-export default function BookInfo() {
-    const data = useLocation();
+export default function BookInfo({title, carousel}) {
     const allImages = photoInfo();
-    const [title, setTitle] = useState("");
     const [colorCodes, setColorCodes] = useState([]);
     const [textDetails, setTextDetails] = useState([]);
     const [images, setImages] = useState([]);
-
-    useEffect(() => {
-        if (data === undefined || data.state === undefined || data.state.title === undefined)
-            return errorPage();
-        setTitle(data.state.title);
-    }, [data]);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const [popupPhoto, setPopupPhoto] = useState([]);
+    const [popupPhotoIndex, setPopupPhotoIndex] = useState(0);
+    const processDivRef = useRef();
 
     useEffect(() => {
         setColorCodes(colors[title]);
         setTextDetails(bookText[title]);
         setImages(allImages[title]);
-    }, [title]);
+	if (processDivRef.current) {
+		processDivRef.current.scrollLeft = 0;
+   	} 
+   }, [title]);
 
-    // each text div has a copy to get the color blend effect 
     function info() {
-        return (
+	const upperTriText = Color(colorCodes.upperTriangle).isLight() ? "text-dark" : "text-light";
+        const bottomTriText = Color(colorCodes.lowerTriangle).isLight() ? "text-dark" : "text-light";
+	const upperBg = Color(colorCodes.upperTriangle).isLight() ? "bg-dark" : "bg-light";
+	const bottomBg = Color(colorCodes.lowerTriangle).isLight() ? "bg-dark" : "bg-light";	
+
+	return (
             <div class="bookInfo">
-                <img src={images.thumbnail} class="thumbNail" alt={images.altText + " Cover"}/>
+                <img src={images.thumbnail} className="thumbNail max-w-[70%]" alt={images.altText + " Cover"}/>
 
-                <div class="invisible md:visible audience infoType">
+                <div class={`invisible md:visible audience ${bottomTriText}`}>
                     <p class="textDiv">AUDIENCE: {textDetails.audience}</p>
-                    <hr className="introLine"/>
+                    <hr className={`introLine ${bottomBg}`}/>
                 </div>
-                {/* <div class="sm:invisible md:visible audience copy">
-                    <p class="textDiv">AUDIENCE: {textDetails.audience}</p>
-                    <hr className="introLine"/>
-                </div> */}
 
-                <div className="invisible md:visible type infoType">
-                    <hr className="introLine"/>
+                <div className={`invisible md:visible type ${bottomTriText}`}>
+                    <hr className={`introLine ${bottomBg}`}/>
                     <p class="textDiv">TYPE: {textDetails.itemType}</p>
                 </div>
-                {/* <div className="sm:invisible md:visible type copy">
-                    <hr className="introLine"/>
-                    <p class="textDiv">TYPE: {textDetails.itemType}</p>
-                </div> */}
 
-                <div className="invisible md:visible client infoType">
+                <div className={`invisible md:visible client ${upperTriText}`}>
                     <p class="textDiv">CLIENT: {textDetails.client}</p>
-                    <hr className="introLine"/>
+                    <hr className={`introLine ${upperBg}`}/>
                 </div>
-                {/* <div className="sm:invisible md:visible client copy">
-                    <p class="textDiv">CLIENT: {textDetails.client}</p>
-                    <hr className="introLine"/>
-                </div> */}
             </div>
         );
     }
@@ -90,8 +83,9 @@ export default function BookInfo() {
             return;
         return images.process.map((item, index) => {
             var i = index+1;
-            return <img src={item} class="card" alt={images.altText + " Step " + i}/>
-        });
+            return <img src={item} class="card" alt={images.altText + " Step " + i} 
+		onClick={() => {setIsPopupOpen(true); setPopupPhoto(images.process); setPopupPhotoIndex(index);}}/>;
+	});
     }
     
     function lowerTriangle() {
@@ -129,7 +123,7 @@ export default function BookInfo() {
                         </p>
                     </div>
 
-                    <div class="cols-span-1 md:col-span-3 
+                    <div ref={processDivRef} class="cols-span-1 md:col-span-3 
                                 mt-8 md:mt-0 md:ml-16 
                                 sideways">
                         {displayProcess()}
@@ -137,30 +131,43 @@ export default function BookInfo() {
                 </div>
                 
                 <div style={{backgroundColor: `${colorCodes.bottomBar}`, height: "3vh", position: "relative"}}></div> 
-                
-                <CheckOutMoreCarousel title={title}/>
+		{carousel}
             </div>
         );
     }
 
-    function errorPage() {
-        return (
-            <div class="min-h-screen bg-purple-300"> 
-                <NavBar show={true} displayType={"info"}/>
-                <h1 class="text-center text-lg" style={{lineHeight: "100vh"}}>
-                    Whoops! Much like my marbles, I seem to have lost this book! Please go back and try again
-                </h1>
-            </div>
-        );
+    function updatePopupIndex(shouldIncrease) {
+	if (shouldIncrease) {
+		setPopupPhotoIndex(popupPhotoIndex+1 < popupPhoto.length
+			? popupPhotoIndex+1
+			: 0);
+	}
+	else {
+		setPopupPhotoIndex(popupPhotoIndex-1 >= 0
+			? popupPhotoIndex-1
+			: popupPhoto.length-1);
+	}
+	
+    }
+
+    function showPopup() {
+	return <div className="bg-black bg-opacity-70 text-white min-h-screen min-w-[100vw] z-50 fixed top-0 left-0 flex justify-center">
+		<div className="invisible md:visible text-4xl absolute top-[3%] right-[3%]" onClick={() => setIsPopupOpen(false)}>X</div>
+		<div className="visible md:invisible text-4xl absolute top-[20%] right-[5%]" onClick={() => setIsPopupOpen(false)}>X</div>
+		<div className="text-6xl m-auto" onClick={() => updatePopupIndex(false)}>&lsaquo;</div>
+		<img src={popupPhoto[popupPhotoIndex]} alt={`${images.altText} Step ${popupPhotoIndex}`} className="max-w-[80%] max-h-[100%] m-auto object-scale-down"/>		
+		<div className="text-6xl m-auto" onClick={() => updatePopupIndex(true)}>&rsaquo;</div>
+	</div>;
     }
 
     function displayPage() {
         if (title === undefined || images === undefined) {
-            return errorPage();
+            return <ErrorPage/>;
         }
-        return (
+        return (<>
+	    {isPopupOpen && showPopup()}
             <div className="parent">
-                <NavBar show={true} displayType={"info"} class="z-20"/>
+                <NavBar show={true} displayType={"info"} backgroundColor={`${colorCodes.upperTriangle}`} class="z-20"/>
 
                 <div style={{height: "203vh", minHeight: "fit-content", position: "relative"}}>
                     {upperTriangle()}
@@ -172,10 +179,8 @@ export default function BookInfo() {
                     </div> 
                     {lowerTriangle()}
                 </div>
-
-
             </div>
-        );
+        </>);
     }
 
     return displayPage();

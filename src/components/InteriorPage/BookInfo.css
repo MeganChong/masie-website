@@ -84,7 +84,6 @@
   letter-spacing: 9px;
   font-size: small;
   text-transform: uppercase;
-  color: white;
   
   position: absolute;
   z-index: 30;
@@ -112,7 +111,6 @@
 }
 
 .introLine {
-  background-color: white;
   border-width: 0;
   height: 2px;
   margin: 9px auto;

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { useLocation } from "react-router";
 import NavBar from "../NavBars/NavBar";
-import { formatCell } from "../FormatCell";
+import formatCell from "../FormatCell";
 import categories from "../../data/categories.json";
 
 export default function DisplayTypes() {
@@ -28,7 +28,7 @@ export default function DisplayTypes() {
 
     function displayPage() {
         return (
-            <div class="md:flex" style={{height: "fit-content", minHeight: "100vh"}}>
+            <div class="md:flex h-fit min-h-screen">
                 <NavBar show={true} displayType={"category"}/>
 
                 <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center">

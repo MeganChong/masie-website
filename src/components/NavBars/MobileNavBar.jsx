@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from '../../assests/Logo.png';
+import {default as logo} from '../../assests/LogoDark.svg';
 import { createButton } from "./CreateButton";
 
 export default function MobileNavBar() {
     const [openToggle, setToggle] = useState(false);
-    const buttonStyle = "flex-1 text-center bg-white";
+    const buttonStyle = "";
 
     function displayMobileBar() {
         if (openToggle) {
             return (
-                <div class="block w-full items-center">
-                    <div class="block text-center w-full"><Link to="/" class="flex-1 text-center"><button class="hover:text-purple-500 text-navBar">HOME</button></Link></div>
-                    <div class="block text-center w-full">{createButton("books", "Books", buttonStyle, {})}</div>
-                    <div class="block text-center w-full">{createButton("marketing", "Marketing", buttonStyle, {})}</div>
-                    <div class="block text-center w-full">{createButton("events", "Events", buttonStyle, {})}</div>
-                    <div class="block text-center w-full">{createButton("personal", "Personal", buttonStyle, {})}</div>
-                    <div class="block text-center w-full">{createButton("about", "About", buttonStyle, {})}</div>
+                <div class="flex flex-col mx-auto ml-1 items-center w-full mt-6">
+                    <Link to="/"><button class="hover:text-purple-500 text-navBar">HOME</button></Link>
+                    {createButton("books", "Books", buttonStyle, {})}
+                    {createButton("marketing", "Marketing", buttonStyle, {})}
+                    {createButton("events", "Events", buttonStyle, {})}
+                    {createButton("personal", "Personal", buttonStyle, {})}
+                    {createButton("about", "About", buttonStyle, {})}
                 </div>
             );
         }
@@ -24,8 +24,8 @@ export default function MobileNavBar() {
 
     function displayMobileIcon() {
         return (
-            <div class="block md:hidden justify-self-center text-center">
-                <img src={logo} alt="the logo- open for menu" class="mx-auto" onClick={() => {setToggle(!openToggle)}}/>
+            <div class="flex flex-col md:hidden justify-items-center">
+                <img className="w-[15%] mx-auto mt-2" src={logo} alt="the logo- open for menu" onClick={() => {setToggle(!openToggle)}}/>
                 {displayMobileBar()}
             </div>
         );

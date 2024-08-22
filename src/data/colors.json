@@ -5,10 +5,10 @@
         "bottomBar": "#BEBE54"
     },
 
-    "Navigating the Principalship": {
-        "upperTriangle": "#C9DBFE",
-        "lowerTriangle": "#FED536",
-        "bottomBar": "#798EBA"
+    "How to Teach AI": {
+        "upperTriangle": "#103D81",
+        "lowerTriangle": "#FDBF12",
+        "bottomBar": "#FC451E"
     },
 
     "The Minimalist Teacher": {
@@ -165,6 +165,18 @@
         "upperTriangle": "#1DA7B2",
         "lowerTriangle": "#F79C31",
         "bottomBar": "#CFE04F"
+    },
+
+    "Annual Conference 2023": {
+        "upperTriangle": "#9C7BA2",
+        "lowerTriangle": "#FFCB3E",
+        "bottomBar": "#FF6E03"
+    },
+
+    "Witsby Booth": {
+        "upperTriangle": "#75C4B1",
+        "lowerTriangle": "#F8ECE0",
+        "bottomBar": "#F37E90"
     },
 
     "Happiness": {

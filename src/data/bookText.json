@@ -8,13 +8,13 @@
 		"client": "ASCD"
 	},
 
-    "Navigating the Principalship": {
+    "How to Teach AI": {
 		"award": "",
 		"header": "Client Request",
-		"description": "Make sure the authors' names are prominent and incorporate a compass into the design.",
+		"description": "The cover should be colorful, bold, and be careful to not make it too dark, scary, or ominous.",
 		"audience": "K–12 Teachers",
 		"itemType": "Book Cover Design",
-		"client": "ASCD"
+		"client": "ISTE"
 	},
 
     "The Minimalist Teacher": {
@@ -246,6 +246,24 @@
 		"award": "",
 		"header": "Client Request",
 		"description": "Design a program book for attendees and a separate kit especially for the press.",
+		"audience": "K–12 Teachers",
+		"itemType": "Conference Design",
+		"client": "ASCD"
+	},
+
+    "Annual Conference 2023": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Design and manage signage, as well as supporting conference materials, such as print pieces and app graphics.",
+		"audience": "K–12 Teachers",
+		"itemType": "Conference Design",
+		"client": "ASCD"
+	},
+
+    "Witsby Booth": {
+		"award": "",
+		"header": "Client Request",
+		"description": "Design a demo storyboard, flyer, and booth to advertise ASCD's product called Witsby at the ISTELive23 conference.",
 		"audience": "K–12 Teachers",
 		"itemType": "Conference Design",
 		"client": "ASCD"
