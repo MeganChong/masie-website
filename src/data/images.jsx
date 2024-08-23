@@ -284,7 +284,7 @@ export function photoInfo() {
             altText: "Engage the Brain",
             process: EngageSteps,
         },
-        "Five Practices for\n Equity-Focused School Leadership": {
+        "Five Practices for Equity-Focused School Leadership": {
             thumbnail: BookThumbFive,
             thumbnailWithBackground: BookThumbBkgdFive,
             backgroundColor: "#5E618B",
@@ -292,7 +292,7 @@ export function photoInfo() {
             process: FiveSteps,
             homepage: FiveHomepage
         },
-        "Social Emotional Learning\n and the Brain": {
+        "Social Emotional Learning and the Brain": {
             thumbnail: BookThumbSel,
             thumbnailWithBackground: BookThumbBkgdSel,
             backgroundColor: "#E0F1FE",

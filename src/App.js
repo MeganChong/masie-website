@@ -5,16 +5,15 @@ import ScrollToTop from './components/ScrollToTop';
 import About from './components/CategoriesPage/About';
 import './App.css';
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App" class="font-brand text-base">
+    <div className="App font-brand text-base">
       <Router>
         
         <ScrollToTop>
 
-          <Switch>
             <Route path="/" exact component={() => <HomepageGrid/>} />
             <Route path="/about" exact component={() => <About/>} />
             <Route path="/books" exact component={() => <DisplayTypes/>} />
@@ -22,10 +21,9 @@ function App() {
             <Route path="/events" exact component={() => <DisplayTypes/>} />
             <Route path="/personal" exact component={() => <DisplayTypes/>} />
             <Route path="/:title" exact component={() => <InteriorPage/>} />
-          </Switch>
 
 
-          <div class="text-center m-5 object-bottom">
+          <div className="text-center m-5 object-bottom">
             <p>Copyright 2024 @ Masie</p>
           </div>
 

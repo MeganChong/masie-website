@@ -44,7 +44,7 @@ export default function CheckOutMoreCarousel(props) {
         if (index < 0 || item === undefined)
             return;
         return (
-            <div class="flex" style={{height: "100%", backgroundColor: `${item.backgroundColor}`, alignItems: "center"}}>
+            <div className="flex" style={{height: "100%", backgroundColor: `${item.backgroundColor}`, alignItems: "center"}}>
 		<Link
             		to={{
                 		pathname: "/" + itemTitle,
@@ -69,11 +69,11 @@ export default function CheckOutMoreCarousel(props) {
         getRandomImages();
         return (
             <div className="h-fit">
-                <p class="text-xl bg-white pt-5" style={{height: "16vh", lineHeight: "16vh", textAlign: "center", letterSpacing: "5px", alignSelf: "center"}}>
+                <p className="text-xl bg-white pt-5" style={{height: "16vh", lineHeight: "16vh", textAlign: "center", letterSpacing: "5px", alignSelf: "center"}}>
                     CHECK OUT MORE
                 </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-3" style={{height: "fit-content", alignItems: "center", justifyContent: "center"}}>
+                <div className="grid grid-cols-1 md:grid-cols-3" style={{height: "fit-content", alignItems: "center", justifyContent: "center"}}>
                     {noImages()}
                     {displayImage(random1)}
                     {displayImage(random2)}
