@@ -6,7 +6,7 @@ import { createButton } from "./CreateButton";
 
 export default function CategoryNavBar() {
     const data = useLocation();
-    const type = data.state.type;
+    const type = data.pathname.substring(1).charAt(0).toUpperCase() + data.pathname.substring(2);
     const [selectedButtonStyles, setSelectedButtonStyles] = useState("");
     const buttonStyle = "";
     const extraAboutHover = type==="About" ? "hover:text-light " : "";
@@ -43,11 +43,11 @@ export default function CategoryNavBar() {
 	   <div className="hidden md:flex md:flex-1 flex-col min-h-screen">
 		<Link to="/" className="w-[23%] mb-[30%] mt-7 ml-8 mr-9">
 			{ (type==="About")
-				? <img src={DarkLogo}/> 
-        			: <img src={WhiteLogo}/> 
+				? <img src={DarkLogo} alt="The logo"/> 
+        			: <img src={WhiteLogo} alt="The logo"/> 
                 	}
 		</Link>
-		<div className="grow flex flex-col">
+		<div className="grow flex flex-col text-left">
 			{button("books", "Books")}
                 	{button("marketing", "Marketing")}
                 	{button("events", "Events")}

@@ -6,20 +6,22 @@ import categories from "../../data/categories.json";
 
 export default function DisplayTypes() {
     const data = useLocation();
-    const [type, setType] = useState(data.state.type);
-    const [projects, setProjects] = useState(categories[type]);
+    const [categoryType, setCategoryType] = useState(data.pathname.substring(1).charAt(0).toUpperCase() + data.pathname.substring(2));
+    const [projects, setProjects] = useState(categories[categoryType]);
 
     const LARGE = " col-span-2";
 
     useEffect(() => {
-        setType(data.state.type);
-        setProjects(categories[type]);
-        
+	const pathname = data.pathname.substring(1);
+	const capitalizedPathName = pathname.charAt(0).toUpperCase() + pathname.substring(1);
+        setCategoryType(capitalizedPathName);
     }, [data]);
+
+    useEffect(() => setProjects(categories[categoryType]), [categoryType]);
 
     function displayProjects() {
         var s = "object-contain";
-        if (type === "Personal" || type=== "Events")
+        if (categoryType === "Personal" || categoryType=== "Events")
             s = s + LARGE;
         return projects.map(item => {
             return formatCell(item, s, "thumbnailWithBackground");
@@ -28,10 +30,10 @@ export default function DisplayTypes() {
 
     function displayPage() {
         return (
-            <div class="md:flex h-fit min-h-screen">
+            <div className="md:flex h-fit min-h-screen">
                 <NavBar show={true} displayType={"category"}/>
 
-                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center">
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 items-center">
                     {displayProjects()}
                 </div>
             </div>

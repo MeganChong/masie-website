@@ -10,16 +10,29 @@ export default function InteriorPage() {
 
 	useEffect(() => {
         	if (data === undefined || data.state === undefined || data.state.title === undefined) {
-	    		return <ErrorPage/>;
+			if (data.pathname) {
+				setTitle(data.pathname.substring(1));
+			}
+			else {
+	    			return <ErrorPage/>;
+			}
 		}
-        	setTitle(data.state.title);
+		else {
+        		setTitle(data.state.title);
+		}
     	}, [data]);
 
+	useEffect(() => {
+		if (title === "You're the Principal! Now What" || title === "What's New") {
+                        setTitle(title+"?");
+                }
+	}, [title]);
+console.log(title);
 	function getCarousel() {
 		return <CheckOutMoreCarousel title={title}/>;
 	}
 
 	return <div className="flex flex-col">
 		<BookInfo title={title} carousel={getCarousel()}/>
-	</div>;
+	</div>; 
 }

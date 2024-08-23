@@ -11,7 +11,7 @@ export default function HomepageNavBar(props) {
             		return <Link to="/" class="bg-white"><img src={logo} alt="The logo - click to go to homepage"/></Link>;
     	}
 
-	return <div class="hidden md:flex md:flex-1 justify-center items-center">
+	return <div className="hidden md:flex md:flex-1 justify-center items-center">
                 {displayHomeIcon()}
                 {createButton("books", "Books", buttonStyle, {})}
                 {createButton("marketing", "Marketing", buttonStyle, {})}

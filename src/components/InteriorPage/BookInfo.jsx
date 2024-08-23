@@ -2,7 +2,6 @@ import React, {useState, useEffect, useRef} from "react";
 import './BookInfo.css';
 import NavBar from "../NavBars/NavBar";
 import ErrorPage from "./ErrorPage";
-import CheckOutMoreCarousel from "./CheckOutMoreCarousel";
 
 import colors from "../../data/colors.json";
 import bookText from "../../data/bookText.json";
@@ -42,21 +41,21 @@ export default function BookInfo({title, carousel}) {
 	const bottomBg = Color(colorCodes.lowerTriangle).isLight() ? "bg-dark" : "bg-light";	
 
 	return (
-            <div class="bookInfo">
+            <div className="bookInfo">
                 <img src={images.thumbnail} className="thumbNail max-w-[70%]" alt={images.altText + " Cover"}/>
 
-                <div class={`invisible md:visible audience ${bottomTriText}`}>
-                    <p class="textDiv">AUDIENCE: {textDetails.audience}</p>
+                <div className={`invisible md:visible audience ${bottomTriText}`}>
+                    <p className="textDiv">AUDIENCE: {textDetails.audience}</p>
                     <hr className={`introLine ${bottomBg}`}/>
                 </div>
 
                 <div className={`invisible md:visible type ${bottomTriText}`}>
                     <hr className={`introLine ${bottomBg}`}/>
-                    <p class="textDiv">TYPE: {textDetails.itemType}</p>
+                    <p className="textDiv">TYPE: {textDetails.itemType}</p>
                 </div>
 
                 <div className={`invisible md:visible client ${upperTriText}`}>
-                    <p class="textDiv">CLIENT: {textDetails.client}</p>
+                    <p className="textDiv">CLIENT: {textDetails.client}</p>
                     <hr className={`introLine ${upperBg}`}/>
                 </div>
             </div>
@@ -72,7 +71,7 @@ export default function BookInfo({title, carousel}) {
             return;
         }
         else {
-            return <p class="mb-10" style={{letterSpacing: "4px", fontSize: "46px", lineHeight:"1.1"}}>
+            return <p className="mb-10" style={{letterSpacing: "4px", fontSize: "46px", lineHeight:"1.1"}}>
                         {textDetails.award}
                     </p>;
         }
@@ -83,7 +82,7 @@ export default function BookInfo({title, carousel}) {
             return;
         return images.process.map((item, index) => {
             var i = index+1;
-            return <img src={item} class="card" alt={images.altText + " Step " + i} 
+            return <img src={item} key={index} className="card" alt={images.altText + " Step " + i} 
 		onClick={() => {setIsPopupOpen(true); setPopupPhoto(images.process); setPopupPhotoIndex(index);}}/>;
 	});
     }
@@ -97,7 +96,7 @@ export default function BookInfo({title, carousel}) {
     function itemTitle() {
         return (
             <div className="titleDiv">
-                <h1 class="text-center text-5xl font-bold mb-9" 
+                <h1 className="text-center text-5xl font-bold mb-9" 
                     style={{whiteSpace: "pre-line", marginRight: "6vw", marginLeft: "6vw"}}>
                     {title}
                     {/* The longest title in the world skdfjskdfjksnvlsnsndvjdsknvfndkanvxdsk sdncalcnadk */}
@@ -111,19 +110,19 @@ export default function BookInfo({title, carousel}) {
         return (
             <div className="descriptionProcess" style={{backgroundColor: `${colorCodes.lowerTriangle}`}}>
                 
-                <div class="grid grid-col-1 md:grid-cols-4 mt-14 mb-20 relative" 
+                <div className="grid grid-col-1 md:grid-cols-4 mt-14 mb-20 relative" 
                     style={{marginLeft: "9%", flexWrap: "wrap"}}>
-                    <div class="col-span-1 p-3 pt-0">
+                    <div className="col-span-1 p-3 pt-0 text-left">
                         {showAward()}
-                        <p class="font-bold text-xl" style={{letterSpacing: "4px", textTransform: "uppercase"}}>
+                        <p className="font-bold text-xl" style={{letterSpacing: "4px", textTransform: "uppercase"}}>
                             {textDetails.header}
                         </p>
-                        <p class="pt-3 text-lg" style={{lineHeight: "30px"}}>
+                        <p className="pt-3 text-lg" style={{lineHeight: "30px"}}>
                             {textDetails.description}
                         </p>
                     </div>
 
-                    <div ref={processDivRef} class="cols-span-1 md:col-span-3 
+                    <div ref={processDivRef} className="cols-span-1 md:col-span-3 
                                 mt-8 md:mt-0 md:ml-16 
                                 sideways">
                         {displayProcess()}
@@ -161,20 +160,23 @@ export default function BookInfo({title, carousel}) {
     }
 
     function displayPage() {
+	if (title === "books" || title === "marketing" || title === "events" || title === "personal" || title === "about") {
+		return <></>;
+	}
         if (title === undefined || images === undefined) {
             return <ErrorPage/>;
         }
         return (<>
 	    {isPopupOpen && showPopup()}
             <div className="parent">
-                <NavBar show={true} displayType={"info"} backgroundColor={`${colorCodes.upperTriangle}`} class="z-20"/>
+                <NavBar show={true} displayType={"info"} backgroundColor={`${colorCodes.upperTriangle}`} className="z-20"/>
 
                 <div style={{height: "203vh", minHeight: "fit-content", position: "relative"}}>
                     {upperTriangle()}
                     {info()}
                     {itemTitle()}
                     {descriptionProcess()}
-                    <div class="invisible md:visible processBox">
+                    <div className="invisible md:visible processBox">
                         <p className="processText">PROCESS</p>    
                     </div> 
                     {lowerTriangle()}
