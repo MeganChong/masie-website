@@ -42,7 +42,7 @@ export default function BookInfo({title, carousel}) {
 
 	return (
             <div className="bookInfo">
-                <img src={images.thumbnail} className="thumbNail max-w-[70%]" alt={images.altText + " Cover"}/>
+                <img src={images.thumbnail} className="thumbNail max-w-[80%] md:max-h-[65%]" alt={images.altText + " Cover"}/>
 
                 <div className={`invisible md:visible audience ${bottomTriText}`}>
                     <p className="textDiv">AUDIENCE: {textDetails.audience}</p>
