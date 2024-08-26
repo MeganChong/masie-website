@@ -18,7 +18,7 @@
     },
 
     "Math Fact Fluency": {
-        "upperTriangle": "#FFD340",
+        "upperTriangle": "#fdbe23",
         "lowerTriangle": "#7DD4DB",
         "bottomBar": "#FF8D1A"
     },
@@ -54,7 +54,7 @@
     },
 
     "Social Emotional Learning and the Brain": {
-        "upperTriangle": "#E0F1FF",
+        "upperTriangle": "#b4c7ec",
         "lowerTriangle": "#D4D848",
         "bottomBar": "#5D7A9C"
     },
@@ -72,8 +72,8 @@
     },
 
     "Rebranding": {
-        "upperTriangle": "#BEE3DA",
-        "lowerTriangle": "#D5D5D5",
+        "upperTriangle": "#2D393D",
+        "lowerTriangle": "#9FE2D4",
         "bottomBar": "#E89BA5"
     },
 
@@ -84,8 +84,8 @@
     },
 
     "'Be' Ad Series": {
-        "upperTriangle": "#B7E3E8",
-        "lowerTriangle": "#9CC450",
+        "upperTriangle": "#9CC450",
+        "lowerTriangle": "#B8E5EA",
         "bottomBar": "#284D5D"
     },
 
@@ -102,13 +102,13 @@
     },
 
     "Spring Sourcebook": {
-        "upperTriangle": "#EAF4F7",
+        "upperTriangle": "#2B7CCC",
         "lowerTriangle": "#56CBD8",
         "bottomBar": "#1C5289"
     },
 
     "Trauma-Sensitive Schools Catalog": {
-        "upperTriangle": "#FDEAEB",
+        "upperTriangle": "#183550",
         "lowerTriangle": "#8EB7E6",
         "bottomBar": "#B66C5F"
     },
@@ -150,7 +150,7 @@
     },
 
     "Empower19": {
-        "upperTriangle": "#FFF4F9",
+        "upperTriangle": "#FCD8E4",
         "lowerTriangle": "#A6e3eb",
         "bottomBar": "#FECF2F"
     },

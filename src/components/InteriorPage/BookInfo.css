@@ -63,13 +63,12 @@
 }
 
 .thumbNail {
-  max-height: 70vh;
   position: absolute; 
   align-self: center;
   z-index: 20;
   margin: 0;
   top: 50%;
-  left: 50%;
+  left:50%;
   transform: translate(-50%, -50%);
 }
 

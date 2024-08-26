@@ -21,7 +21,8 @@ export default function About() {
 
     function topIntroSection() {
 	return <div className="bg-dark h-fit text-light text-center items-center flex flex-col p-10">
-		<div className="text-7xl tracking-[0.7rem] mt-32 mb-6 md:mb-4">Masie</div>
+		<div className="text-7xl tracking-[0.7rem] mt-32">Masie</div>
+		<div className="text-3xl leading-[2.85rem] tracking-[0.5rem] mb-6 md:mb-4">/ˈmeɪ si/</div>
 		<div className="text-3xl leading-[2.85rem] tracking-[0.5rem]">Senior Graphic Designer</div>
 		<img src={circles} className="w-4/12 m-10 mb-20" alt="a row of 4 circles"/>
 		<div className="flex w-full items-start flex-col md:flex-row">
@@ -78,15 +79,18 @@ export default function About() {
 			</div>
 			
 			<div className="flex flex-row max-h-fit min-h-full max-w-full">
-			<div className="bg-brandRed p-6 flex flex-col items-center place-content-center min-h-full text-light">
-				<img src={linkedin} className="w-4/12 m-4" alt="the LinkedIn logo"/>
-				<div>linkedin.com</div>
-			</div>
-			
-			<div className="bg-brandYellow p-6 flex flex-col items-center place-content-center h-full">
-				<img src={email} className="w-4/12 m-4" alt="email icon"/>
-				<div className=" text-center">sleepingartist693<br/>@gmail.com</div>
-			</div>
+			   <a href="https://www.linkedin.com/in/masie-chong" target="_blank">
+				<div className="bg-brandRed p-6 flex flex-col items-center place-content-center min-h-full text-light">
+					<img src={linkedin} className="w-4/12 m-4" alt="the LinkedIn logo"/>
+					<div>My LinkedIn</div>
+				</div>
+			   </a>	
+			   <a href="mailto:masiecsdesign@gmail.com">
+				<div className="bg-brandYellow p-6 flex flex-col items-center place-content-center h-full">
+					<img src={email} className="w-4/12 m-4" alt="email icon"/>
+					<div className=" text-center">masiecsdesign<br/>@gmail.com</div>
+				</div>
+			   </a>
 			</div>
 		</div>
 	</div>;
