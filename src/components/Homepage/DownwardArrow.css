@@ -1,6 +1,6 @@
 .fadeArrowIn {
 	opacity: 0;
-	animation: fade-in 9s ease-in 5s infinite;
+	animation: fade-in 7s ease-in 2s infinite;
 }
 
 @keyframes fade-in {
@@ -10,7 +10,7 @@
 	40% {
 		opacity: 1;
 	}
-	45% {
+	60% {
 		opacity: 0.5;
 	}
 	100% {

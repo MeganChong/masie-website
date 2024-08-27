@@ -13,7 +13,7 @@ export default function FormatCell(itemTitle, classStyle, sourceType) {
 
     const path = "/" + itemTitle;
     const opacity = isCellVisible ? "opacity-100" : "opacity-0";
-    const style = classStyle + " hover:opacity-50 transition-opacity ease-in duration-700 " + opacity;
+    const style = classStyle + " hover:opacity-50 transition-opacity ease-in duration-700 hover:duration-75 " + opacity;
     return (
         <Link 
             to={{
