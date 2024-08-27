@@ -90,21 +90,21 @@
     },
 
     "Lessons Learned Catalog": {
-        "upperTriangle": "#615E67",
+        "upperTriangle": "#615d6f",
         "lowerTriangle": "#FEB59F",
         "bottomBar": "#53C3BE"
     },
 
     "ASCD Resource Guide": {
-        "upperTriangle": "#707070",
+        "upperTriangle": "#515154",
         "lowerTriangle": "#C4D041",
         "bottomBar": "#5EABC3"
     },
 
     "Spring Sourcebook": {
         "upperTriangle": "#2B7CCC",
-        "lowerTriangle": "#56CBD8",
-        "bottomBar": "#1C5289"
+        "lowerTriangle": "#57bdcc",
+        "bottomBar": "#10394D"
     },
 
     "Trauma-Sensitive Schools Catalog": {
@@ -144,7 +144,7 @@
     },
 
     "Recharge & Reconnect": {
-        "upperTriangle": "#3D7CB2",
+        "upperTriangle": "#044068",
         "lowerTriangle": "#FFAC27",
         "bottomBar": "#159774"
     },
