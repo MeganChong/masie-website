@@ -35,8 +35,8 @@ export default function About() {
 
     function middleMottoSection() {
 	return <div className="bg-light h-fit flex flex-col lg:flex-row gap-4 max-w-full">
-		<div className="bg-brandYellow flex flex-col grow h-full text-5xl md:text-7xl tracking-[0.9rem] text-left">
-			<div className="text-xl md:text-2xl tracking-[0.5rem] p-4 pt-32 pl-24">My motto is</div>
+		<div className="bg-brandYellow flex flex-col grow h-full text-5xl md:text-7xl tracking-[0.9rem] text-left content-center">
+			<div className="text-xl md:text-2xl tracking-[0.5rem] p-4 pt-32 pl-24 grow">My motto is</div>
 			<div className="p-4 pl-24 pt-2">Sleep.</div>
 			<div className="p-4 pl-24">Eat.</div>
 		    	<div className="p-6 bg-light pl-24">Design!</div>
@@ -73,7 +73,7 @@ export default function About() {
 			</div>
 		</div>
 
-		<div className="bg-light flex flex-col md:flex-row max-h-[45%] text-xl">
+		<div className="bg-light flex flex-col md:flex-row max-h-[45%] text-xl content-center">
 			<div className="basis-11/12 text-3xl leading-[2.5rem] tracking-[0.4rem] m-12 mt-16 ml-16 text-center md:text-left">
 				Let's make something cool together!
 			</div>

@@ -1225,6 +1225,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+.hover\:duration-75:hover {
+  transition-duration: 75ms;
+}
+
 .hover\:text-dark:hover {
   --tw-text-opacity: 1;
   color: rgb(9 40 53 / var(--tw-text-opacity));
