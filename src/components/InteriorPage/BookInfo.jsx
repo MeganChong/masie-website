@@ -182,6 +182,9 @@ export default function BookInfo({title, carousel}) {
                     {lowerTriangle()}
                 </div>
             </div>
+            <div className="text-center m-10 object-bottom">
+                <a href="mailto:masiecsdesign@gmail.com">masiecsdesign@gmail.com</a>
+            </div>
         </>);
     }
 

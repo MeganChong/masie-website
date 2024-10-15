@@ -27,7 +27,7 @@ export default function InteriorPage() {
                         setTitle(title+"?");
                 }
 	}, [title]);
-console.log(title);
+	
 	function getCarousel() {
 		return <CheckOutMoreCarousel title={title}/>;
 	}

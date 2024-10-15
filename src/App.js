@@ -22,9 +22,8 @@ function App() {
             <Route path="/personal" exact component={() => <DisplayTypes/>} />
             <Route path="/:title" exact component={() => <InteriorPage/>} />
 
-
-          <div className="text-center m-5 object-bottom">
-            <p>masiecsdesign</p>
+          <div className="text-center m-10 object-bottom">
+            <a href="mailto:masiecsdesign@gmail.com">masiecsdesign@gmail.com</a>
           </div>
 
         </ScrollToTop>
