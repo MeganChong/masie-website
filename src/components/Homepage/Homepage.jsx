@@ -1,6 +1,5 @@
 import React from 'react';
 
-import hello from "../../assests/homepage/Homepg_Intro.jpg";
 import whiteSquare from '../../assests/homepage/Homepg_White.jpg'
 import blueSquare from '../../assests/homepage/Homepg_Blue.jpg'
 
@@ -29,56 +28,56 @@ export default function Homepage() {
 
     const mobileHomepage = () => {
 	return <>
-		<img src={hello} alt="intro box" className="col-span-3"/>
-                {formatCell("Lessons Learned Catalog", "col-span-2 row-span-2", source)}
-                {formatCell("The Essential 25", "", source)}
+        {formatCell("Annual Conference 2023", "col-span-3", source)}
+        {formatCell("Lessons Learned Catalog", "col-span-2 row-span-2", source)}
+        {formatCell("The Essential 25", "", source)}
 
-                {formatCell("Five Practices for Equity-Focused School Leadership", "", source)}
-                {formatCell("Summer Catalog", "col-span-3", source)}
+        {formatCell("Five Practices for Equity-Focused School Leadership", "", source)}
+        {formatCell("Summer Catalog", "col-span-3", source)}
 
-                {formatCell("Giving Students a Say", "col-span-3 row-span-2", source)}
-                {formatCell("The Minimalist Teacher", "col-span-3 row-span-2", source)}
-                {formatCell("Japan Postcards", "col-span-3", source)}
+        {formatCell("Giving Students a Say", "col-span-3 row-span-2", source)}
+        {formatCell("The Minimalist Teacher", "col-span-3 row-span-2", source)}
+        {formatCell("Empower17", "col-span-3", source)}
 
-                {formatCell("Happiness", "", source)}
-                {formatCell("Empower19", "", source)}
-                {formatCell("The Classroom Behavior Manual", "", source)}
+        {formatCell("Happiness", "", source)}
+        {formatCell("Empower19", "", source)}
+        {formatCell("The Classroom Behavior Manual", "", source)}
 
-                {formatCell("'Be' Ad Series", "col-span-3", source)}
+        {formatCell("'Be' Ad Series", "col-span-3", source)}
 
-                {formatCell("Math Fact Fluency", "col-span-2 row-span-2", source)}
-                {formatCell("Rebranding", "row-span-2", source)}
+        {formatCell("Math Fact Fluency", "col-span-2 row-span-2", source)}
+        {formatCell("Rebranding", "row-span-2", source)}
 
-                {formatCell("Spring Sourcebook", "col-span-3", source)}
+        {formatCell("Spring Sourcebook", "col-span-3", source)}
 	</>;
     }
 
     const desktopHomepage = () => {
 	return <>
-                <img src={hello} alt="intro box" className="col-span-3"/>
-                {formatCell("Lessons Learned Catalog", "col-span-2 row-span-2", source)}
-                {formatCell("The Essential 25", "", source)}
+        {formatCell("Annual Conference 2023", "col-span-3", source)}
+        {formatCell("Lessons Learned Catalog", "col-span-2 row-span-2", source)}
+        {formatCell("The Essential 25", "", source)}
 
-                <img src={whiteSquare} alt="a white square"/>
-                {formatCell("Summer Catalog", "col-span-2", source)}
-                {formatCell("Five Practices for Equity-Focused School Leadership", "", source)}
+        <img src={whiteSquare} alt="a white square"/>
+        {formatCell("Summer Catalog", "col-span-2", source)}
+        {formatCell("Five Practices for Equity-Focused School Leadership", "", source)}
 
-                {formatCell("Giving Students a Say", "col-span-2 row-span-2", source)}
-                {formatCell("The Minimalist Teacher", "col-span-2 row-span-2", source)}
-                {formatCell("Japan Postcards", "col-span-2", source)}
-                {formatCell("The Classroom Behavior Manual", "", source)}
-                <img src={blueSquare} alt="a blue square"/>
+        {formatCell("Giving Students a Say", "col-span-2 row-span-2", source)}
+        {formatCell("The Minimalist Teacher", "col-span-2 row-span-2", source)}
+        {formatCell("Empower17", "col-span-2", source)}
+        {formatCell("The Classroom Behavior Manual", "", source)}
+        <img src={blueSquare} alt="a blue square"/>
 
-                <img src={blueSquare} alt="a blue square"/>
-                {formatCell("'Be' Ad Series", "col-span-3", source)}
-                {formatCell("Empower19", "", source)}
+        <img src={blueSquare} alt="a blue square"/>
+        {formatCell("'Be' Ad Series", "col-span-3", source)}
+        {formatCell("Empower19", "", source)}
 
-                {formatCell("Rebranding", "row-span-2", source)}
+        {formatCell("Rebranding", "row-span-2", source)}
 
-                {formatCell("Spring Sourcebook", "col-span-2", source)}
-                {formatCell("Math Fact Fluency", "", source)}
-                <img src={blueSquare} alt="a blue square"/>
-                {formatCell("Happiness", "", source)}
+        {formatCell("Spring Sourcebook", "col-span-2", source)}
+        {formatCell("Math Fact Fluency", "", source)}
+        <img src={blueSquare} alt="a blue square"/>
+        {formatCell("Happiness", "", source)}
 	</>;
     }
 
@@ -97,21 +96,21 @@ export default function Homepage() {
     };
 
     const getMissionStatement = () => {
-        return <div className="bg-brandBlue h-[90vh] min-h-fit content-center bg-cover bg-center" 
+        return <div className="bg-brandBlue h-[90vh] min-h-fit content-center bg-cover bg-center text-dark" 
             style={{ backgroundImage: `url(${MissionStatementBkg})`}}>
             <div className="flex flex-col md:flex-row content-center justify-center min-h-fit mt-24 md:mt-40 mx-10">
                 <div className="m-auto md:m-0 text-5xl font-thin 
                     border-solid border-y-2 border-black 
                     content-center max-w-fit leading-loose">I'm a</div>
-                <div className="text-[5rem] leading-none md:text-9xl px-6 mt-4">Creative</div>
+                <div className="text-[5rem] leading-none md:text-[9rem] px-6 mt-4">Design</div>
             </div>
-            <div className="text-[5rem] leading-none md:text-9xl">Strategist</div>
+            <div className="text-[5rem] leading-none md:text-[9rem]">Leader</div>
 
             <div className="bg-brandYellow w-7/12 m-auto mb-24 md:mb-40 p-4 md:px-10 rounded-full mt-11 
                 ring-brandPurple ring-offset-4 ring-2 ring-offset-brandBlue
                 flex justify-center">
                 <div className="bg-white rounded-full w-5 md:w-3 h-3 my-auto"/>
-                <div className="grow justify-center mx-2 leading-7 md:leading-8 text-lg">Designing <span className="font-bold">visual impact</span> for brands and people</div>
+                <div className="grow justify-center mx-2 leading-7 md:leading-8 text-lg">Creating <span className="font-bold">visual impact</span> for brands and people</div>
                 <div className="bg-white rounded-full w-5 md:w-3 h-3 my-auto"/>
             </div>
         </div>;
@@ -125,7 +124,7 @@ export default function Homepage() {
                 <img src={ApproachSquiggle} alt="purple squiggle" className="w-6/12 max-h-96 object-contain m-auto"/>
                 <div className="flex flex-col md:w-6/12 md:mr-40 leading-9 m-12 mt-2 md:mt-8">
                     <img src={BlueWavyLine} alt="blue wavy line"/>
-                    <div className="border-b-2 border-solid pb-8 mt-6 text-2xl md:text-3xl leading-10 md:leading-[2.75rem] tracking-wider">
+                    <div className="border-b-2 border-solid pb-8 ml-2 mt-6 text-2xl md:text-3xl leading-10 md:leading-[2.75rem] tracking-wider">
                         Blending innovation and precision with a  
                         <span className="text-brandYellow px-2">user-centered approach</span>
                         to elevate brand identities since 2014.
@@ -147,13 +146,13 @@ export default function Homepage() {
     };
 
     const getWorkPage = () => {
-        return <div className="bg-brandYellow h-[85vh] md:h-[90vh] min-h-fit content-center">
+        return <div className="bg-brandYellow h-[85vh] md:h-[90vh] min-h-fit content-center text-dark">
             <div className="flex justify-center w-full mt-24 md:mt-28">
                 <img src={WhiteWavyLine} alt="a white wavy line" className="object-contain max-w-[20%]"/>
                 <div className="text-3xl grow tracking-[0.2em] leading-10">On to the Good Stuff!</div>
                 <img src={WhiteWavyLine} alt="a white wavy line" className="object-contain max-w-[20%]"/>
             </div>
-            <div className="bg-white text-9xl md:text-[14rem] leading-[1.2] my-6 mt-10">Work</div>
+            <div className="bg-white text-9xl md:text-[18rem] leading-[1.2] my-6 mt-10">Work</div>
             <div className="tracking-[0.5em] mt-12 mb-20">
                 {FILLED_CIRCLE}
                 CATALOGS {FILLED_CIRCLE}
@@ -165,7 +164,7 @@ export default function Homepage() {
     };
 
     const getAwards = () => {
-        return <div className="bg-light h-[120vh] min-h-fit content-center bg-cover bg-center" 
+        return <div className="bg-light h-[120vh] min-h-fit content-center bg-cover bg-center text-dark" 
             style={{ backgroundImage: `url(${AwardsBkg})`}}>
             <div className="text-2xl mt-32 mb-10 leading-9">Honored and grateful to <br/> be recognized for my work</div>
             <img src={BlueWavyLine} alt="blue wavy line" className="max-w-[70%] md:max-w-[50%] m-auto"/>

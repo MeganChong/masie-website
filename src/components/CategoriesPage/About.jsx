@@ -35,12 +35,16 @@ export default function About() {
 
     function middleMottoSection() {
 	return <div className="bg-light h-fit flex flex-col lg:flex-row gap-4 max-w-full">
-		<div className="bg-brandYellow flex flex-col grow h-full text-5xl md:text-7xl tracking-[0.9rem] text-left content-center">
-			<div className="text-xl md:text-2xl lg:text-5xl tracking-[0.5rem] p-4 pt-32 lg:pt-20 pl-24  grow align-bottom flex flex-col"><div className="grow"></div><p>My motto is</p></div>
-			<div className="p-4 pl-24 pt-2">Sleep.</div>
-			<div className="p-4 pl-24">Eat.</div>
-		    	<div className="p-6 bg-light pl-24">Design!</div>
-			<div className="p-6 grow"></div>
+		<div className="bg-brandYellow flex flex-col grow h-full tracking-[0.5rem] text-left content-center py-12">
+			<div className="text-2xl tracking-[0.4rem] p-4 pt-32 lg:pt-20 pl-12 grow align-bottom flex flex-col"><div className="grow"></div><p>Great design is</p></div>
+		    <div className="p-12 bg-light text-5xl leading-[4rem]">
+				<div>Functional</div>
+				<div>Aesthetic</div>
+				<div>Purposeful</div>
+			</div>
+			<div className="p-6 grow text-lg tracking-widest px-12">
+				Weaving these principals into every project to resonate and inspire.
+			</div>
 		</div>
 		
 		<div className="max-w-full lg:max-w-[50%] flex flex-col gap-4 h-full max-h-fit md:max-h-[90vh]">
@@ -56,7 +60,7 @@ export default function About() {
     function bottomHobbiesContactSection() {
 	return <div className="bg-brandBlue min-h-screen flex flex-col">
 		<div className="text-center text-xl tracking-[0.2rem] max-h-[55%] m-20">
-			<div className="text-3xl m-8 leading-[2.6rem] tracking-[0.3rem]">My hobbies include</div>
+			<div className="text-3xl m-8 leading-[2.6rem] tracking-[0.3rem]">I am inspired by</div>
 			<div className="flex flex-col md:flex-row w-full">
 				<div className="p-5">	
 					<img src={travel} className="w-9/12 m-auto" alt="A photo of a the red temple gate in Japan that I took"/>
@@ -67,8 +71,8 @@ export default function About() {
 					<div className="mt-3">Photography</div>
 				</div>
 				<div className="p-5">
-					<img src={baking} className="w-9/12 m-auto" alt="A cake I baked!"/>
-					<div className="mt-3">Baking</div>
+					<img src={baking} className="w-9/12 m-auto" alt="music shelf"/>
+					<div className="mt-3">Music</div>
 				</div>
 			</div>
 		</div>
