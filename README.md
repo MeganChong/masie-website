@@ -38,6 +38,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### npx tailwindcss build -o public/output.css
 When you update tailwind.config.js or add tags using customs (text-customColor, bg-custom ), run this command in the main folder to see the changes
 
+or run 
+##  npx tailwindcss -o public/output.css --watch
+and it will rebuild everytime you save
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

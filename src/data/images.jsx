@@ -88,6 +88,7 @@ import BookThumbBkgdRebranding from "../assests/thumbBkgd/MarketingThumbnailBkgd
 import BookProcessRebranding from "../assests/steps/Marketing/Rebranding/MarketingProcess_Rebranding.jpg";
 import BookProcessRebranding2 from "../assests/steps/Marketing/Rebranding/MarketingProcess_Rebranding2.jpg";
 import BookProcessRebranding3 from "../assests/steps/Marketing/Rebranding/MarketingProcess_Rebranding3.jpg";
+import BookProcessRebranding4 from "../assests/steps/Marketing/Rebranding/MarketingProcess_Rebranding4.gif";
 
 import BookThumbSpring from "../assests/thumbnails/MarketingThumbnail_Spring.png";
 import BookThumbBkgdSpring from "../assests/thumbBkgd/MarketingThumbnailBkgd_Spring.jpg";
@@ -131,7 +132,8 @@ import BookThumbRecharge from "../assests/thumbnails/EventThumbnail_Recharge.png
 import BookThumbBkgdRecharge from "../assests/thumbBkgd/EventThumbnailBkgd_Recharge.jpg";
 import BookProcessRecharge from "../assests/steps/Events/Recharge/EventProcess_Recharge.jpg";
 import BookProcessRecharge2 from "../assests/steps/Events/Recharge/EventProcess_Recharge2.jpg";
-import BookProcessRecharge3 from "../assests/steps/Events/Recharge/EventProcess_Recharge3.jpg";
+import BookProcessRecharge3 from "../assests/steps/Events/Recharge/EventProcess_Recharge3.gif";
+import BookProcessRecharge4 from "../assests/steps/Events/Recharge/EventProcess_Recharge4.gif";
 
 import BookThumbEmpower19 from "../assests/thumbnails/EventThumbnail_Empower19.png";
 import BookThumbBkgdEmpower19 from "../assests/thumbBkgd/EventThumbnailBkgd_Empower19.jpg";
@@ -146,15 +148,20 @@ import BookProcessAdaptive2 from "../assests/steps/Events/Adaptive/EventProcess_
 
 import BookThumbEmpower17 from "../assests/thumbnails/EventThumbnail_Empower17.png";
 import BookThumbBkgdEmpower17 from "../assests/thumbBkgd/EventThumbnailBkgd_Empower17.jpg";
-import BookProcessEmpower17 from "../assests/steps/Events/Empower17/EventProcess_Empower17.jpg";
+import BookProcessEmpower17 from "../assests/steps/Events/Empower17/EventProcess_Empower17.gif";
 import BookProcessEmpower172 from "../assests/steps/Events/Empower17/EventProcess_Empower172.jpg";
 import BookProcessEmpower173 from "../assests/steps/Events/Empower17/EventProcess_Empower173.jpg";
+import BookProcessEmpower174 from "../assests/steps/Events/Empower17/EventProcess_Empower174.jpg";
+import BookProcessEmpower175 from "../assests/steps/Events/Empower17/EventProcess_Empower175.jpg";
+import HomepageEmpower17 from "../assests/homepage/Homepg_Empower17.jpg";
 
 import BookThumbAC23 from "../assests/thumbnails/EventThumbnail_AC23.png";
 import BookThumbBkgdAC23 from "../assests/thumbBkgd/EventThumbnailBkgd_AC23.jpg";
 import BookProcessAC23 from "../assests/steps/Events/AC23/EventProcess_AC23.jpg";
 import BookProcessAC232 from "../assests/steps/Events/AC23/EventProcess_AC232.jpg";
 import BookProcessAC233 from "../assests/steps/Events/AC23/EventProcess_AC233.jpg";
+import BookProcessAC234 from "../assests/steps/Events/AC23/EventProcess_AC234.jpg";
+import HomepageAC23 from "../assests/homepage/Homepg_AC23.jpg"
 
 import BookThumbWitsby from "../assests/thumbnails/EventThumbnail_Witsby.png";
 import BookThumbBkgdWitsby from "../assests/thumbBkgd/EventThumbnailBkgd_Witsby.jpg";
@@ -186,7 +193,6 @@ import SpringHomepage from "../assests/homepage/Homepg_Spring.gif";
 import SummerHomepage from "../assests/homepage/Homepg_Summer.jpg";
 import Empower19Homepage from "../assests/homepage/Homepg_Empower19.jpg";
 import HappinessHomepage from "../assests/homepage/Homepg_Happiness.jpg";
-import JapanHomepage from "../assests/homepage/Homepg_Japan.jpg";
 import RebrandingHomepage from "../assests/homepage/Homepg_Rebranding.gif";
 
 export function photoInfo() {
@@ -213,15 +219,15 @@ export function photoInfo() {
     const BookSteps = [BookProcessBook, BookProcessBook2];
     const ProductSteps = [BookProcessProduct, BookProcessProduct2];
     const WhatsNewSteps = [BookProcessWhatsNew, BookProcessWhatsNew2];
-    const RechargeSteps = [BookProcessRecharge, BookProcessRecharge2, BookProcessRecharge3];
+    const RechargeSteps = [BookProcessRecharge, BookProcessRecharge2, BookProcessRecharge3, BookProcessRecharge4];
     const Empower19Steps = [BookProcessEmpower19, BookProcessEmpower192, BookProcessEmpower193];
-    const AC23Steps = [BookProcessAC23, BookProcessAC232, BookProcessAC233];
+    const AC23Steps = [BookProcessAC23, BookProcessAC232, BookProcessAC233, BookProcessAC234];
     const WitsbySteps = [BookProcessWitsby, BookProcessWitsby2, BookProcessWitsby3];
     const AdaptiveSteps = [BookProcessAdaptive, BookProcessAdaptive2];
-    const Empower17Steps = [BookProcessEmpower17, BookProcessEmpower172, BookProcessEmpower173];
+    const Empower17Steps = [BookProcessEmpower17, BookProcessEmpower172, BookProcessEmpower173, BookProcessEmpower174, BookProcessEmpower175];
     const HappinessSteps = [BookProcessHappiness, BookProcessHappiness2, BookProcessHappiness3];
     const JapanSteps = [BookProcessJapan, BookProcessJapan2, BookProcessJapan3];
-    const RebrandingSteps = [BookProcessRebranding, BookProcessRebranding2, BookProcessRebranding3];
+    const RebrandingSteps = [BookProcessRebranding, BookProcessRebranding2, BookProcessRebranding3, BookProcessRebranding4];
     
     const photoMap = {
         "Learning in a New Language": {
@@ -416,6 +422,7 @@ export function photoInfo() {
             backgroundColor: "#1DA7B2",
             altText: "Empower17",
             process: Empower17Steps,
+            homepage: HomepageEmpower17,
         },
         "The Adaptive Leader": {
             thumbnail: BookThumbAdaptive,
@@ -430,6 +437,7 @@ export function photoInfo() {
             backgroundColor: "#9b7ba2",
             altText: "Annual Conference",
             process: AC23Steps,
+            homepage:HomepageAC23,
         },
         "Witsby Booth": {
             thumbnail: BookThumbWitsby,
@@ -452,7 +460,6 @@ export function photoInfo() {
             backgroundColor: "#BDABC1",
             altText: "Japan Postcards",
             process: JapanSteps,
-            homepage: JapanHomepage
         },
         "Rebranding": {
             thumbnail: BookThumbRebranding,
